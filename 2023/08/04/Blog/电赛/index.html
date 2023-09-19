@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh" >
+<head>
+    <meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+
+    <link rel="dns-prefetch" //cdn.jsdelivr.net>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css">
+
+
+
+    
+<link rel="stylesheet" href="/css/prism-m.css">
+
+    
+
+
+
+<meta name="theme-color" content="#3F51B5">
+
+    
+        <link rel=alternate type="application/atom+xml" href="/atom.xml">
+    
+
+<style>
+    html,body{scroll-behavior:smooth;min-height:100vh}
+    blockquote>strong>a{word-break:break-all}
+    .mdui-hoverable:hover,.mdui-hoverable:focus{-webkit-box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12) !important;box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12) !important;}
+    .mdui-card-primary-title a{text-decoration:none !important}
+    .page-number{display:none !important}
+    .mdui-container-fluid{transition:opacity .4s}
+    
+        body{background-color: #f6f6f6}
+
+    
+</style>
+    
+    <title>电赛 | Hexo</title>
+    <link rel="canonical" href="http://example.com/2023/08/04/Blog/%E7%94%B5%E8%B5%9B/">
+    <meta name="description" content="Day 1我们组选了个B题，同轴电缆长度与终端负载检测上午还真没啥事，8点等题，上午买买器材，吃个午饭 同轴电缆长度测定原理：  向同轴电缆发一道脉冲，由于一端开路，同轴电缆会反弹一道脉冲，这就意味着在同轴线一端测量波形，我们能得到两个波形：一个是发射波，一个是反弹波。  GitHub上捞了个代码，但是ChibiOS&#x2F;os&#x2F;hal&#x2F;ports&#x2F;STM32&amp;#">
+<meta property="og:type" content="article">
+<meta property="og:title" content="电赛">
+<meta property="og:url" content="http://example.com/2023/08/04/Blog/%E7%94%B5%E8%B5%9B/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Day 1我们组选了个B题，同轴电缆长度与终端负载检测上午还真没啥事，8点等题，上午买买器材，吃个午饭 同轴电缆长度测定原理：  向同轴电缆发一道脉冲，由于一端开路，同轴电缆会反弹一道脉冲，这就意味着在同轴线一端测量波形，我们能得到两个波形：一个是发射波，一个是反弹波。  GitHub上捞了个代码，但是ChibiOS&#x2F;os&#x2F;hal&#x2F;ports&#x2F;STM32&amp;#">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-08-03T16:11:22.000Z">
+<meta property="article:modified_time" content="2023-09-12T04:19:31.105Z">
+<meta property="article:author" content="容小狸">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="电赛">
+<meta name="twitter:card" content="summary">
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body class="mdui-theme-primary-indigo mdui-theme-accent-blue mdui-appbar-with-toolbar ">
+    <div class="mdui-theme-layout-light">
+    <header id="appbar" class="mdui-appbar mdui-appbar-fixed mdui-shadow-0 mdui-appbar-scroll-hide">
+    <div class="mdui-toolbar">
+        <button mdui-drawer="{target: '.mdui-drawer'}" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">menu</i></button>
+        <a href="/" class="mdui-typo-title">Hexo</a>
+        <div class="mdui-toolbar-spacer"></div>
+        
+        <a href="/atom.xml" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">rss_feed</i></a>
+        
+    </div>
+</header>
+    <aside class="mdui-drawer mdui-drawer-close">
+    <nav class="mdui-list" mdui-collapse="{accordion: true}">
+        <a href="/about/"  class="mdui-list-item mdui-ripple">
+            <div class="mdui-list-item-avatar">
+                
+                <i class="mdui-color-theme-primary mdui-icon material-icons">person</i>
+                
+            </div>
+            <div class="mdui-list-item-content">容小狸</div>
+        </a>
+        <div class="mdui-divider"></div>
+        
+        <a href="/" class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+            <div class="mdui-list-item-content">Home</div>
+        </a>
+        
+        <div class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">inbox</i>
+                <div class="mdui-list-item-content">Archives</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+            </div>
+            <div class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                <a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/09/">九月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/08/">八月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/03/">三月 2023</a>
+            </div>
+        </div>
+        
+        <div class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">apps</i>
+                <div class="mdui-list-item-content">Categories</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+            </div>
+            <div class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                <a class="mdui-list-item mdui-ripple m-link" href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/">复变函数</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/">概率论</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E6%A8%A1%E7%94%B5/">模电</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E7%89%A9%E7%90%86/">物理</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E8%BD%AF%E4%BB%B6/">软件</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E9%9A%8F%E7%AC%94%E5%92%8C%E7%AC%94%E8%AE%B0/">随笔和笔记</a>
+            </div>
+        </div>
+        
+    </nav>
+    <div class="mdui-divider"></div>
+    <footer class="mdui-m-l-2 mdui-m-t-1 mdui-typo mdui-text-color-theme-disabled">
+        <p class="mdui-m-b-0">
+            
+            ©
+            2023 容小狸<br>
+            
+            Powered by <a href="https://hexo.io/" rel="noreferrer" target="_blank">Hexo</a><br>
+            
+            Theme - <a href="https://github.com/kwaa/hexo-theme-m" rel="noreferrer" target="_blank"
+                mdui-tooltip="{position:'right', content: 'by 藍+85CD'}">M</a></p>
+            
+    </footer>
+</aside>
+    </div>
+    <div class="mdui-container-fluid mdui-center" style="max-width:720px">
+        <article class="mdui-card mdui-hoverable mdui-shadow-1 mdui-m-y-2" style="opacity: 1; border-radius: 4px">
+    
+    <div class="mdui-card-primary mdui-ripple">
+    <div class="mdui-card-primary-title">
+        <a role="heading" aria-level="1" class="mdui-text-color-theme-text" >电赛</a>
+        
+        <small> <a class="mdui-text-color-theme-text category-link" href="/categories/%E9%9A%8F%E7%AC%94%E5%92%8C%E7%AC%94%E8%AE%B0/">随笔和笔记</a></small>
+        
+    </div>
+    <div class="mdui-card-primary-subtitle mdui-typo">
+        
+        <span><a class="tag-none-link" href="/tags/Python/" rel="tag">Python</a> <a class="tag-none-link" href="/tags/%E7%94%B5%E8%B5%9B/" rel="tag">电赛</a> -</span>
+        <span mdui-tooltip="{content:'Created: 2023-08-04 12:11<br>Updated: 2023-09-12 12:19'}">2023-08-04 -</span>
+        
+            <span>2023/08/04/Blog/电赛/</span>
+        
+    </div>
+</div>
+    
+    
+    <div class="mdui-divider"></div>
+    <div class="mdui-card-content mdui-typo">
+        
+        <h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p>我们组选了个B题，同轴电缆长度与终端负载检测<br>上午还真没啥事，8点等题，上午买买器材，吃个午饭</p>
+<p>同轴电缆长度测定原理：</p>
+<blockquote>
+<p>向同轴电缆发一道脉冲，由于一端开路，同轴电缆会反弹一道脉冲，这就意味着在同轴线一端测量波形，我们能得到两个波形：一个是发射波，一个是反弹波。</p>
+</blockquote>
+<p>GitHub上捞了个<a target="_blank" rel="noopener" href="https://github.com/hugen79/NanoVNA-H">代码</a>，但是ChibiOS&#x2F;os&#x2F;hal&#x2F;ports&#x2F;STM32&#x2F;STM32F0xx&#x2F;hal_lld.c报错，换成<a target="_blank" rel="noopener" href="https://github.com/DiSlord/NanoVNA-D">另一个</a>就搞定了（第二个现在还在更新，而且两个差别其实不是特别大，我们就可以比较方便地套用了）</p>
+<p>主要是仪器还没到，不能刷固件确认。其实只要固件有了，基本都没什么太大问题，然后就是写论文了。<br>我们也是有能干起来的活的，比如测量的UI，不知道我能不能帮的上忙。（我C稀碎，而且python也是完全不会）</p>
+<p>睡觉了，等第二天器材到了就开始忙了。</p>
+<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p>快递早上就到了，接下来就是用micropython对NanoVNA的操作了。</p>
+<p>之前没搞过micropython，踩了一些坑，跟着<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/366411699">这篇文章</a>走了一遍，就能上了。<br>首先是环境，安装所需的requirements，然后看到有个模块叫machine<br>这个模块是micropython生成的，所以应该这么搞：<br>进入虚拟环境：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">source</span> ./venv/bin/activate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>Windows：</p>
+<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">.&#x2F;venv&#x2F;scripts&#x2F;activate.bat<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>之后（使用阿里云的镜像加速）：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip <span class="token function">install</span> micropy-cli esptool <span class="token parameter variable">-i</span> https://mirrors.aliyun.com/pypi/simple<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>擦除ESP32S3的固件：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">esptool.py <span class="token parameter variable">--chip</span> esp32s3 <span class="token parameter variable">--port</span> /dev/yourDevice erase_flash<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>将micropython的固件刷上ESP32：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">esptool.py <span class="token parameter variable">--chip</span> esp32s3 <span class="token parameter variable">--port</span> /dev/youtDevice write_flash <span class="token parameter variable">-z</span> <span class="token number">0</span> /path/to/BIN_FILE.bin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>串口连接ESP32S3，波特率115200，就可以了。</p>
+<p>第一天的时候其实是这样的：打算使用官方的开源代码进行逆向，获取数据。今天找到了这个：<br>有这个软件：<a target="_blank" rel="noopener" href="https://github.com/NanoVNA-Saver/nanovna-saver">NanoVNA-Saver</a>，是在Windows、Linux和MacOS上用于提取NanoVNA的数据的，也就是说NanoVNA-H使用串口进行调试，那么就可以通过串口指令提取数据：</p>
+<blockquote>
+<p>A multiplatform tool to save Touchstone files from the NanoVNA, sweep frequency spans in segments to gain more than 101 data points, and generally display and analyze the resulting data.</p>
+</blockquote>
+<blockquote>
+<p>This software connects to a NanoVNA and extracts the data for display on a computer and allows saving the sweep data to Touchstone files.</p>
+</blockquote>
+<p>接下来就是串口截取数据了。Windows下可以使用<a target="_blank" rel="noopener" href="http://www.ceiwei.com/mt/">CommMonitor</a>进行监视，Linux一开始用的是这个<a target="_blank" rel="noopener" href="https://github.com/chipkin/Linux-HighSpeedSerialMonitor/">“HighSpeedSerialMonitor”</a>，但是用这个的话会报错闪退，ERROR - too many retries。我猜估计是占用问题，Windows下那个CommMonitor就没有问题。<br>搜到stackexchange.com貌似有个<a target="_blank" rel="noopener" href="https://unix.stackexchange.com/questions/12359/how-can-i-monitor-serial-port-traffic">类似问题的帖子</a>，提到：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.google.com/search?q=socat+serial+port+pty+tee+debug">Googling</a> “socat serial port pty tee debug” will point you to several “standard procedure” examples, one being:</p>
+</blockquote>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">socat  /dev/ttyS0,raw,echo<span class="token operator">=</span><span class="token number">0</span>  <span class="token punctuation">\</span>
+	SYSTEM:<span class="token string">'tee in.txt | socat - "PTY,link=/tmp/ttyV0,raw,echo=0,waitslave" | tee out.txt'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>貌似没问题，时间来不及了，没时间验证，明天再说。<br>明天要验证socat端口转发，两个佬晚上通宵搞定软件和硬件，明天写完论文就搞定了。</p>
+<h2 id="Day-3"><a href="#Day-3" class="headerlink" title="Day 3"></a>Day 3</h2><blockquote>
+<p>nanovna.py line 260 to line 270: </p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">tdr</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+	pl<span class="token punctuation">.</span>grid<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+	window <span class="token operator">=</span> np<span class="token punctuation">.</span>blackman<span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+	NFFT <span class="token operator">=</span> <span class="token number">256</span>
+	td <span class="token operator">=</span> np<span class="token punctuation">.</span><span class="token builtin">abs</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>fft<span class="token punctuation">.</span>ifft<span class="token punctuation">(</span>window <span class="token operator">*</span> x<span class="token punctuation">,</span> NFFT<span class="token punctuation">)</span><span class="token punctuation">)</span>
+	time <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">/</span> <span class="token punctuation">(</span>self<span class="token punctuation">.</span>frequencies<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> self<span class="token punctuation">.</span>frequencies<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+	t_axis <span class="token operator">=</span> np<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> time<span class="token punctuation">,</span> NFFT<span class="token punctuation">)</span>
+	pl<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>t_axis<span class="token punctuation">,</span> td<span class="token punctuation">)</span>
+	pl<span class="token punctuation">.</span>xlim<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> time<span class="token punctuation">)</span>
+	pl<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">"time (s)"</span><span class="token punctuation">)</span>
+	pl<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">"magnitude"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>问题是Micropython没有numpy，还有一个方案是捞个树莓派用，但是我觉得很臃肿，试着手搓一下Blackman，ittf和linspace，剩下的方案执行交给佬们。<br>linespace: </p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">linspace</span><span class="token punctuation">(</span>start<span class="token punctuation">,</span> stop<span class="token punctuation">,</span> num<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">,</span> endpoint<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> retstep<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> dtype<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+	out <span class="token operator">=</span> <span class="token punctuation">[</span> <span class="token builtin">float</span><span class="token punctuation">(</span>start<span class="token punctuation">)</span> <span class="token punctuation">]</span> <span class="token comment">#try to init output.</span>
+	<span class="token keyword">if</span> <span class="token keyword">not</span> endpoint<span class="token punctuation">:</span>
+		delta <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token punctuation">(</span>stop <span class="token operator">-</span> start<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token keyword">else</span><span class="token punctuation">:</span>
+		delta <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token punctuation">(</span>stop <span class="token operator">-</span> start<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span>num <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>num <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+		out<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token builtin">float</span><span class="token punctuation">(</span>out<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> delta<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment"># For each step, add the delta.</span>
+<span class="token keyword">return</span> out<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>验证：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">linspaceTest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+<span class="token comment"># Test 1:</span>
+	result <span class="token operator">=</span> libNumpy<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token number">2.0</span><span class="token punctuation">,</span> <span class="token number">3.0</span><span class="token punctuation">,</span> num<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">)</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Should be: [2. , 2.25, 2.5 , 2.75, 3. ]"</span><span class="token punctuation">)</span>
+<span class="token comment"># Test 2:</span>
+	result <span class="token operator">=</span> libNumpy<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token number">2.0</span><span class="token punctuation">,</span> <span class="token number">3.0</span><span class="token punctuation">,</span> num<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">,</span> endpoint<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Should be: [2. , 2.2, 2.4, 2.6, 2.8]"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>强制转换的时候精度丢了，要改。</p>
+<p>佬们做完树莓派的硬件适配了，可以不用管了，等会儿直接上树莓派就行了。</p>
+<p>摸了一下午鱼，佬们把python写完了，捞了份源码下来。</p>
+<blockquote>
+<p>CR.py<br>main.py<br>nanovna.py<br>TDR.py<br>utils (dir)<br>├── Formatting.py<br>├── RFTools.py<br>└── SITools.py</p>
+</blockquote>
+<p>依赖安装貌似还是有点问题，总之先这么装：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip <span class="token function">install</span> luma
+pip <span class="token function">install</span> luma.core
+pip <span class="token function">install</span> luma.oled<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>main.py为入口：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token punctuation">:</span>
+	GPIO_init<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment"># init GPIO on rasp</span>
+	_cr<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment"># draw screen</span>
+	<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+		<span class="token keyword">if</span> <span class="token keyword">not</span> GPIO<span class="token punctuation">.</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+			_cr<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment"># almost the same as _tdr()</span>
+		<span class="token keyword">if</span> <span class="token keyword">not</span> GPIO<span class="token punctuation">.</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token number">17</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+			_tdr<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>首先初始化GPIO：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">GPIO_init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+	GPIO<span class="token punctuation">.</span>setmode<span class="token punctuation">(</span>GPIO<span class="token punctuation">.</span>BCM<span class="token punctuation">)</span>
+	GPIO<span class="token punctuation">.</span>setup<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> GPIO<span class="token punctuation">.</span>IN<span class="token punctuation">,</span> pull_up_down<span class="token operator">=</span>GPIO<span class="token punctuation">.</span>PUD_UP<span class="token punctuation">)</span>
+	GPIO<span class="token punctuation">.</span>setup<span class="token punctuation">(</span><span class="token number">17</span><span class="token punctuation">,</span> GPIO<span class="token punctuation">.</span>IN<span class="token punctuation">,</span> pull_up_down<span class="token operator">=</span>GPIO<span class="token punctuation">.</span>PUD_UP<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>第4，17针脚用于接出两个按钮，所以是<code>GPIO.IN</code>，具体定义见GPIO。</p>
+<p>接下来准备屏幕：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">_cr</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"CR"</span><span class="token punctuation">)</span>
+	stats<span class="token punctuation">(</span>oled<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">"Unknown"</span><span class="token punctuation">)</span>
+	length<span class="token punctuation">,</span> terminal_category<span class="token punctuation">,</span> terminal_parameter <span class="token operator">=</span> cr<span class="token punctuation">(</span>nv<span class="token punctuation">,</span> <span class="token number">97e-12</span><span class="token punctuation">)</span> <span class="token comment"># read from vna</span>
+	<span class="token comment">#stats(oled, 1, length, terminal_category, terminal_parameter)</span>
+	stats<span class="token punctuation">(</span>oled<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> length<span class="token punctuation">,</span> terminal_category<span class="token punctuation">,</span> terminal_parameter<span class="token punctuation">)</span> <span class="token comment"># render</span>
+	<span class="token comment"># cr(nv, 97e-12)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>stats()</code>用于更新屏幕，画出屏幕上的东西，比如各种参数：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">stats</span><span class="token punctuation">(</span>oled<span class="token punctuation">,</span> Condition<span class="token punctuation">,</span> length<span class="token punctuation">,</span> terminal_category<span class="token punctuation">,</span> terminal_parameter<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token comment">#render func</span>
+	oled<span class="token punctuation">.</span>clear<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">#clear the screen</span>
+	<span class="token keyword">with</span> canvas<span class="token punctuation">(</span>oled<span class="token punctuation">)</span> <span class="token keyword">as</span> draw<span class="token punctuation">:</span>
+	draw<span class="token punctuation">.</span>text<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">"condition"</span><span class="token punctuation">,</span> fill<span class="token operator">=</span><span class="token string">"white"</span><span class="token punctuation">)</span>
+	draw<span class="token punctuation">.</span>text<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">"length"</span><span class="token punctuation">,</span> fill<span class="token operator">=</span><span class="token string">"white"</span><span class="token punctuation">)</span>
+	draw<span class="token punctuation">.</span>text<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">"Load_Type"</span><span class="token punctuation">,</span> fill<span class="token operator">=</span><span class="token string">"white"</span><span class="token punctuation">)</span>
+	draw<span class="token punctuation">.</span>text<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">"Load_Para"</span><span class="token punctuation">,</span> fill<span class="token operator">=</span><span class="token string">"white"</span><span class="token punctuation">)</span>
+	draw<span class="token punctuation">.</span>text<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">str</span><span class="token punctuation">(</span>Piget_condition<span class="token punctuation">(</span>Condition<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> fill<span class="token operator">=</span><span class="token string">"white"</span><span class="token punctuation">)</span>
+	draw<span class="token punctuation">.</span>text<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string-interpolation"><span class="token string">f"</span><span class="token interpolation"><span class="token punctuation">&#123;</span><span class="token punctuation">(</span>length<span class="token operator">*</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token format-spec">.2f</span><span class="token punctuation">&#125;</span></span><span class="token string"> cm"</span></span><span class="token punctuation">,</span> fill<span class="token operator">=</span><span class="token string">"white"</span><span class="token punctuation">)</span>
+	draw<span class="token punctuation">.</span>text<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">60</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">str</span><span class="token punctuation">(</span>Piget_terminal_category<span class="token punctuation">(</span>terminal_category<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span> fill<span class="token operator">=</span><span class="token string">"white"</span><span class="token punctuation">)</span>
+	draw<span class="token punctuation">.</span>text<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">60</span><span class="token punctuation">,</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">str</span><span class="token punctuation">(</span>terminal_parameter<span class="token punctuation">)</span><span class="token punctuation">,</span> fill<span class="token operator">=</span><span class="token string">"white"</span><span class="token punctuation">)</span>
+	draw<span class="token punctuation">.</span>text<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">,</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">str</span><span class="token punctuation">(</span>Piget_terminal_category<span class="token punctuation">(</span>terminal_category<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span> fill<span class="token operator">=</span><span class="token string">"white"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>还挺显而易见的。</p>
+<p><code>Piget_terminal_category()</code>用于返回获取终端负载的类型的状态和单位，有开路，容性负载，和电阻：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">Piget_terminal_category</span><span class="token punctuation">(</span>terminal_category<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token comment"># terminal type</span>
+    <span class="token keyword">if</span> terminal_category <span class="token operator">==</span><span class="token number">0</span> <span class="token punctuation">:</span>
+        Show_terminal_category <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"open"</span><span class="token punctuation">,</span><span class="token string">""</span><span class="token punctuation">]</span>
+    <span class="token keyword">elif</span> terminal_category <span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">:</span>
+        Show_terminal_category <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"C"</span><span class="token punctuation">,</span><span class="token string">"pF"</span><span class="token punctuation">]</span>
+    <span class="token keyword">elif</span> terminal_category <span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">:</span>
+        Show_terminal_category <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"R"</span><span class="token punctuation">,</span><span class="token string">"Ohm"</span><span class="token punctuation">]</span>
+    <span class="token keyword">return</span> Show_terminal_category<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>Piget_condition()</code>用来获取树莓派的状态的文本，0是正在等待，1是正在测量：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">Piget_condition</span><span class="token punctuation">(</span>Condition<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token comment"># current pi condition</span>
+    <span class="token keyword">if</span> Condition <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span>
+        Show_Condition <span class="token operator">=</span> <span class="token string">"TESTING"</span>
+    <span class="token keyword">elif</span> Condition <span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">:</span>
+        Show_Condition <span class="token operator">=</span> <span class="token string">"HOLD"</span>
+    <span class="token keyword">return</span> Show_Condition<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>_cr()</code>是用来提取从vna获取的数据的：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">_cr</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"CR"</span><span class="token punctuation">)</span>
+    stats<span class="token punctuation">(</span>oled<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">"Unknown"</span><span class="token punctuation">)</span>
+    length<span class="token punctuation">,</span> terminal_category<span class="token punctuation">,</span> terminal_parameter <span class="token operator">=</span> cr<span class="token punctuation">(</span>nv<span class="token punctuation">,</span> <span class="token number">97e-12</span><span class="token punctuation">)</span> <span class="token comment"># read from vna</span>
+    <span class="token comment">#stats(oled, 1, length, terminal_category, terminal_parameter)</span>
+    stats<span class="token punctuation">(</span>oled<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> length<span class="token punctuation">,</span> terminal_category<span class="token punctuation">,</span> terminal_parameter<span class="token punctuation">)</span> <span class="token comment"># render</span>
+    <span class="token comment"># cr(nv, 97e-12)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>_tdr()</code>也差不多：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">_tdr</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"TDR"</span><span class="token punctuation">)</span>
+    stats<span class="token punctuation">(</span>oled<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">"Unknown"</span><span class="token punctuation">)</span>
+    length<span class="token punctuation">,</span> terminal_category<span class="token punctuation">,</span> terminal_parameter <span class="token operator">=</span> cr<span class="token punctuation">(</span>nv<span class="token punctuation">,</span> <span class="token number">97e-12</span><span class="token punctuation">)</span> <span class="token comment">#read from vna</span>
+    <span class="token comment">#stats(oled, 1, length, terminal_category, terminal_parameter)</span>
+    stats<span class="token punctuation">(</span>oled<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> length<span class="token punctuation">,</span> terminal_category<span class="token punctuation">,</span> terminal_parameter<span class="token punctuation">)</span> <span class="token comment"># render</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><code>cr()</code>用于从vna生数据做转换：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">cr</span><span class="token punctuation">(</span>nv<span class="token punctuation">,</span> offset<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""
+    nv: NanoVNA对象；
+    offset： 每米线电容大小（单位：F)， 1F = 1e12pF
+
+    Return
+    """</span>
+    cable_len<span class="token punctuation">,</span> s11 <span class="token operator">=</span> tdr<span class="token punctuation">(</span>nv<span class="token punctuation">,</span> <span class="token number">50000</span><span class="token punctuation">,</span> <span class="token number">200000000</span><span class="token punctuation">)</span> <span class="token comment"># 200 MHz     ：线材够长</span>
+    cable_len<span class="token punctuation">,</span> s11 <span class="token operator">=</span> tdr<span class="token punctuation">(</span>nv<span class="token punctuation">,</span> <span class="token number">50000</span><span class="token punctuation">,</span> <span class="token number">200000000</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>cable_len<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> cable_len <span class="token operator">&lt;=</span> <span class="token number">2.5</span><span class="token punctuation">:</span>
+        cable_len<span class="token punctuation">,</span> s11 <span class="token operator">=</span> tdr<span class="token punctuation">(</span>nv<span class="token punctuation">,</span> <span class="token number">50000</span><span class="token punctuation">,</span> <span class="token number">1500000000</span><span class="token punctuation">)</span> <span class="token comment"># 1.5 GHz：线材小于2.5米</span>
+        cable_len<span class="token punctuation">,</span> s11 <span class="token operator">=</span> tdr<span class="token punctuation">(</span>nv<span class="token punctuation">,</span> <span class="token number">50000</span><span class="token punctuation">,</span> <span class="token number">1500000000</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>cable_len<span class="token punctuation">)</span>
+    <span class="token keyword">elif</span> cable_len <span class="token operator">&lt;=</span> <span class="token number">5</span><span class="token punctuation">:</span>
+        cable_len<span class="token punctuation">,</span> s11 <span class="token operator">=</span> tdr<span class="token punctuation">(</span>nv<span class="token punctuation">,</span> <span class="token number">50000</span><span class="token punctuation">,</span> <span class="token number">750000000</span><span class="token punctuation">)</span> <span class="token comment"># 750 MHz ：线材小于5米</span>
+        cable_len<span class="token punctuation">,</span> s11 <span class="token operator">=</span> tdr<span class="token punctuation">(</span>nv<span class="token punctuation">,</span> <span class="token number">50000</span><span class="token punctuation">,</span> <span class="token number">750000000</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>cable_len<span class="token punctuation">)</span>
+    imp <span class="token operator">=</span> RFTools<span class="token punctuation">.</span>gamma_to_impedance<span class="token punctuation">(</span><span class="token builtin">complex</span><span class="token punctuation">(</span>s11<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> s11<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment"># 这是阻抗</span>
+    imp_p <span class="token operator">=</span> RFTools<span class="token punctuation">.</span>serial_to_parallel<span class="token punctuation">(</span>imp<span class="token punctuation">)</span>
+    capacitance <span class="token operator">=</span> RFTools<span class="token punctuation">.</span>impedance_to_capacitance<span class="token punctuation">(</span>imp<span class="token punctuation">,</span> <span class="token number">500000</span><span class="token punctuation">)</span>
+    resistance <span class="token operator">=</span> imp_p<span class="token punctuation">.</span>real <span class="token comment"># 获取电阻</span>
+    <span class="token keyword">if</span> capacitance <span class="token operator">-</span> <span class="token punctuation">(</span>offset <span class="token operator">*</span> cable_len<span class="token punctuation">)</span> <span class="token operator">>=</span> <span class="token number">90e-12</span><span class="token punctuation">:</span>
+        cap_str <span class="token operator">=</span> format_capacitance<span class="token punctuation">(</span>
+            <span class="token comment"># 500000表示500kHz</span>
+            RFTools<span class="token punctuation">.</span>impedance_to_capacitance<span class="token punctuation">(</span>imp<span class="token punctuation">,</span> <span class="token number">500000</span><span class="token punctuation">)</span>
+        <span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'类型：电容  电容值：</span><span class="token interpolation"><span class="token punctuation">&#123;</span>cap_str<span class="token punctuation">&#125;</span></span><span class="token string"> 线长：</span><span class="token interpolation"><span class="token punctuation">&#123;</span>cable_len<span class="token punctuation">&#125;</span></span><span class="token string">'</span></span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> cable_len<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> cap_str
+    <span class="token keyword">if</span> <span class="token number">0</span> <span class="token operator">&lt;</span> resistance <span class="token operator">&lt;=</span> <span class="token number">60</span><span class="token punctuation">:</span>
+        resistance_str <span class="token operator">=</span> format_resistance<span class="token punctuation">(</span>imp_p<span class="token punctuation">.</span>real<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'类型：电阻 电阻值：</span><span class="token interpolation"><span class="token punctuation">&#123;</span>resistance_str<span class="token punctuation">&#125;</span></span><span class="token string"> 线长：</span><span class="token interpolation"><span class="token punctuation">&#123;</span>cable_len<span class="token punctuation">&#125;</span></span><span class="token string">'</span></span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> cable_len<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> resistance_str
+    <span class="token keyword">if</span> <span class="token keyword">not</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>capacitance <span class="token operator">-</span> <span class="token punctuation">(</span>offset <span class="token operator">*</span> cable_len<span class="token punctuation">)</span> <span class="token operator">>=</span> <span class="token number">90e-12</span><span class="token punctuation">)</span> <span class="token keyword">or</span> <span class="token punctuation">(</span><span class="token number">0</span> <span class="token operator">&lt;</span> resistance <span class="token operator">&lt;=</span> <span class="token number">60</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'开路 线长：</span><span class="token interpolation"><span class="token punctuation">&#123;</span>cable_len<span class="token punctuation">&#125;</span></span><span class="token string">'</span></span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> cable_len<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>capacitance<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>resistance<span class="token punctuation">)</span>
+    cap_str <span class="token operator">=</span> format_capacitance<span class="token punctuation">(</span>
+        <span class="token comment"># 500000表示500kHz</span>
+        RFTools<span class="token punctuation">.</span>impedance_to_capacitance<span class="token punctuation">(</span>imp<span class="token punctuation">,</span> <span class="token number">500000</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span>
+    resistance_str <span class="token operator">=</span> format_resistance<span class="token punctuation">(</span>imp_p<span class="token punctuation">.</span>real<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'电容值为：</span><span class="token interpolation"><span class="token punctuation">&#123;</span>cap_str<span class="token punctuation">&#125;</span></span><span class="token string"> 电阻值为：</span><span class="token interpolation"><span class="token punctuation">&#123;</span>resistance_str<span class="token punctuation">&#125;</span></span><span class="token string"> 电缆长度为：</span><span class="token interpolation"><span class="token punctuation">&#123;</span>cable_len<span class="token punctuation">&#125;</span></span><span class="token string"> m'</span></span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>tdr()</code>用于获取vna生数据：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">tdr</span><span class="token punctuation">(</span>nv<span class="token punctuation">,</span> start<span class="token punctuation">,</span> end<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    nv<span class="token punctuation">.</span>fetch_frequencies<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    nv<span class="token punctuation">.</span>fetch_frequencies<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    s11 <span class="token operator">=</span> nv<span class="token punctuation">.</span>new_scan<span class="token punctuation">(</span>start<span class="token punctuation">,</span> end<span class="token punctuation">)</span>
+    <span class="token comment"># print(s11[1][0])</span>
+    t_axies <span class="token operator">=</span> nv<span class="token punctuation">.</span>tdr<span class="token punctuation">(</span>s11<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    d_axies <span class="token operator">=</span> t_axies<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token number">0.71</span> <span class="token operator">*</span> speed_of_light
+    index_peak <span class="token operator">=</span> np<span class="token punctuation">.</span>argmax<span class="token punctuation">(</span>t_axies<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    cable_len <span class="token operator">=</span> d_axies<span class="token punctuation">[</span>index_peak<span class="token punctuation">]</span> <span class="token operator">/</span> <span class="token number">2</span>
+    <span class="token comment"># print(f'Cable length: &#123;cable_len&#125; m')</span>
+    <span class="token keyword">return</span> cable_len<span class="token punctuation">,</span> s11<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>RFTools.py</code>是用来计算的</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">gamma_to_impedance</span><span class="token punctuation">(</span>gamma<span class="token punctuation">:</span> <span class="token builtin">complex</span><span class="token punctuation">,</span> ref_impedance<span class="token punctuation">:</span> <span class="token builtin">float</span> <span class="token operator">=</span> <span class="token number">50</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token builtin">complex</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""Calculate impedance from gamma"""</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token operator">-</span>gamma <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span>gamma <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">*</span> ref_impedance
+    <span class="token keyword">except</span> ZeroDivisionError<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> math<span class="token punctuation">.</span>inf
+
+<span class="token keyword">def</span> <span class="token function">impedance_to_capacitance</span><span class="token punctuation">(</span>z<span class="token punctuation">:</span> <span class="token builtin">complex</span><span class="token punctuation">,</span> freq<span class="token punctuation">:</span> <span class="token builtin">float</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token builtin">float</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""Calculate capacitive equivalent for reactance"""</span>
+    <span class="token keyword">if</span> freq <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token operator">-</span>math<span class="token punctuation">.</span>inf
+    <span class="token keyword">return</span> math<span class="token punctuation">.</span>inf <span class="token keyword">if</span> z<span class="token punctuation">.</span>imag <span class="token operator">==</span> <span class="token number">0</span> <span class="token keyword">else</span> <span class="token operator">-</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">/</span> <span class="token punctuation">(</span>freq <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">*</span> math<span class="token punctuation">.</span>pi <span class="token operator">*</span> z<span class="token punctuation">.</span>imag<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">def</span> <span class="token function">impedance_to_inductance</span><span class="token punctuation">(</span>z<span class="token punctuation">:</span> <span class="token builtin">complex</span><span class="token punctuation">,</span> freq<span class="token punctuation">:</span> <span class="token builtin">float</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token builtin">float</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""Calculate inductive equivalent for reactance"""</span>
+    <span class="token keyword">return</span> <span class="token number">0</span> <span class="token keyword">if</span> freq <span class="token operator">==</span> <span class="token number">0</span> <span class="token keyword">else</span> z<span class="token punctuation">.</span>imag <span class="token operator">*</span> <span class="token number">1</span> <span class="token operator">/</span> <span class="token punctuation">(</span>freq <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">*</span> math<span class="token punctuation">.</span>pi<span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">serial_to_parallel</span><span class="token punctuation">(</span>z<span class="token punctuation">:</span> <span class="token builtin">complex</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token builtin">complex</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""Convert serial impedance to parallel impedance equivalent"""</span>
+    z_sq_sum <span class="token operator">=</span> z<span class="token punctuation">.</span>real<span class="token operator">**</span><span class="token number">2</span> <span class="token operator">+</span> z<span class="token punctuation">.</span>imag<span class="token operator">**</span><span class="token number">2</span>
+    <span class="token keyword">if</span> z<span class="token punctuation">.</span>real <span class="token operator">==</span> <span class="token number">0</span> <span class="token keyword">and</span> z<span class="token punctuation">.</span>imag <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token builtin">complex</span><span class="token punctuation">(</span>math<span class="token punctuation">.</span>inf<span class="token punctuation">,</span> math<span class="token punctuation">.</span>inf<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> z<span class="token punctuation">.</span>imag <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token builtin">complex</span><span class="token punctuation">(</span>z_sq_sum <span class="token operator">/</span> z<span class="token punctuation">.</span>real<span class="token punctuation">,</span> math<span class="token punctuation">.</span>copysign<span class="token punctuation">(</span>math<span class="token punctuation">.</span>inf<span class="token punctuation">,</span> z_sq_sum<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> z<span class="token punctuation">.</span>real <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token builtin">complex</span><span class="token punctuation">(</span>math<span class="token punctuation">.</span>copysign<span class="token punctuation">(</span>math<span class="token punctuation">.</span>inf<span class="token punctuation">,</span> z_sq_sum<span class="token punctuation">)</span><span class="token punctuation">,</span> z_sq_sum <span class="token operator">/</span> z<span class="token punctuation">.</span>imag<span class="token punctuation">)</span>
+	    returnrs <span class="token builtin">complex</span><span class="token punctuation">(</span>z_sq_sum <span class="token operator">/</span> z<span class="token punctuation">.</span>real<span class="token punctuation">,</span> z_sq_sum <span class="token operator">/</span> z<span class="token punctuation">.</span>imag<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><code>SITools.py</code>是用来写科学计数法的。</p>
+<h2 id="Day-4"><a href="#Day-4" class="headerlink" title="Day 4"></a>Day 4</h2><p>上面这个代码分析算是半梦半醒之间写出来的，弄完已经第二天早上6点了。<br>睡到中午12点，佬们开始重构代码了，要我读一遍写个框图。</p>
+<pre class="mermaid">graph TD
+GlobalCapacitance(线路阻抗)
+InitBox(初始化) --> OLEDRefresh(屏幕刷新)
+OLEDRefresh --> Length[测量线长] --> MesureLength[扫频并获取频点数据<br/>Gamma转负阻抗<br/><br/>串联阻抗转并联阻抗<br/>阻抗转容性负载] --> |存储| GlobalCapacitance(线路阻抗) --> OLEDRefresh1
+GlobalCapacitance1(线路阻抗) --> CalculateLoad
+OLEDRefresh --> Load[测量负载] --> MesureLoad[扫频并获取频点数据<br/>Gamma转负阻抗<br/>串联阻抗转并联阻抗<br/>阻抗转容性负载] --> CalculateLoad[计算负载] --> OLEDRefresh1(屏幕刷新)</pre>
+
+<p>搞定，装箱，明天回家。</p>
+
+        
+        <blockquote class="mdui-m-x-0 mdui-m-t-4">
+    <strong>
+        Author: <a href="/about/">容小狸</a><br>
+        URL: <a href="http://example.com/2023/08/04/Blog/%E7%94%B5%E8%B5%9B/">http://example.com/2023/08/04/Blog/%E7%94%B5%E8%B5%9B/</a><br>
+        
+            This work is licensed under a <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> .
+        
+    </strong>
+</blockquote>
+        
+    </div>
+    
+</article>
+<nav class="mdui-theme-layout-light mdui-color-transparent mdui-row mdui-m-b-2">
+    
+        <div class="mdui-col-xs-12 mdui-m-b-2">
+            <a class="extend prev mdui-btn mdui-ripple mdui-float-left mdui-text-truncate" rel="prev"
+                style="max-width: 100%" href="/2023/09/02/Blog/%E4%BA%8EWindows%E4%B8%8A%E9%83%A8%E7%BD%B2ChatGLM2-6B%20%E4%BB%A5%E5%8F%8A%E5%85%B6WebUI/">
+                <i class="mdui-icon mdui-icon-left material-icons">arrow_back</i>于Windows上部署ChatGLM2-6B 以及其WebUI
+            </a>
+        </div>
+    
+        <div class="mdui-col-xs-12">
+            <a class="extend next mdui-btn mdui-ripple mdui-float-right mdui-text-truncate" rel="next"
+                style="max-width: 100%" href="/2023/03/21/Blog/RongXiaoliBotv0-2-1/">
+                <i class="mdui-icon mdui-icon-right material-icons">arrow_forward</i>RongXiaoliBotv0.2.1
+            </a>
+        </div>
+    
+</nav>
+
+    </div>
+    <a href="#" class="mdui-fab mdui-fab-fixed mdui-hidden-xs mdui-color-theme-accent mdui-ripple"><i class="mdui-icon material-icons">keyboard_arrow_up</i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
+
+
+<script>
+    var $ = mdui.$;
+    function init(){
+        //
+    }
+    window.addEventListener("load", () => {
+        //
+        init()
+    }, {once: true});
+</script>
+
+</body>
+</html>

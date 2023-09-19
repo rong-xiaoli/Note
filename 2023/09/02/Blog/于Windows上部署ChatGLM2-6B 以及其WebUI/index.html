@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh" >
+<head>
+    <meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+
+    <link rel="dns-prefetch" //cdn.jsdelivr.net>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css">
+
+
+
+    
+<link rel="stylesheet" href="/css/prism-m.css">
+
+    
+
+
+
+<meta name="theme-color" content="#3F51B5">
+
+    
+        <link rel=alternate type="application/atom+xml" href="/atom.xml">
+    
+
+<style>
+    html,body{scroll-behavior:smooth;min-height:100vh}
+    blockquote>strong>a{word-break:break-all}
+    .mdui-hoverable:hover,.mdui-hoverable:focus{-webkit-box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12) !important;box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12) !important;}
+    .mdui-card-primary-title a{text-decoration:none !important}
+    .page-number{display:none !important}
+    .mdui-container-fluid{transition:opacity .4s}
+    
+        body{background-color: #f6f6f6}
+
+    
+</style>
+    
+    <title>于Windows上部署ChatGLM2-6B 以及其WebUI | Hexo</title>
+    <link rel="canonical" href="http://example.com/2023/09/02/Blog/%E4%BA%8EWindows%E4%B8%8A%E9%83%A8%E7%BD%B2ChatGLM2-6B%20%E4%BB%A5%E5%8F%8A%E5%85%B6WebUI/">
+    <meta name="description" content="寻思要给自己搞一个能上网的GLM2-6B，就在GLM官网找有没有友链，正好找到了这么一条：ChatGLM-6B-Engineering，于是就打算在本地部署一下（我是比较讨厌语言模型不在本地的那种）。坑有点多，于是用几乎是0基础的方式写了这么一篇教程。本篇文章使用venv来创建虚拟环境，conda创建环境的可以找别人了。  0x0 拉代码到这个工程的仓库拉下代码，解压到一个文件夹。创建一个命令行窗">
+<meta property="og:type" content="article">
+<meta property="og:title" content="于Windows上部署ChatGLM2-6B 以及其WebUI">
+<meta property="og:url" content="http://example.com/2023/09/02/Blog/%E4%BA%8EWindows%E4%B8%8A%E9%83%A8%E7%BD%B2ChatGLM2-6B%20%E4%BB%A5%E5%8F%8A%E5%85%B6WebUI/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="寻思要给自己搞一个能上网的GLM2-6B，就在GLM官网找有没有友链，正好找到了这么一条：ChatGLM-6B-Engineering，于是就打算在本地部署一下（我是比较讨厌语言模型不在本地的那种）。坑有点多，于是用几乎是0基础的方式写了这么一篇教程。本篇文章使用venv来创建虚拟环境，conda创建环境的可以找别人了。  0x0 拉代码到这个工程的仓库拉下代码，解压到一个文件夹。创建一个命令行窗">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-09-02T06:06:13.000Z">
+<meta property="article:modified_time" content="2023-09-12T04:19:31.104Z">
+<meta property="article:author" content="容小狸">
+<meta property="article:tag" content="LLM">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="ChatGLM2-6B">
+<meta name="twitter:card" content="summary">
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body class="mdui-theme-primary-indigo mdui-theme-accent-blue mdui-appbar-with-toolbar ">
+    <div class="mdui-theme-layout-light">
+    <header id="appbar" class="mdui-appbar mdui-appbar-fixed mdui-shadow-0 mdui-appbar-scroll-hide">
+    <div class="mdui-toolbar">
+        <button mdui-drawer="{target: '.mdui-drawer'}" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">menu</i></button>
+        <a href="/" class="mdui-typo-title">Hexo</a>
+        <div class="mdui-toolbar-spacer"></div>
+        
+        <a href="/atom.xml" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">rss_feed</i></a>
+        
+    </div>
+</header>
+    <aside class="mdui-drawer mdui-drawer-close">
+    <nav class="mdui-list" mdui-collapse="{accordion: true}">
+        <a href="/about/"  class="mdui-list-item mdui-ripple">
+            <div class="mdui-list-item-avatar">
+                
+                <i class="mdui-color-theme-primary mdui-icon material-icons">person</i>
+                
+            </div>
+            <div class="mdui-list-item-content">容小狸</div>
+        </a>
+        <div class="mdui-divider"></div>
+        
+        <a href="/" class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+            <div class="mdui-list-item-content">Home</div>
+        </a>
+        
+        <div class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">inbox</i>
+                <div class="mdui-list-item-content">Archives</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+            </div>
+            <div class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                <a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/09/">九月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/08/">八月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/03/">三月 2023</a>
+            </div>
+        </div>
+        
+        <div class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">apps</i>
+                <div class="mdui-list-item-content">Categories</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+            </div>
+            <div class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                <a class="mdui-list-item mdui-ripple m-link" href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/">复变函数</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/">概率论</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E6%A8%A1%E7%94%B5/">模电</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E7%89%A9%E7%90%86/">物理</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E8%BD%AF%E4%BB%B6/">软件</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E9%9A%8F%E7%AC%94%E5%92%8C%E7%AC%94%E8%AE%B0/">随笔和笔记</a>
+            </div>
+        </div>
+        
+    </nav>
+    <div class="mdui-divider"></div>
+    <footer class="mdui-m-l-2 mdui-m-t-1 mdui-typo mdui-text-color-theme-disabled">
+        <p class="mdui-m-b-0">
+            
+            ©
+            2023 容小狸<br>
+            
+            Powered by <a href="https://hexo.io/" rel="noreferrer" target="_blank">Hexo</a><br>
+            
+            Theme - <a href="https://github.com/kwaa/hexo-theme-m" rel="noreferrer" target="_blank"
+                mdui-tooltip="{position:'right', content: 'by 藍+85CD'}">M</a></p>
+            
+    </footer>
+</aside>
+    </div>
+    <div class="mdui-container-fluid mdui-center" style="max-width:720px">
+        <article class="mdui-card mdui-hoverable mdui-shadow-1 mdui-m-y-2" style="opacity: 1; border-radius: 4px">
+    
+    <div class="mdui-card-primary mdui-ripple">
+    <div class="mdui-card-primary-title">
+        <a role="heading" aria-level="1" class="mdui-text-color-theme-text" >于Windows上部署ChatGLM2-6B 以及其WebUI</a>
+        
+        <small> <a class="mdui-text-color-theme-text category-link" href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a></small>
+        
+    </div>
+    <div class="mdui-card-primary-subtitle mdui-typo">
+        
+        <span><a class="tag-none-link" href="/tags/ChatGLM2-6B/" rel="tag">ChatGLM2-6B</a> <a class="tag-none-link" href="/tags/LLM/" rel="tag">LLM</a> <a class="tag-none-link" href="/tags/Python/" rel="tag">Python</a> -</span>
+        <span mdui-tooltip="{content:'Created: 2023-09-02 02:06<br>Updated: 2023-09-12 12:19'}">2023-09-02 -</span>
+        
+            <span>2023/09/02/Blog/于Windows上部署ChatGLM2-6B 以及其WebUI/</span>
+        
+    </div>
+</div>
+    
+    
+    <div class="mdui-divider"></div>
+    <div class="mdui-card-content mdui-typo">
+        
+        <p>寻思要给自己搞一个能上网的GLM2-6B，就在<a target="_blank" rel="noopener" href="https://chatglm.cn/blog">GLM官网</a>找有没有友链，正好找到了这么一条：<a target="_blank" rel="noopener" href="https://github.com/LemonQu-GIT/ChatGLM-6B-Engineering">ChatGLM-6B-Engineering</a>，于是就打算在本地部署一下（我是比较讨厌语言模型不在本地的那种）。坑有点多，于是用几乎是0基础的方式写了这么一篇教程。<br>本篇文章使用venv来创建虚拟环境，conda创建环境的可以找别人了。</p>
+<hr>
+<h2 id="0x0-拉代码"><a href="#0x0-拉代码" class="headerlink" title="0x0 拉代码"></a>0x0 拉代码</h2><h2 id="到这个工程的仓库拉下代码，解压到一个文件夹。创建一个命令行窗口，然后cd到你的目录。"><a href="#到这个工程的仓库拉下代码，解压到一个文件夹。创建一个命令行窗口，然后cd到你的目录。" class="headerlink" title="到这个工程的仓库拉下代码，解压到一个文件夹。创建一个命令行窗口，然后cd到你的目录。"></a>到这个工程的仓库拉下代码，解压到一个文件夹。<br>创建一个命令行窗口，然后cd到你的目录。<br><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">rem Go to your working dir. 
+cd &#x2F;D D:\path\to\your\workspace<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></h2><h2 id="0x1-创建环境"><a href="#0x1-创建环境" class="headerlink" title="0x1 创建环境"></a>0x1 创建环境</h2><h2 id="然后创建python虚拟环境（有些人极度讨厌虚拟环境可以跳过，此处使用venv而不是conda是因为我比较讨厌conda）：确保缓存的盘足够，如果不能的话，就会报pip没有足够的空间安装，你需要这么做：然后再在同一窗口安装执行：pip安装依赖："><a href="#然后创建python虚拟环境（有些人极度讨厌虚拟环境可以跳过，此处使用venv而不是conda是因为我比较讨厌conda）：确保缓存的盘足够，如果不能的话，就会报pip没有足够的空间安装，你需要这么做：然后再在同一窗口安装执行：pip安装依赖：" class="headerlink" title="然后创建python虚拟环境（有些人极度讨厌虚拟环境可以跳过，此处使用venv而不是conda是因为我比较讨厌conda）：确保缓存的盘足够，如果不能的话，就会报pip没有足够的空间安装，你需要这么做：然后再在同一窗口安装执行：pip安装依赖："></a>然后创建python虚拟环境（有些人极度讨厌虚拟环境可以跳过，此处使用venv而不是conda是因为我比较讨厌conda）：<br><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">rem Run python to create venv. 
+python -m venv .\venv<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br>确保缓存的盘足够，如果不能的话，就会报pip没有足够的空间安装，你需要这么做：<br><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">rem Set the cache dir. 
+set TMPDIR&#x3D;D:\your\cache\dir<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br>然后再在同一窗口安装执行：<br>pip安装依赖：<br><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">pip install -r requirements.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></h2><h2 id="0x2-使用模型搭建GLM层API"><a href="#0x2-使用模型搭建GLM层API" class="headerlink" title="0x2 使用模型搭建GLM层API"></a>0x2 使用模型搭建GLM层API</h2><p>接下来GLM模型就已经基本可以使用了。<br>ChatGLM有量化，可以在稍微性能不足一点的电脑上运行：<br>以下内容摘自<a target="_blank" rel="noopener" href="https://github.com/THUDM/ChatGLM-6B#%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F">ChatGLM-6B的README.md</a>:</p>
+<h3 id="硬件需求"><a href="#硬件需求" class="headerlink" title="硬件需求"></a>硬件需求</h3><div class="mdui-table-fluid mdui-shadow-0"><table class="mdui-table mdui-table-hoverable">
+<thead>
+<tr>
+<th><strong>量化等级</strong></th>
+<th><strong>最低 GPU 显存</strong>（推理）</th>
+<th><strong>最低 GPU 显存</strong>（高效参数微调）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FP16（无量化）</td>
+<td>13 GB</td>
+<td>14 GB</td>
+</tr>
+<tr>
+<td>INT8</td>
+<td>8 GB</td>
+<td>9 GB</td>
+</tr>
+<tr>
+<td>INT4</td>
+<td>6 GB</td>
+<td>7 GB</td>
+</tr>
+</tbody></table></div>
+<p>实在不行还可以在CPU上运行，这个稍后会提到。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">tokenizer <span class="token operator">=</span> AutoTokenizer<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span><span class="token string">"THUDM/chatglm2-6b"</span><span class="token punctuation">,</span> trust_remote_code<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+model <span class="token operator">=</span> AutoModel<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span><span class="token string">"THUDM/chatglm2-6b"</span><span class="token punctuation">,</span> trust_remote_code<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">.</span>quantize<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">.</span>half<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>cuda<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>上面的代码中，表示量化的在这里：<code>.quantize(4)</code>，这表示该模型使用INT4量化，同理<code>.quantize(8)</code>就是使用INT8量化。<br>但是使用他的API还需要改一点东西：<br>他的模型使用本地模型，我们把它改成线上模型。<br>改一行代码：<br><code>.\api.py</code><br>更改前：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#tokenizer = AutoTokenizer.from_pretrained("THUDM/chatglm2-6b", trust_remote_code=True)</span>
+<span class="token comment">#model = AutoModel.from_pretrained("THUDM/chatglm2-6b", trust_remote_code=True).quantize(4).half().cuda()</span>
+<span class="token comment">#tokenizer = AutoTokenizer.from_pretrained(r"E:\huggingface\models--THUDM--chatglm-6b\snapshots\a10da4c68b5d616030d3531fc37a13bb44ea814d", trust_remote_code=True)</span>
+<span class="token comment">#model = AutoModel.from_pretrained(r"E:\huggingface\models--THUDM--chatglm-6b\snapshots\a10da4c68b5d616030d3531fc37a13bb44ea814d", trust_remote_code=True).quantize(4).half().cuda()</span>
+tokenizer <span class="token operator">=</span> AutoTokenizer<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span><span class="token string">r"E:\model\chatglm2-6b"</span><span class="token punctuation">,</span> trust_remote_code<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+model <span class="token operator">=</span> AutoModel<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span><span class="token string">r"E:\model\chatglm2-6b"</span><span class="token punctuation">,</span> trust_remote_code<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">.</span>quantize<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">.</span>half<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>cuda<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>更改后：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">tokenizer <span class="token operator">=</span> AutoTokenizer<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span><span class="token string">"THUDM/chatglm2-6b"</span><span class="token punctuation">,</span> trust_remote_code<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+model <span class="token operator">=</span> AutoModel<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span><span class="token string">"THUDM/chatglm2-6b"</span><span class="token punctuation">,</span> trust_remote_code<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">.</span>quantize<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">.</span>half<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>cuda<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#tokenizer = AutoTokenizer.from_pretrained(r"E:\huggingface\models--THUDM--chatglm-6b\snapshots\a10da4c68b5d616030d3531fc37a13bb44ea814d", trust_remote_code=True)</span>
+<span class="token comment">#model = AutoModel.from_pretrained(r"E:\huggingface\models--THUDM--chatglm-6b\snapshots\a10da4c68b5d616030d3531fc37a13bb44ea814d", trust_remote_code=True).quantize(4).half().cuda()</span>
+<span class="token comment">#tokenizer = AutoTokenizer.from_pretrained(r"E:\model\chatglm2-6b", trust_remote_code=True)</span>
+<span class="token comment">#model = AutoModel.from_pretrained(r"E:\model\chatglm2-6b", trust_remote_code=True).quantize(4).half().cuda()</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>现在就是线上模型了。但是按照他写的，我们现在实际上用的是CPU处理。还是使用上面的代码会报错，这里我们分两种情况：</p>
+<h3 id="1、使用CPU进行推理："><a href="#1、使用CPU进行推理：" class="headerlink" title="1、使用CPU进行推理："></a>1、使用CPU进行推理：</h3><p>更改刚刚那段代码为：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">tokenizer <span class="token operator">=</span> AutoTokenizer<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span><span class="token string">"THUDM/chatglm2-6b"</span><span class="token punctuation">,</span> trust_remote_code<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+model <span class="token operator">=</span> AutoModel<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span><span class="token string">"THUDM/chatglm2-6b"</span><span class="token punctuation">,</span> trust_remote_code<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">.</span>quantize<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">.</span>half<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">float</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#tokenizer = AutoTokenizer.from_pretrained(r"E:\huggingface\models--THUDM--chatglm-6b\snapshots\a10da4c68b5d616030d3531fc37a13bb44ea814d", trust_remote_code=True)</span>
+<span class="token comment">#model = AutoModel.from_pretrained(r"E:\huggingface\models--THUDM--chatglm-6b\snapshots\a10da4c68b5d616030d3531fc37a13bb44ea814d", trust_remote_code=True).quantize(4).half().cuda()</span>
+<span class="token comment">#tokenizer = AutoTokenizer.from_pretrained(r"E:\model\chatglm2-6b", trust_remote_code=True)</span>
+<span class="token comment">#model = AutoModel.from_pretrained(r"E:\model\chatglm2-6b", trust_remote_code=True).quantize(4).half().cuda()</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>现在我们就可以在CPU上使用ChatGLM了。</p>
+<h3 id="2、使用CUDA进行推理："><a href="#2、使用CUDA进行推理：" class="headerlink" title="2、使用CUDA进行推理："></a>2、使用CUDA进行推理：</h3><p>代码无需更改，但是我们需要更改torch的版本。现在是CPU版本，我们需要卸载并安装GPU版本。</p>
+<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">pip uninstall torch<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="2-1-你没有CUDA："><a href="#2-1-你没有CUDA：" class="headerlink" title="2.1 你没有CUDA："></a>2.1 你没有CUDA：</h4><p>没有安装CUDA的按照以下步骤下载并安装：<br>首先检查NVidia的显卡支持的CUDA版本：</p>
+<ul>
+<li>右键NVidia设置；</li>
+<li>点击NVidia控制面板；</li>
+<li>点击“帮助”-“系统信息”；</li>
+<li>点击“组件”；</li>
+<li>查看“3D 设置”-“NVCUDA64.DLL”-“产品名称”<br>想必电脑应该基本都是x64的CPU，如果还是x86的我也不知道怎么办，换电脑吧……<br>下载的CUDA版本不得低于产品名称里显示的版本。于是我下载了<a target="_blank" rel="noopener" href="https://developer.download.nvidia.com/compute/cuda/12.2.2/local_installers/cuda_12.2.2_537.13_windows.exe">11.7的本地安装版</a><br>最新CUDA在<a target="_blank" rel="noopener" href="https://developer.nvidia.com/cuda-downloads">这里</a>下载。<br>安装的时候，可以精简，如果没地方安装可以选择自定义，然后只选择CUDA，甚至还可以把CUDA的Document、Visual Studio支持也取消选择。<br>选择安装位置，点击安装。<br>接下来按照2.2走：</li>
+</ul>
+<h4 id="2-2-你有CUDA："><a href="#2-2-你有CUDA：" class="headerlink" title="2.2 你有CUDA："></a>2.2 你有CUDA：</h4><p>torch官网，找到Install PyTorch，按照实际情况选择：<br>我的情况：<br>系统：Windows<br>包安装器：Pip<br>语言：Python<br>计算平台：CUDA 11.7<br>那么就有：</p>
+<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">pip install torch torchvision torchaudio --index-url https:&#x2F;&#x2F;download.pytorch.org&#x2F;whl&#x2F;cu117<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>记得以上命令在虚拟环境中执行。</p>
+<p>然后我们可以这样验证：</p>
+<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">python<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在python交互式终端中输入：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> torch
+torch<span class="token punctuation">.</span>cuda<span class="token punctuation">.</span>is_available<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>如果输出为True，那么我们就安装好了。我们正常使用就OK了。</p>
+<h3 id="3、batch脚本一键启动"><a href="#3、batch脚本一键启动" class="headerlink" title="3、batch脚本一键启动"></a>3、batch脚本一键启动</h3><p>从<code>.\venv\Scripts\activate.bat</code>中，复制所有文本，在工作目录下新建<code>api.bat</code>，粘贴。<br>脚本：</p>
+<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">...(这一段是你的activate.bat中的内容)
+rem 更改标题
+title ChatGLM-6B WebUI API
+rem 启动GLM层API
+python .\api.py
+pause<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>接下来是交互层API：</p>
+<h2 id="0x3-搭建交互层API"><a href="#0x3-搭建交互层API" class="headerlink" title="0x3 搭建交互层API"></a>0x3 搭建交互层API</h2><p>这部分其实很简单，只需要更改一下他的插件里面的浏览器内核的配置就可以了：</p>
+<ul>
+<li>打开<code>.\plugins\web.py</code></li>
+<li>更换所有的不在字符串里的<code>Chrome</code>为<code>Edge</code>，为的是使所有Chrome配置更改为Edge配置</li>
+<li>保存<br>就搞定了。</li>
+</ul>
+<p>一键启动基本一样：<br>从<code>.\venv\Scripts\activate.bat</code>中，复制所有文本，在工作目录下新建<code>front_end.bat</code>，粘贴。<br>脚本：</p>
+<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">...(这一段是你的activate.bat中的内容)
+rem 更改标题
+title ChatGLM-6B WebUI front end
+rem 启动交互层API
+python .\front_end.py
+pause<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="0x4-搭建前端"><a href="#0x4-搭建前端" class="headerlink" title="0x4 搭建前端"></a>0x4 搭建前端</h2><p>有两种前端，一个是在项目主分支里写好的，已经被我们下载下来的前端，还有一种是另一根类Open AI式的前端。我会分开讲：</p>
+<h3 id="1-使用已下载的前端"><a href="#1-使用已下载的前端" class="headerlink" title="1. 使用已下载的前端"></a>1. 使用已下载的前端</h3><p>一键启动就行：<br>从<code>.\venv\Scripts\activate.bat</code>中，复制所有文本，在工作目录下新建<code>web.bat</code>，粘贴。<br>脚本：</p>
+<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">...(这一段是你的activate.bat中的内容)
+rem 更改标题
+title ChatGLM-6B gradio demo
+rem 启动GLM层API
+python .\gradio_demo.py
+pause<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-使用类Open-AI的前端"><a href="#2-使用类Open-AI的前端" class="headerlink" title="2. 使用类Open AI的前端"></a>2. 使用类Open AI的前端</h3><p>从<a target="_blank" rel="noopener" href="https://github.com/LemonQu-GIT/ChatGLM-6B-Engineering/archive/refs/heads/WebUI.zip">这里</a>下载，并解压缩到一个文件夹内，我个人习惯丢到工作目录下的新文件夹：<code>.\WebUI</code><br>解压缩之后，<a target="_blank" rel="noopener" href="https://nodejs.org/download/release/v14.21.3/node-v14.21.3-x64.msi">下载</a>并安装node.js 14.21.3。<br>切换到WebUI工作目录并运行以下指令：</p>
+<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">npm install<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>等安装完毕之后，打开<code>src\App.vue</code>，并修改：</p>
+<ul>
+<li>把所有的<code>process.env.VUE_APP_API</code>替换为<code>&quot;http://127.0.0.1:8003&quot;</code></li>
+<li>保存<br>然后在创建一个<code>web.bat</code>，输入以下内容：<pre class="line-numbers language-batch" data-language="batch"><code class="language-batch"><span class="token operator">@</span><span class="token command"><span class="token keyword">echo</span> off</span>
+<span class="token comment">rem 替换D:\your\path\to\webui为你的WebUI工作路径</span>
+<span class="token command"><span class="token keyword">cd</span> <span class="token parameter attr-name">/D</span> D:\your\path\to\webui</span>
+<span class="token command"><span class="token keyword">title</span> ChatGLM-6B Web UI</span>
+<span class="token command"><span class="token keyword">npm</span> run dev</span>
+<span class="token command"><span class="token keyword">pause</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+<h2 id="0x5-修补"><a href="#0x5-修补" class="headerlink" title="0x5 修补"></a>0x5 修补</h2><ul>
+<li><p>该插件使用markmap绘制思维导图<br>所以如果启用了markmap，你需要执行这个：</p>
+<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">npm install markmap markmap-cli -g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>类Open AI前端的左侧标题有对于该主题的概括，但是概括的时候输入并没有被赋值，所以在</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">chat</span><span class="token punctuation">(</span>prompt<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这一句后面添加一行：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">chat_prompt <span class="token operator">=</span> prompt <span class="token comment"># This is temp fix. </span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>关于这一点我已经提交了issue，就看作者怎么处理这个了。</p>
+</li>
+</ul>
+<hr>
+<p>2023-09-03编辑：该bug已经修补了：<br><a target="_blank" rel="noopener" href="https://github.com/LemonQu-GIT/ChatGLM-6B-Engineering/pull/31">A temp fix for sidebar title. 对于侧边栏标题的临时性修复。 by rong-xiaoli · Pull Request #31</a></p>
+<ul>
+<li>使用网络插件的时候，可能是因为某些bug，无法返回查询内容（可能连请求都发不出去），已经提交Issue：<a target="_blank" rel="noopener" href="https://github.com/LemonQu-GIT/ChatGLM-6B-Engineering/issues/32">无法使用网络搜索 · Issue #32</a><br>我的解决方案是从Chrome切换至Edge，也就是把除了UA部分的Chrome全部改成Edge（或者说把所有Chrome的实现改为Edge）</li>
+</ul>
+<h2 id="0x6-最后需要注意的点"><a href="#0x6-最后需要注意的点" class="headerlink" title="0x6 最后需要注意的点"></a>0x6 最后需要注意的点</h2><ul>
+<li>需要先启动GLM层API，启动完成后再启动交互层API；前端随时可以启动；</li>
+<li>本篇所有的目录请根据实际情况核实一遍，不要直接<code>Ctrl+C</code>，<code>Ctrl+V</code>就不管了；</li>
+</ul>
+
+        
+        <blockquote class="mdui-m-x-0 mdui-m-t-4">
+    <strong>
+        Author: <a href="/about/">容小狸</a><br>
+        URL: <a href="http://example.com/2023/09/02/Blog/%E4%BA%8EWindows%E4%B8%8A%E9%83%A8%E7%BD%B2ChatGLM2-6B%20%E4%BB%A5%E5%8F%8A%E5%85%B6WebUI/">http://example.com/2023/09/02/Blog/%E4%BA%8EWindows%E4%B8%8A%E9%83%A8%E7%BD%B2ChatGLM2-6B%20%E4%BB%A5%E5%8F%8A%E5%85%B6WebUI/</a><br>
+        
+            This work is licensed under a <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> .
+        
+    </strong>
+</blockquote>
+        
+    </div>
+    
+</article>
+<nav class="mdui-theme-layout-light mdui-color-transparent mdui-row mdui-m-b-2">
+    
+        <div class="mdui-col-xs-12 mdui-m-b-2">
+            <a class="extend prev mdui-btn mdui-ripple mdui-float-left mdui-text-truncate" rel="prev"
+                style="max-width: 100%" href="/2023/09/11/%E6%A8%A1%E7%94%B5/2023-09-11%E6%A8%A1%E7%94%B5/">
+                <i class="mdui-icon mdui-icon-left material-icons">arrow_back</i>
+            </a>
+        </div>
+    
+        <div class="mdui-col-xs-12">
+            <a class="extend next mdui-btn mdui-ripple mdui-float-right mdui-text-truncate" rel="next"
+                style="max-width: 100%" href="/2023/08/04/Blog/%E7%94%B5%E8%B5%9B/">
+                <i class="mdui-icon mdui-icon-right material-icons">arrow_forward</i>电赛
+            </a>
+        </div>
+    
+</nav>
+
+    </div>
+    <a href="#" class="mdui-fab mdui-fab-fixed mdui-hidden-xs mdui-color-theme-accent mdui-ripple"><i class="mdui-icon material-icons">keyboard_arrow_up</i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
+
+
+<script>
+    var $ = mdui.$;
+    function init(){
+        //
+    }
+    window.addEventListener("load", () => {
+        //
+        init()
+    }, {once: true});
+</script>
+
+</body>
+</html>

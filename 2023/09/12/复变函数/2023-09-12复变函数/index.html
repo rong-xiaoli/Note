@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh" >
+<head>
+    <meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+
+    <link rel="dns-prefetch" //cdn.jsdelivr.net>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css">
+
+
+
+    
+<link rel="stylesheet" href="/css/prism-m.css">
+
+    
+
+
+
+<meta name="theme-color" content="#3F51B5">
+
+    
+        <link rel=alternate type="application/atom+xml" href="/atom.xml">
+    
+
+<style>
+    html,body{scroll-behavior:smooth;min-height:100vh}
+    blockquote>strong>a{word-break:break-all}
+    .mdui-hoverable:hover,.mdui-hoverable:focus{-webkit-box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12) !important;box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12) !important;}
+    .mdui-card-primary-title a{text-decoration:none !important}
+    .page-number{display:none !important}
+    .mdui-container-fluid{transition:opacity .4s}
+    
+        body{background-color: #f6f6f6}
+
+    
+</style>
+    
+    <title>Hexo</title>
+    <link rel="canonical" href="http://example.com/2023/09/12/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/2023-09-12%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/">
+    <meta name="description" content="#复数复数的概念形如：$z&#x3D;x+yi$其中$x,y∈R$#虚数 单位i的特点：$i^2&#x3D;-1$ 记$x&#x3D;Re(z),y&#x3D;Im(z)$复数相等：$x1&#x3D;x2,y1&#x3D;y2$共轭：$x_{1}&#x3D;x_{2},y_{1}&#x3D;-y_{2}$$x&#x3D;0,y\neq0$时，为纯虚数$x\neq0,y&#x3D;0$时，看作实数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2023/09/12/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/2023-09-12%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#复数复数的概念形如：$z&#x3D;x+yi$其中$x,y∈R$#虚数 单位i的特点：$i^2&#x3D;-1$ 记$x&#x3D;Re(z),y&#x3D;Im(z)$复数相等：$x1&#x3D;x2,y1&#x3D;y2$共轭：$x_{1}&#x3D;x_{2},y_{1}&#x3D;-y_{2}$$x&#x3D;0,y\neq0$时，为纯虚数$x\neq0,y&#x3D;0$时，看作实数">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-09-11T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-09-19T17:17:11.527Z">
+<meta property="article:author" content="容小狸">
+<meta property="article:tag" content="复变函数">
+<meta name="twitter:card" content="summary">
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body class="mdui-theme-primary-indigo mdui-theme-accent-blue mdui-appbar-with-toolbar ">
+    <div class="mdui-theme-layout-light">
+    <header id="appbar" class="mdui-appbar mdui-appbar-fixed mdui-shadow-0 mdui-appbar-scroll-hide">
+    <div class="mdui-toolbar">
+        <button mdui-drawer="{target: '.mdui-drawer'}" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">menu</i></button>
+        <a href="/" class="mdui-typo-title">Hexo</a>
+        <div class="mdui-toolbar-spacer"></div>
+        
+        <a href="/atom.xml" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">rss_feed</i></a>
+        
+    </div>
+</header>
+    <aside class="mdui-drawer mdui-drawer-close">
+    <nav class="mdui-list" mdui-collapse="{accordion: true}">
+        <a href="/about/"  class="mdui-list-item mdui-ripple">
+            <div class="mdui-list-item-avatar">
+                
+                <i class="mdui-color-theme-primary mdui-icon material-icons">person</i>
+                
+            </div>
+            <div class="mdui-list-item-content">容小狸</div>
+        </a>
+        <div class="mdui-divider"></div>
+        
+        <a href="/" class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+            <div class="mdui-list-item-content">Home</div>
+        </a>
+        
+        <div class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">inbox</i>
+                <div class="mdui-list-item-content">Archives</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+            </div>
+            <div class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                <a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/09/">九月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/08/">八月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/03/">三月 2023</a>
+            </div>
+        </div>
+        
+        <div class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">apps</i>
+                <div class="mdui-list-item-content">Categories</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+            </div>
+            <div class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                <a class="mdui-list-item mdui-ripple m-link" href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/">复变函数</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/">概率论</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E6%A8%A1%E7%94%B5/">模电</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E7%89%A9%E7%90%86/">物理</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E8%BD%AF%E4%BB%B6/">软件</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E9%9A%8F%E7%AC%94%E5%92%8C%E7%AC%94%E8%AE%B0/">随笔和笔记</a>
+            </div>
+        </div>
+        
+    </nav>
+    <div class="mdui-divider"></div>
+    <footer class="mdui-m-l-2 mdui-m-t-1 mdui-typo mdui-text-color-theme-disabled">
+        <p class="mdui-m-b-0">
+            
+            ©
+            2023 容小狸<br>
+            
+            Powered by <a href="https://hexo.io/" rel="noreferrer" target="_blank">Hexo</a><br>
+            
+            Theme - <a href="https://github.com/kwaa/hexo-theme-m" rel="noreferrer" target="_blank"
+                mdui-tooltip="{position:'right', content: 'by 藍+85CD'}">M</a></p>
+            
+    </footer>
+</aside>
+    </div>
+    <div class="mdui-container-fluid mdui-center" style="max-width:720px">
+        <article class="mdui-card mdui-hoverable mdui-shadow-1 mdui-m-y-2" style="opacity: 1; border-radius: 4px">
+    
+    <div class="mdui-card-primary mdui-ripple">
+    <div class="mdui-card-primary-title">
+        <a role="heading" aria-level="1" class="mdui-text-color-theme-text" ></a>
+        
+        <small> <a class="mdui-text-color-theme-text category-link" href="/categories/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/">复变函数</a></small>
+        
+    </div>
+    <div class="mdui-card-primary-subtitle mdui-typo">
+        
+        <span><a class="tag-none-link" href="/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/" rel="tag">复变函数</a> -</span>
+        <span mdui-tooltip="{content:'Created: 2023-09-12 12:00<br>Updated: 2023-09-20 01:17'}">2023-09-12 -</span>
+        
+            <a href="/2023/09/12/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/2023-09-12%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/">2023/09/12/复变函数/2023-09-12复变函数/</a>
+        
+    </div>
+</div>
+    
+    
+    <div class="mdui-divider"></div>
+    <div class="mdui-card-content mdui-typo">
+        
+        <h2 id="复数"><a href="#复数" class="headerlink" title="#复数"></a>#复数</h2><h3 id="复数的概念"><a href="#复数的概念" class="headerlink" title="复数的概念"></a>复数的概念</h3><p>形如：$z&#x3D;x+yi$<br>其中$x,y∈R$<br>#虚数 单位i的特点：$i^2&#x3D;-1$</p>
+<p>记$x&#x3D;Re(z),y&#x3D;Im(z)$<br>复数相等：<br>$x1&#x3D;x2,y1&#x3D;y2$<br>共轭：$x_{1}&#x3D;x_{2},y_{1}&#x3D;-y_{2}$<br>$x&#x3D;0,y\neq0$时，为纯虚数<br>$x\neq0,y&#x3D;0$时，看作实数</p>
+<h3 id="复数四则运算"><a href="#复数四则运算" class="headerlink" title="复数四则运算"></a>复数四则运算</h3><p>记$A&#x3D;x_{1}+y_{1}i, B&#x3D;x_{2}+y_{2}i$<br>和：$A+B&#x3D;(x_{1}+x_{2})+(y_{1}+y_{2})i$<br>差：$A-B&#x3D;(x_{1}-x_{2})+(y_{1}-y_{2})i$<br>积：$A\cdot B&#x3D;(x_{1}x_{2}-y_{1}y_{2})+(x_{1}x_{2}+y_{1}y_{2})i$<br>商：$A\div B&#x3D;\frac{(x_{1}x_{2}+y_{1}y_{2})}{x_{2}^2+y_{2}^2}+i\frac{x_{2}y_{1}-x_{1}y_{2}}{x_{2}^2+y_{2}^2}$</p>
+<h2 id="复数的-模-与-辐角"><a href="#复数的-模-与-辐角" class="headerlink" title="复数的 #模 与 #辐角"></a>复数的 #模 与 #辐角</h2><h4 id="复数的几何表示"><a href="#复数的几何表示" class="headerlink" title="复数的几何表示"></a>复数的几何表示</h4><p><strong>复数可以与复平面上的点一一对应</strong><br>$|z|$：z的模<br>$|z|&#x3D;r&#x3D;\sqrt{x^2+y^2}$<br>$|x|&lt;|z|, |y|&lt;|z|$<br>$|z|\le|x|+|y|$<br>$|z|\ge0$<br>$z\cdot\overline{z}&#x3D;|z|^2&#x3D;|z^2|&#x3D;|\overline{z}|^2&#x3D;|\overline{z}^2|$</p>
+<h4 id="复数的辐角"><a href="#复数的辐角" class="headerlink" title="复数的辐角"></a>复数的辐角</h4><blockquote>
+<p>从<strong>x轴正向</strong>到向量$\overrightarrow{OP}$的转角$\theta$</p>
+</blockquote>
+<p>辐角：$Argz&#x3D;\theta+2k\pi(k\in\mathbb{z})$</p>
+<ul>
+<li><strong>辐角是一个集合</strong></li>
+<li>辐角是一个有向角</li>
+<li>$z&#x3D;0$时辐角任意<br>若$-\pi&lt;\theta\le\pi$，则$\theta$为$Argz$的 #主值 。<br>$Argz&#x3D;argz+2k\pi(k\in\mathbb{z})$</li>
+</ul>
+<p>$z\neq0$时：<br>$$<br>argz&#x3D;\begin{cases}<br>arctan(\frac{y}{x})  &amp; \text{ , } x&gt;0 &amp; 这个是一，四象限内可用的公式\<br>\pm\frac{\pi}{2}  &amp; \text{ , } x&#x3D;0,y\neq0 \<br>arctan(\frac{y}{x}\pm\pi)  &amp; \text{ , } x&lt;0,y\neq0 \<br>\pi  &amp; \text{ , } x&lt;0,y&#x3D;0<br>\end{cases}<br>$$<br>其中$arctan\frac{y}{x}\in(-\frac{\pi}{2},\frac{\pi}{2})$</p>
+<h4 id="复数三角表示"><a href="#复数三角表示" class="headerlink" title="复数三角表示"></a>复数三角表示</h4><p>$z&#x3D;x+iy$<br>变换：<br>$$\left{\begin{matrix}<br> x&#x3D;rcos\theta\<br> y&#x3D;rsin\theta<br>\end{matrix}\right.<br>$$<br>得：$z&#x3D;r(cos\theta+isin\theta)$<br>#欧拉公式 ：<br>$$cos\theta+isin\theta&#x3D;e^{i\theta}(\theta\in\mathbb{R})$$<br>得：$z&#x3D;re^{i\theta}$</p>
+<h3 id="加法和减法"><a href="#加法和减法" class="headerlink" title="加法和减法"></a>加法和减法</h3><p>几何意义与向量加减法相同<br>其中：$|z|&#x3D;|\overline{z}|,arg(z)&#x3D;-arg(\overline{z})$（共轭辐角为本体相反数）</p>
+
+        
+        <blockquote class="mdui-m-x-0 mdui-m-t-4">
+    <strong>
+        Author: <a href="/about/">容小狸</a><br>
+        URL: <a href="http://example.com/2023/09/12/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/2023-09-12%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/">http://example.com/2023/09/12/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/2023-09-12%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</a><br>
+        
+            This work is licensed under a <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> .
+        
+    </strong>
+</blockquote>
+        
+    </div>
+    
+</article>
+<nav class="mdui-theme-layout-light mdui-color-transparent mdui-row mdui-m-b-2">
+    
+        <div class="mdui-col-xs-12 mdui-m-b-2">
+            <a class="extend prev mdui-btn mdui-ripple mdui-float-left mdui-text-truncate" rel="prev"
+                style="max-width: 100%" href="/2023/09/13/%E6%A8%A1%E7%94%B5/2023-09-13%E6%A8%A1%E7%94%B5/">
+                <i class="mdui-icon mdui-icon-left material-icons">arrow_back</i>
+            </a>
+        </div>
+    
+        <div class="mdui-col-xs-12">
+            <a class="extend next mdui-btn mdui-ripple mdui-float-right mdui-text-truncate" rel="next"
+                style="max-width: 100%" href="/2023/09/12/%E6%A6%82%E7%8E%87%E8%AE%BA/2023-09-12%E6%A6%82%E7%8E%87%E8%AE%BA/">
+                <i class="mdui-icon mdui-icon-right material-icons">arrow_forward</i>
+            </a>
+        </div>
+    
+</nav>
+
+    </div>
+    <a href="#" class="mdui-fab mdui-fab-fixed mdui-hidden-xs mdui-color-theme-accent mdui-ripple"><i class="mdui-icon material-icons">keyboard_arrow_up</i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
+
+
+<script>
+    var $ = mdui.$;
+    function init(){
+        //
+    }
+    window.addEventListener("load", () => {
+        //
+        init()
+    }, {once: true});
+</script>
+
+</body>
+</html>

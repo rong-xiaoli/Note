@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh" >
+<head>
+    <meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+
+    <link rel="dns-prefetch" //cdn.jsdelivr.net>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css">
+
+
+
+    
+<link rel="stylesheet" href="/css/prism-m.css">
+
+    
+
+
+
+<meta name="theme-color" content="#3F51B5">
+
+    
+        <link rel=alternate type="application/atom+xml" href="/atom.xml">
+    
+
+<style>
+    html,body{scroll-behavior:smooth;min-height:100vh}
+    blockquote>strong>a{word-break:break-all}
+    .mdui-hoverable:hover,.mdui-hoverable:focus{-webkit-box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12) !important;box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12) !important;}
+    .mdui-card-primary-title a{text-decoration:none !important}
+    .page-number{display:none !important}
+    .mdui-container-fluid{transition:opacity .4s}
+    
+        body{background-color: #f6f6f6}
+
+    
+</style>
+    
+    <title>Hexo</title>
+    <link rel="canonical" href="http://example.com/2023/09/13/%E7%89%A9%E7%90%86/2023-09-13%E7%89%A9%E7%90%86/">
+    <meta name="description" content="振动定义：  机械振动是物体在一定位置附近所作的周期性往复的运动  #简谐振动 弹簧振子  平衡位置O为坐标原点， 运动学特征：$x&#x3D;Acos(\omega t+\phi)$$v&#x3D;\frac{dx}{dt}&#x3D;-\omega Asin(\omega t+\phi)$$a&#x3D;\frac{d^2x}{dt^2}&#x3D;-\omega^2Acos\omega t+">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2023/09/13/%E7%89%A9%E7%90%86/2023-09-13%E7%89%A9%E7%90%86/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="振动定义：  机械振动是物体在一定位置附近所作的周期性往复的运动  #简谐振动 弹簧振子  平衡位置O为坐标原点， 运动学特征：$x&#x3D;Acos(\omega t+\phi)$$v&#x3D;\frac{dx}{dt}&#x3D;-\omega Asin(\omega t+\phi)$$a&#x3D;\frac{d^2x}{dt^2}&#x3D;-\omega^2Acos\omega t+">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-09-13T05:25:00.000Z">
+<meta property="article:modified_time" content="2023-09-18T10:25:47.058Z">
+<meta property="article:author" content="容小狸">
+<meta property="article:tag" content="LaTeX">
+<meta name="twitter:card" content="summary">
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body class="mdui-theme-primary-indigo mdui-theme-accent-blue mdui-appbar-with-toolbar ">
+    <div class="mdui-theme-layout-light">
+    <header id="appbar" class="mdui-appbar mdui-appbar-fixed mdui-shadow-0 mdui-appbar-scroll-hide">
+    <div class="mdui-toolbar">
+        <button mdui-drawer="{target: '.mdui-drawer'}" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">menu</i></button>
+        <a href="/" class="mdui-typo-title">Hexo</a>
+        <div class="mdui-toolbar-spacer"></div>
+        
+        <a href="/atom.xml" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">rss_feed</i></a>
+        
+    </div>
+</header>
+    <aside class="mdui-drawer mdui-drawer-close">
+    <nav class="mdui-list" mdui-collapse="{accordion: true}">
+        <a href="/about/"  class="mdui-list-item mdui-ripple">
+            <div class="mdui-list-item-avatar">
+                
+                <i class="mdui-color-theme-primary mdui-icon material-icons">person</i>
+                
+            </div>
+            <div class="mdui-list-item-content">容小狸</div>
+        </a>
+        <div class="mdui-divider"></div>
+        
+        <a href="/" class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+            <div class="mdui-list-item-content">Home</div>
+        </a>
+        
+        <div class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">inbox</i>
+                <div class="mdui-list-item-content">Archives</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+            </div>
+            <div class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                <a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/09/">九月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/08/">八月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/03/">三月 2023</a>
+            </div>
+        </div>
+        
+        <div class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">apps</i>
+                <div class="mdui-list-item-content">Categories</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+            </div>
+            <div class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                <a class="mdui-list-item mdui-ripple m-link" href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/">复变函数</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/">概率论</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E6%A8%A1%E7%94%B5/">模电</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E7%89%A9%E7%90%86/">物理</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E8%BD%AF%E4%BB%B6/">软件</a><a class="mdui-list-item mdui-ripple m-link" href="/categories/%E9%9A%8F%E7%AC%94%E5%92%8C%E7%AC%94%E8%AE%B0/">随笔和笔记</a>
+            </div>
+        </div>
+        
+    </nav>
+    <div class="mdui-divider"></div>
+    <footer class="mdui-m-l-2 mdui-m-t-1 mdui-typo mdui-text-color-theme-disabled">
+        <p class="mdui-m-b-0">
+            
+            ©
+            2023 容小狸<br>
+            
+            Powered by <a href="https://hexo.io/" rel="noreferrer" target="_blank">Hexo</a><br>
+            
+            Theme - <a href="https://github.com/kwaa/hexo-theme-m" rel="noreferrer" target="_blank"
+                mdui-tooltip="{position:'right', content: 'by 藍+85CD'}">M</a></p>
+            
+    </footer>
+</aside>
+    </div>
+    <div class="mdui-container-fluid mdui-center" style="max-width:720px">
+        <article class="mdui-card mdui-hoverable mdui-shadow-1 mdui-m-y-2" style="opacity: 1; border-radius: 4px">
+    
+    <div class="mdui-card-primary mdui-ripple">
+    <div class="mdui-card-primary-title">
+        <a role="heading" aria-level="1" class="mdui-text-color-theme-text" ></a>
+        
+        <small> <a class="mdui-text-color-theme-text category-link" href="/categories/%E7%89%A9%E7%90%86/">物理</a></small>
+        
+    </div>
+    <div class="mdui-card-primary-subtitle mdui-typo">
+        
+        <span><a class="tag-none-link" href="/tags/LaTeX/" rel="tag">LaTeX</a> -</span>
+        <span mdui-tooltip="{content:'Created: 2023-09-13 01:25<br>Updated: 2023-09-18 06:25'}">2023-09-13 -</span>
+        
+            <a href="/2023/09/13/%E7%89%A9%E7%90%86/2023-09-13%E7%89%A9%E7%90%86/">2023/09/13/物理/2023-09-13物理/</a>
+        
+    </div>
+</div>
+    
+    
+    <div class="mdui-divider"></div>
+    <div class="mdui-card-content mdui-typo">
+        
+        <h2 id="振动"><a href="#振动" class="headerlink" title="振动"></a>振动</h2><p>定义：</p>
+<blockquote>
+<p>机械振动是物体在一定位置附近所作的周期性往复的运动</p>
+</blockquote>
+<h3 id="简谐振动"><a href="#简谐振动" class="headerlink" title="#简谐振动"></a>#简谐振动</h3><ul>
+<li>弹簧振子</li>
+</ul>
+<p>平衡位置O为坐标原点，</p>
+<p>运动学特征：<br>$x&#x3D;Acos(\omega t+\phi)$<br>$v&#x3D;\frac{dx}{dt}&#x3D;-\omega Asin(\omega t+\phi)$<br>$a&#x3D;\frac{d^2x}{dt^2}&#x3D;-\omega^2Acos\omega t+\phi$<br>![[Pasted image 20230913135328.png]]<br>物体在简谐运动时，其 #位移 ， #速度 ， #加速度 都是<strong>周期性变化</strong><br>（采用余弦形式表示运动）</p>
+<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><ul>
+<li>受力角度来说 动力学特征 $f&#x3D;-kx$</li>
+<li>加速度角度来说 运动学特征 $a&#x3D;-\omega^2$x</li>
+<li>从位移角度来看 运动学特征 $x&#x3D;Acos(\omega t+\phi)$<br>证明是否是简谐运动，三证一即可</li>
+</ul>
+<h3 id="振幅"><a href="#振幅" class="headerlink" title="振幅"></a>振幅</h3><p>定义振幅A：</p>
+<blockquote>
+<p>作简谐运动的物体离开平衡位置的最大位移的绝对值</p>
+</blockquote>
+<ul>
+<li>恒为正，单位为米</li>
+<li>振幅大小与振动系统能量有关，由初始条件决定</li>
+</ul>
+<h3 id="周期"><a href="#周期" class="headerlink" title="周期"></a>周期</h3><blockquote>
+<p>物体做一次完全震动所需的时间T，单位为秒</p>
+</blockquote>
+<p>$\omega T&#x3D;2\pi, T&#x3D;\frac{2\pi}{\omega}$</p>
+<p>频率$v&#x3D;\frac{1}{T}&#x3D;\frac{\omega}{2\pi}$</p>
+<h3 id="圆频率"><a href="#圆频率" class="headerlink" title="圆频率"></a>圆频率</h3><p>物体在2\pi秒内所作的完全振动的次数，$\omega$表示。单位弧度&#x2F;秒<br>$\omega&#x3D;2\pi v&#x3D;\frac{2\pi}{T}$<br>简谐运动基本特性是周期性<br>性质由其系统本身性质决定<br>$\omega&#x3D;\sqrt{\frac{k}{m}},v&#x3D;\frac{1}{2\pi}\sqrt{\frac{k}{m}}.T&#x3D;2\pi\sqrt{\frac{k}{m}}$<br>$x&#x3D;Acos(\omega t+\phi)&#x3D;Acos(\frac{2\pi}{T}t+\phi)&#x3D;Acos(2\pi vt+\phi)$</p>
+<h3 id="相位"><a href="#相位" class="headerlink" title="相位"></a>相位</h3><p>$\omega t+\phi$<br>初相位：$\phi$<br>相位差：两个振动在同一时刻的相位之差活同一振动在不同时刻的相位之差<br>$\Delta\phi&#x3D;(\omega t+\phi_{20})-(\omega t+\phi_{10})&#x3D;\phi_{20}-\phi_{10}$<br>$$\begin{matrix}<br>\Delta\phi&gt;0  &amp;  &amp; 质点2的振动超前质点1的振动\<br>\Delta\phi&lt;0  &amp;  &amp; 质点2的振动落后质点1的振动\<br>\Delta\phi&#x3D;\pm2k\pi,  &amp; k&#x3D;0,1,2,…, &amp; 同向（步调相同）\<br>\Delta\phi&#x3D;\pm(2k+1)\pi,  &amp; k&#x3D;0,1,2,…, &amp; 反向（步调相反）\<br>\end{matrix}$$<br>$x&#x3D;Acos(\omega t+\phi)$<br>$v&#x3D;\frac{\mathrm{d}x}{\mathrm{d}t}&#x3D;-\omega Asin(\omega t+\phi$</p>
+<p>$x_{0}&#x3D;Acos\phi$<br>$v_{0}&#x3D;-A\omega sin(\phi)$</p>
+<p><strong>$A&#x3D;\sqrt{x_{0}^2+(\frac{v_{0}}{\omega})^2}$</strong><br><strong>$tan\phi&#x3D;-\frac{v_{0}}{\omega x_{0}}$</strong></p>
+<p>$\phi$一般在$-\pi和\pi$（或$0和2\pi$）之间<br>一般来说有两个值，由初始条件判断应取哪个值<br>由$A&#x3D;\sqrt{x_{0}^2+(\frac{v_{0}}{\omega})^2}$<br>求A，然后由<br>$$x_{0}&#x3D;Acos\phi$$<br>$$v_{0}&#x3D;-A\omega sin\phi$$<br>共同部分求$\phi$<br>$a_{m}&#x3D;\omega^2A&#x3D;v_{m}\omega$</p>
+<p>初始沿x轴负方向运动则$\phi\in(0,\pi]$<br>初始沿x轴正方向运动则$\phi\in(-\pi,0]$</p>
+
+        
+        <blockquote class="mdui-m-x-0 mdui-m-t-4">
+    <strong>
+        Author: <a href="/about/">容小狸</a><br>
+        URL: <a href="http://example.com/2023/09/13/%E7%89%A9%E7%90%86/2023-09-13%E7%89%A9%E7%90%86/">http://example.com/2023/09/13/%E7%89%A9%E7%90%86/2023-09-13%E7%89%A9%E7%90%86/</a><br>
+        
+            This work is licensed under a <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> .
+        
+    </strong>
+</blockquote>
+        
+    </div>
+    
+</article>
+<nav class="mdui-theme-layout-light mdui-color-transparent mdui-row mdui-m-b-2">
+    
+        <div class="mdui-col-xs-12 mdui-m-b-2">
+            <a class="extend prev mdui-btn mdui-ripple mdui-float-left mdui-text-truncate" rel="prev"
+                style="max-width: 100%" href="/2023/09/14/%E6%A6%82%E7%8E%87%E8%AE%BA/2023-09-14%E6%A6%82%E7%8E%87%E8%AE%BA/">
+                <i class="mdui-icon mdui-icon-left material-icons">arrow_back</i>
+            </a>
+        </div>
+    
+        <div class="mdui-col-xs-12">
+            <a class="extend next mdui-btn mdui-ripple mdui-float-right mdui-text-truncate" rel="next"
+                style="max-width: 100%" href="/2023/09/13/%E6%A8%A1%E7%94%B5/2023-09-13%E6%A8%A1%E7%94%B5/">
+                <i class="mdui-icon mdui-icon-right material-icons">arrow_forward</i>
+            </a>
+        </div>
+    
+</nav>
+
+    </div>
+    <a href="#" class="mdui-fab mdui-fab-fixed mdui-hidden-xs mdui-color-theme-accent mdui-ripple"><i class="mdui-icon material-icons">keyboard_arrow_up</i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
+
+
+<script>
+    var $ = mdui.$;
+    function init(){
+        //
+    }
+    window.addEventListener("load", () => {
+        //
+        init()
+    }, {once: true});
+</script>
+
+</body>
+</html>
