@@ -40,12 +40,12 @@
     
 </style>
     
-    <title>Archives: 2023-9 | Hexo</title>
-    <link rel="canonical" href="http://example.com/archives/2023/09/page/2/">
+    <title>Archives: 2023-9 | 容小狸的笔记</title>
+    <link rel="canonical" href="http://note.rongxiaoli.top/archives/2023/09/page/2/">
     <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2023/09/page/2/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:title" content="容小狸的笔记">
+<meta property="og:url" content="http://note.rongxiaoli.top/archives/2023/09/page/2/index.html">
+<meta property="og:site_name" content="容小狸的笔记">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="容小狸">
 <meta name="twitter:card" content="summary">
@@ -55,7 +55,7 @@
     <header id="appbar" class="mdui-appbar mdui-appbar-fixed mdui-shadow-0 mdui-appbar-scroll-hide">
     <div class="mdui-toolbar">
         <button mdui-drawer="{target: '.mdui-drawer'}" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">menu</i></button>
-        <a href="/" class="mdui-typo-title">Hexo</a>
+        <a href="/" class="mdui-typo-title">容小狸的笔记</a>
         <div class="mdui-toolbar-spacer"></div>
         
         <a href="/atom.xml" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">rss_feed</i></a>
@@ -86,7 +86,7 @@
                 <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
             </div>
             <div class="mdui-collapse-item-body mdui-list mdui-list-dense">
-                <a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/09/">九月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/08/">八月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/03/">三月 2023</a>
+                <a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/10/">十月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/09/">九月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/08/">八月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/03/">三月 2023</a>
             </div>
         </div>
         
@@ -118,23 +118,20 @@
 </aside>
     </div>
     <div class="mdui-container-fluid mdui-center" style="max-width:720px">
-        <div class="mdui-theme-layout-dark mdui-color-transparent">
+        <div class="mdui-theme-layout-auto mdui-color-transparent">
 
     <section class="mdui-card mdui-hoverable mdui-shadow-1 mdui-m-y-2" style="opacity: 1; border-radius: 4px">
     
     <div class="mdui-card-primary mdui-ripple">
     <div class="mdui-card-primary-title">
-        <a role="heading" aria-level="1" class="mdui-text-color-theme-text" href="/2023/09/02/Blog/%E4%BA%8EWindows%E4%B8%8A%E9%83%A8%E7%BD%B2ChatGLM2-6B%20%E4%BB%A5%E5%8F%8A%E5%85%B6WebUI/">于Windows上部署ChatGLM2-6B 以及其WebUI</a>
-        
-        <small> <a class="mdui-text-color-theme-text category-link" href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a></small>
+        <a role="heading" aria-level="1" class="mdui-text-color-theme-text" href="/2023/09/20/README/"></a>
         
     </div>
     <div class="mdui-card-primary-subtitle mdui-typo">
         
-        <span><a class="tag-none-link" href="/tags/ChatGLM2-6B/" rel="tag">ChatGLM2-6B</a> <a class="tag-none-link" href="/tags/LLM/" rel="tag">LLM</a> <a class="tag-none-link" href="/tags/Python/" rel="tag">Python</a> -</span>
-        <span mdui-tooltip="{content:'Created: 2023-09-02 02:06<br>Updated: 2023-09-12 12:19'}">2023-09-02 -</span>
+        <span mdui-tooltip="{content:'Created: 2023-09-20 02:33<br>Updated: 2023-09-12 12:19'}">2023-09-20 -</span>
         
-            <span>2023/09/02/Blog/于Windows上部署ChatGLM2-6B 以及其WebUI/</span>
+            <a href="/2023/09/20/README/">2023/09/20/README/</a>
         
     </div>
 </div>
@@ -143,38 +140,367 @@
     <div class="mdui-divider"></div>
     <div class="mdui-card-content mdui-typo">
         
-            <p>寻思要给自己搞一个能上网的GLM2-6B，就在<a target="_blank" rel="noopener" href="https://chatglm.cn/blog">GLM官网</a>找有没有友链，正好找到了这么一条：<a target="_blank" rel="noopener" href="https://github.com/LemonQu-GIT/ChatGLM-6B-Engineering">ChatGLM-6B-Engineering</a>，于是就打算在本地部署一下（我是比较讨厌语言模型不在本地的那种）。坑有点多，于是用几乎是0基础的方式写了这么一篇教程。<br>本篇文章使用venv来创建虚拟环境，conda创建环境的可以找别人了。</p>
-<hr>
-<h2 id="0x0-拉代码"><a href="#0x0-拉代码" class="headerlink" title="0x0 拉代码"></a>0x0 拉代码</h2><h2 id="到这个工程的仓库拉下代码，解压到一个文件夹。创建一个命令行窗口，然后cd到你的目录。"><a href="#到这个工程的仓库拉下代码，解压到一个文件夹。创建一个命令行窗口，然后cd到你的目录。" class="headerlink" title="到这个工程的仓库拉下代码，解压到一个文件夹。创建一个命令行窗口，然后cd到你的目录。"></a>到这个工程的仓库拉下代码，解压到一个文件夹。<br>创建一个命令行窗口，然后cd到你的目录。<br><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">rem Go to your working dir. 
-cd &#x2F;D D:\path\to\your\workspace<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></h2><h2 id="0x1-创建环境"><a href="#0x1-创建环境" class="headerlink" title="0x1 创建环境"></a>0x1 创建环境</h2><h2 id="然后创建python虚拟环境（有些人极度讨厌虚拟环境可以跳过，此处使用venv而不是conda是因为我比较讨厌conda）：确保缓存的盘足够，如果不能的话，就会报pip没有足够的空间安装，你需要这么做：然后再在同一窗口安装执行：pip安装依赖："><a href="#然后创建python虚拟环境（有些人极度讨厌虚拟环境可以跳过，此处使用venv而不是conda是因为我比较讨厌conda）：确保缓存的盘足够，如果不能的话，就会报pip没有足够的空间安装，你需要这么做：然后再在同一窗口安装执行：pip安装依赖：" class="headerlink" title="然后创建python虚拟环境（有些人极度讨厌虚拟环境可以跳过，此处使用venv而不是conda是因为我比较讨厌conda）：确保缓存的盘足够，如果不能的话，就会报pip没有足够的空间安装，你需要这么做：然后再在同一窗口安装执行：pip安装依赖："></a>然后创建python虚拟环境（有些人极度讨厌虚拟环境可以跳过，此处使用venv而不是conda是因为我比较讨厌conda）：<br><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">rem Run python to create venv. 
-python -m venv .\venv<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br>确保缓存的盘足够，如果不能的话，就会报pip没有足够的空间安装，你需要这么做：<br><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">rem Set the cache dir. 
-set TMPDIR&#x3D;D:\your\cache\dir<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br>然后再在同一窗口安装执行：<br>pip安装依赖：<br><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">pip install -r requirements.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></h2><h2 id="0x2-使用模型搭建GLM层API"><a href="#0x2-使用模型搭建GLM层API" class="headerlink" title="0x2 使用模型搭建GLM层API"></a>0x2 使用模型搭建GLM层API</h2><p>接下来GLM模型就已经基本可以使用了。<br>ChatGLM有量化，可以在稍微性能不足一点的电脑上运行：<br>以下内容摘自<a target="_blank" rel="noopener" href="https://github.com/THUDM/ChatGLM-6B#%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F">ChatGLM-6B的README.md</a>:</p>
-<h3 id="硬件需求"><a href="#硬件需求" class="headerlink" title="硬件需求"></a>硬件需求</h3><div class="mdui-table-fluid mdui-shadow-0"><table class="mdui-table mdui-table-hoverable">
-<thead>
-<tr>
-<th><strong>量化等级</strong></th>
-<th><strong>最低 GPU 显存</strong>（推理）</th>
-<th><strong>最低 GPU 显存</strong>（高效参数微调）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>FP16（无量化）</td>
-<td>13 GB</td>
-<td>14 GB</td>
-</tr>
-<tr>
-<td>INT8</td>
-<td>8 GB</td>
-<td>9 GB</td>
-</tr>
-<tr>
-<td>INT4</td>
-<td>6 GB</td>
-<td>7 GB</td>
-</tr>
-</tbody></table></div>
+            <h1 id="MarkdownNote"><a href="#MarkdownNote" class="headerlink" title="MarkdownNote"></a>MarkdownNote</h1><p>这是所有笔记的记录处，Blog下放了博客用的内容</p>
+
             
-            <a class="mdui-btn mdui-btn-block mdui-ripple" href="/2023/09/02/Blog/%E4%BA%8EWindows%E4%B8%8A%E9%83%A8%E7%BD%B2ChatGLM2-6B%20%E4%BB%A5%E5%8F%8A%E5%85%B6WebUI/">Read more</a>
+            <a class="mdui-btn mdui-btn-block mdui-ripple" href="/2023/09/20/README/">Read more</a>
+        
+    </div>
+    
+</section>
+
+    <section class="mdui-card mdui-hoverable mdui-shadow-1 mdui-m-y-2" style="opacity: 1; border-radius: 4px">
+    
+    <div class="mdui-card-primary mdui-ripple">
+    <div class="mdui-card-primary-title">
+        <a role="heading" aria-level="1" class="mdui-text-color-theme-text" href="/2023/09/20/%E6%A8%A1%E7%94%B5/2023-09-20%E6%A8%A1%E7%94%B5/"></a>
+        
+        <small> <a class="mdui-text-color-theme-text category-link" href="/categories/%E6%A8%A1%E7%94%B5/">模电</a></small>
+        
+    </div>
+    <div class="mdui-card-primary-subtitle mdui-typo">
+        
+        <span><a class="tag-none-link" href="/tags/LaTeX/" rel="tag">LaTeX</a> <a class="tag-none-link" href="/tags/%E6%A8%A1%E7%94%B5/" rel="tag">模电</a> -</span>
+        <span mdui-tooltip="{content:'Created: 2023-09-20 12:00<br>Updated: 2023-09-26 11:20'}">2023-09-20 -</span>
+        
+            <a href="/2023/09/20/%E6%A8%A1%E7%94%B5/2023-09-20%E6%A8%A1%E7%94%B5/">2023/09/20/模电/2023-09-20模电/</a>
+        
+    </div>
+</div>
+    
+    
+    <div class="mdui-divider"></div>
+    <div class="mdui-card-content mdui-typo">
+        
+            <p>交流转直流：<br>电压等于$\frac{\sqrt2}{\pi}$倍有效值<br>二极管最大整流电流$I_{OM}\ge I_o$<br>最高反响电压$U_{DRM} \ge \sqrt2 U_2$<br>![[物理202309201549.jpeg]]<br>![[物理202309201551.jpg]]</p>
+<p>![[物理202309201619.jpeg]]</p>
+
+            
+            <a class="mdui-btn mdui-btn-block mdui-ripple" href="/2023/09/20/%E6%A8%A1%E7%94%B5/2023-09-20%E6%A8%A1%E7%94%B5/">Read more</a>
+        
+    </div>
+    
+</section>
+
+    <section class="mdui-card mdui-hoverable mdui-shadow-1 mdui-m-y-2" style="opacity: 1; border-radius: 4px">
+    
+    <div class="mdui-card-primary mdui-ripple">
+    <div class="mdui-card-primary-title">
+        <a role="heading" aria-level="1" class="mdui-text-color-theme-text" href="/2023/09/20/%E7%89%A9%E7%90%86/2023-09-20%E7%89%A9%E7%90%86/"></a>
+        
+        <small> <a class="mdui-text-color-theme-text category-link" href="/categories/%E7%89%A9%E7%90%86/">物理</a></small>
+        
+    </div>
+    <div class="mdui-card-primary-subtitle mdui-typo">
+        
+        <span><a class="tag-none-link" href="/tags/LaTeX/" rel="tag">LaTeX</a> <a class="tag-none-link" href="/tags/%E7%89%A9%E7%90%86/" rel="tag">物理</a> -</span>
+        <span mdui-tooltip="{content:'Created: 2023-09-20 12:00<br>Updated: 2023-09-26 11:20'}">2023-09-20 -</span>
+        
+            <a href="/2023/09/20/%E7%89%A9%E7%90%86/2023-09-20%E7%89%A9%E7%90%86/">2023/09/20/物理/2023-09-20物理/</a>
+        
+    </div>
+</div>
+    
+    
+    <div class="mdui-divider"></div>
+    <div class="mdui-card-content mdui-typo">
+        
+            <h2 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h2><h3 id="简谐运动的方程"><a href="#简谐运动的方程" class="headerlink" title="简谐运动的方程"></a>简谐运动的方程</h3><p>见[[2023-09-13物理#简谐振动]]<br>$$\left{\begin{matrix}<br>\omega&#x3D;\frac{2\pi}{T} \<br>v&#x3D;\frac{1}{T}<br>\end{matrix}\right.$$<br>$$\left{\begin{matrix}<br>x&#x3D;Acos(\omega t+\phi)&#x3D;Acos(\frac{2\pi}{T}+\phi) \<br>v&#x3D;-A\omega sin(\omega t+\phi) \<br>a&#x3D;-A\omega^2cos(\omega t+\phi)<br>\end{matrix}\right.$$</p>
+<h3 id="旋转矢量法"><a href="#旋转矢量法" class="headerlink" title="旋转矢量法"></a>旋转矢量法</h3><h2 id="简谐振动的合成"><a href="#简谐振动的合成" class="headerlink" title="简谐振动的合成"></a>简谐振动的合成</h2><p><em>目前研究简单情况：多个振动可合成为一个简谐振动</em></p>
+<p>$$<br>\left{\begin{matrix}<br>x_1&#x3D;Acos(\omega t+\phi_1) \<br>x_2&#x3D;Acos(\omega t+\phi_2)<br>\end{matrix} \right.<br>$$<br>$$\downarrow$$<br>$$x&#x3D;Acos(\omega t+\phi)$$</p>
+<p>同方向同频率相位差恒定<br>两个简谐运动合成后合振动为一个新的简谐振动<br><em>建议使用矢量和进行合成</em><br>![[物理202309201356.jpg]]</p>
+<h3 id="特殊情形"><a href="#特殊情形" class="headerlink" title="特殊情形"></a>特殊情形</h3><ol>
+<li>$\Delta\phi&#x3D;\phi_2-\phi_1&#x3D;\pm2k\pi, k\in\mathbb{Z}; A&#x3D;A_1+A_2$ 同相合成</li>
+<li>$\Delta\phi&#x3D;\phi_2-\phi_1&#x3D;\pm(2k+1)\pi, k\in\mathbb{Z}; A&#x3D;|A_1-A_2|$ 反相合成，$A_1&#x3D;A_2$时，A&#x3D;0（应用：主动降噪）</li>
+</ol>
+            
+            <a class="mdui-btn mdui-btn-block mdui-ripple" href="/2023/09/20/%E7%89%A9%E7%90%86/2023-09-20%E7%89%A9%E7%90%86/">Read more</a>
+        
+    </div>
+    
+</section>
+
+    <section class="mdui-card mdui-hoverable mdui-shadow-1 mdui-m-y-2" style="opacity: 1; border-radius: 4px">
+    
+    <div class="mdui-card-primary mdui-ripple">
+    <div class="mdui-card-primary-title">
+        <a role="heading" aria-level="1" class="mdui-text-color-theme-text" href="/2023/09/19/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/2023-09-19%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"></a>
+        
+        <small> <a class="mdui-text-color-theme-text category-link" href="/categories/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/">复变函数</a></small>
+        
+    </div>
+    <div class="mdui-card-primary-subtitle mdui-typo">
+        
+        <span><a class="tag-none-link" href="/tags/LaTeX/" rel="tag">LaTeX</a> <a class="tag-none-link" href="/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/" rel="tag">复变函数</a> -</span>
+        <span mdui-tooltip="{content:'Created: 2023-09-19 12:00<br>Updated: 2023-09-26 11:20'}">2023-09-19 -</span>
+        
+            <a href="/2023/09/19/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/2023-09-19%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/">2023/09/19/复变函数/2023-09-19复变函数/</a>
+        
+    </div>
+</div>
+    
+    
+    <div class="mdui-divider"></div>
+    <div class="mdui-card-content mdui-typo">
+        
+            <h2 id="作业讲解"><a href="#作业讲解" class="headerlink" title="作业讲解"></a>作业讲解</h2><p>先虚实分离<br>$e^{i\alpha}&#x3D;e^{-y+ix}\newline&#x3D;e^{-y}\cdot e^{ix}$<br>$e^{ix}$：欧拉公式</p>
+<p>复数相乘，辐角相加</p>
+<p>![[Pasted image 20230919105656.png]]</p>
+<h2 id="复数-与-复变函数"><a href="#复数-与-复变函数" class="headerlink" title="#复数 与 #复变函数"></a>#复数 与 #复变函数</h2><h3 id="点集"><a href="#点集" class="headerlink" title="点集"></a>点集</h3><p><strong>复数要从实数类比</strong><br>为积分做准备</p>
+<h3 id="1-直角方程"><a href="#1-直角方程" class="headerlink" title="1. 直角方程"></a>1. 直角方程</h3><p><strong>z换x,y：</strong><br>$x\rightarrow \frac{z+\overline z}{2},y\rightarrow \frac{z+\overline z}{2i}$<br><strong>x,y换z：</strong><br>$z&#x3D;x+yi$</p>
+<h3 id="2-参数方程"><a href="#2-参数方程" class="headerlink" title="2. #参数方程"></a>2. #参数方程</h3>
+            
+            <a class="mdui-btn mdui-btn-block mdui-ripple" href="/2023/09/19/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/2023-09-19%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/">Read more</a>
+        
+    </div>
+    
+</section>
+
+    <section class="mdui-card mdui-hoverable mdui-shadow-1 mdui-m-y-2" style="opacity: 1; border-radius: 4px">
+    
+    <div class="mdui-card-primary mdui-ripple">
+    <div class="mdui-card-primary-title">
+        <a role="heading" aria-level="1" class="mdui-text-color-theme-text" href="/2023/09/19/%E6%A6%82%E7%8E%87%E8%AE%BA/2023-09-19%E6%A6%82%E7%8E%87%E8%AE%BA/"></a>
+        
+        <small> <a class="mdui-text-color-theme-text category-link" href="/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/">概率论</a></small>
+        
+    </div>
+    <div class="mdui-card-primary-subtitle mdui-typo">
+        
+        <span><a class="tag-none-link" href="/tags/LaTeX/" rel="tag">LaTeX</a> <a class="tag-none-link" href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/" rel="tag">概率论</a> -</span>
+        <span mdui-tooltip="{content:'Created: 2023-09-19 12:00<br>Updated: 2023-10-10 01:16'}">2023-09-19 -</span>
+        
+            <a href="/2023/09/19/%E6%A6%82%E7%8E%87%E8%AE%BA/2023-09-19%E6%A6%82%E7%8E%87%E8%AE%BA/">2023/09/19/概率论/2023-09-19概率论/</a>
+        
+    </div>
+</div>
+    
+    
+    <div class="mdui-divider"></div>
+    <div class="mdui-card-content mdui-typo">
+        
+            <h2 id="事件独立性"><a href="#事件独立性" class="headerlink" title="事件独立性"></a>事件独立性</h2><p><strong>每个事件间没有重叠</strong><br>$P(AB)&#x3D;P(A)P(B)$<br>A对B的发生没有影响<br>设ABC相互独立<br>那么有：<br>$$\left.\begin{matrix}<br>P(AB)&#x3D;P(A)P(B) \<br>P(AC)&#x3D;P(A)P(C) \<br>P(BC)&#x3D;P(B)P(C)<br>\end{matrix}\right} ABC相互独立$$<br>$$P(ABC)&#x3D;P(A)+P(B)+P(C)$$</p>
+<h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><ul>
+<li>设AB相互独立，则有：<br>  若P(A)&gt;0，则有P(B|A)&#x3D;P(B)<br>  若P(B)&gt;0，则有P(A|B)&#x3D;P(A)</li>
+<li>S与A相互独立，$\emptyset$与A相互独立</li>
+<li>A与B相互独立，则：<br>  $\overline{A}$与B，A与$\overline{B}$，$\overline{A} 与 \overline{B}$也相互独立</li>
+</ul>
+<p>并转交：<br>$$P(\bigcup_{i&#x3D;1}^{n}A_{i})&#x3D;1-\overline{P(\bigcup_{i&#x3D;1}^nA_i)}&#x3D;1-P(\bigcap_{i&#x3D;1}^nA_i)$$</p>
+<h2 id="n重贝努利实验"><a href="#n重贝努利实验" class="headerlink" title="#n重贝努利实验"></a>#n重贝努利实验</h2><h3 id="1-独立实验序列"><a href="#1-独立实验序列" class="headerlink" title="1. 独立实验序列"></a>1. 独立实验序列</h3><blockquote>
+<p>设E为随机实验，如果在相同条件下将实验E重复进行若干次，且各实验结果互不影响，则由这若干次实验构成的序列称为独立实验序列</p>
+</blockquote>
+<h3 id="2-n重贝努利实验"><a href="#2-n重贝努利实验" class="headerlink" title="2. #n重贝努利实验"></a>2. #n重贝努利实验</h3><blockquote>
+<p>设E为随机实验，相同条件下将E重复若干次，若：<br>    由这n次实验构成的序列是独立实验序列；<br>    每次实验只有两个结果：$A与\overline{A}$；<br>    每次试验A发生的概率为常数p，即P(A)&#x3D;p<br>则该实验序列为n重贝努利实验</p>
+</blockquote>
+            
+            <a class="mdui-btn mdui-btn-block mdui-ripple" href="/2023/09/19/%E6%A6%82%E7%8E%87%E8%AE%BA/2023-09-19%E6%A6%82%E7%8E%87%E8%AE%BA/">Read more</a>
+        
+    </div>
+    
+</section>
+
+    <section class="mdui-card mdui-hoverable mdui-shadow-1 mdui-m-y-2" style="opacity: 1; border-radius: 4px">
+    
+    <div class="mdui-card-primary mdui-ripple">
+    <div class="mdui-card-primary-title">
+        <a role="heading" aria-level="1" class="mdui-text-color-theme-text" href="/2023/09/18/%E6%A8%A1%E7%94%B5/2023-09-18%E6%A8%A1%E7%94%B5/"></a>
+        
+        <small> <a class="mdui-text-color-theme-text category-link" href="/categories/%E6%A8%A1%E7%94%B5/">模电</a></small>
+        
+    </div>
+    <div class="mdui-card-primary-subtitle mdui-typo">
+        
+        <span><a class="tag-none-link" href="/tags/%E6%A8%A1%E7%94%B5/" rel="tag">模电</a> -</span>
+        <span mdui-tooltip="{content:'Created: 2023-09-18 12:00<br>Updated: 2023-09-26 11:30'}">2023-09-18 -</span>
+        
+            <a href="/2023/09/18/%E6%A8%A1%E7%94%B5/2023-09-18%E6%A8%A1%E7%94%B5/">2023/09/18/模电/2023-09-18模电/</a>
+        
+    </div>
+</div>
+    
+    
+    <div class="mdui-divider"></div>
+    <div class="mdui-card-content mdui-typo">
+        
+            <h2 id="特殊二极管"><a href="#特殊二极管" class="headerlink" title="特殊二极管"></a>特殊二极管</h2><ul>
+<li><strong>稳压二极管</strong><br>面接触型二极管，利用 #反向击穿 稳压特性，反接为正常接法<br>![[Pasted image 20230918102328.png]]<br>![[Pasted image 20230918102426.png]]<br>稳定电压$U_{z}$：为反向击穿电压$U_{BR}$<br>稳定电流$I_{Z}$：在稳定状态时的参考电流</li>
+<li><strong>发光二极管</strong><br>工作条件：正向偏置</li>
+<li><strong>光敏二极管</strong></li>
+</ul>
+<h2 id="三极管"><a href="#三极管" class="headerlink" title="三极管"></a>三极管</h2><p>aka半导体三极管，双极性晶体管或简称晶体管</p>
+<ul>
+<li><p><strong>N-P-N型三极管</strong><br>![[Pasted image 20230918111037.png]]<br>![[Pasted image 20230918111137.png]]<br>![[Pasted image 20230918111320.png]]</p>
+</li>
+<li><p><strong>P-N-P型三极管</strong><br>![[Pasted image 20230918111151.png]]<br>![[Pasted image 20230918111335.png]]</p>
+</li>
+</ul>
+<p>NPN信号放大必须<strong>C高B中E低</strong><br>PNP信号放大必须<strong>E高B中C低</strong></p>
+<h3 id="如何判断是NPN还是PNP"><a href="#如何判断是NPN还是PNP" class="headerlink" title="如何判断是NPN还是PNP"></a>如何判断是NPN还是PNP</h3><ol>
+<li>先看三级，中间电压为B</li>
+<li>再看压差，硅0.5-0.8，锗0.1-0.3，压差在区间内的，低电位为正偏方向<ul>
+<li>若+0.7在侧边，那么为NPN</li>
+<li>若+0.7在中间，那么为PNP</li>
+</ul>
+</li>
+</ol>
+
+            
+            <a class="mdui-btn mdui-btn-block mdui-ripple" href="/2023/09/18/%E6%A8%A1%E7%94%B5/2023-09-18%E6%A8%A1%E7%94%B5/">Read more</a>
+        
+    </div>
+    
+</section>
+
+    <section class="mdui-card mdui-hoverable mdui-shadow-1 mdui-m-y-2" style="opacity: 1; border-radius: 4px">
+    
+    <div class="mdui-card-primary mdui-ripple">
+    <div class="mdui-card-primary-title">
+        <a role="heading" aria-level="1" class="mdui-text-color-theme-text" href="/2023/09/14/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/2023-09-14%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"></a>
+        
+        <small> <a class="mdui-text-color-theme-text category-link" href="/categories/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/">复变函数</a></small>
+        
+    </div>
+    <div class="mdui-card-primary-subtitle mdui-typo">
+        
+        <span><a class="tag-none-link" href="/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/" rel="tag">复变函数</a> -</span>
+        <span mdui-tooltip="{content:'Created: 2023-09-14 12:00<br>Updated: 2023-09-26 11:20'}">2023-09-14 -</span>
+        
+            <a href="/2023/09/14/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/2023-09-14%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/">2023/09/14/复变函数/2023-09-14复变函数/</a>
+        
+    </div>
+</div>
+    
+    
+    <div class="mdui-divider"></div>
+    <div class="mdui-card-content mdui-typo">
+        
+            <p>复数运算</p>
+<h2 id="复数加减法"><a href="#复数加减法" class="headerlink" title="复数加减法"></a>复数加减法</h2><p>![[Pasted image 20230914152541.png]]<br>![[Pasted image 20230914152742.png]]<br>#角度旋转公式 ：<br>$sin(\alpha+\beta)&#x3D;sin\alpha cos\beta+cos\alpha sin\beta$<br>$sin(\alpha-\beta)&#x3D;sin\alpha cos\beta-cos\alpha sin\beta$<br>$cos(\alpha+\beta)&#x3D;cos\alpha cos\beta-sin\alpha sin\beta$<br>$cos(\alpha-\beta)&#x3D;cos\alpha cos\beta+sin\alpha sin\beta$</p>
+<p>![[Pasted image 20230914160108.png]]</p>
+<p>![[Pasted image 20230914161824.png]]</p>
+
+            
+            <a class="mdui-btn mdui-btn-block mdui-ripple" href="/2023/09/14/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/2023-09-14%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/">Read more</a>
+        
+    </div>
+    
+</section>
+
+    <section class="mdui-card mdui-hoverable mdui-shadow-1 mdui-m-y-2" style="opacity: 1; border-radius: 4px">
+    
+    <div class="mdui-card-primary mdui-ripple">
+    <div class="mdui-card-primary-title">
+        <a role="heading" aria-level="1" class="mdui-text-color-theme-text" href="/2023/09/14/%E6%A6%82%E7%8E%87%E8%AE%BA/2023-09-14%E6%A6%82%E7%8E%87%E8%AE%BA/"></a>
+        
+        <small> <a class="mdui-text-color-theme-text category-link" href="/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/">概率论</a></small>
+        
+    </div>
+    <div class="mdui-card-primary-subtitle mdui-typo">
+        
+        <span><a class="tag-none-link" href="/tags/LaTeX/" rel="tag">LaTeX</a> <a class="tag-none-link" href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/" rel="tag">概率论</a> -</span>
+        <span mdui-tooltip="{content:'Created: 2023-09-14 12:00<br>Updated: 2023-10-10 01:16'}">2023-09-14 -</span>
+        
+            <a href="/2023/09/14/%E6%A6%82%E7%8E%87%E8%AE%BA/2023-09-14%E6%A6%82%E7%8E%87%E8%AE%BA/">2023/09/14/概率论/2023-09-14概率论/</a>
+        
+    </div>
+</div>
+    
+    
+    <div class="mdui-divider"></div>
+    <div class="mdui-card-content mdui-typo">
+        
+            <p>条件概率，乘法定理<br>$P(A|B)$<br>理解为：</p>
+<ul>
+<li>B为因，A为果</li>
+<li>B已发生，A未发生<br>$P(A|B)&#x3D;\frac{P(AB)}{PB}$</li>
+</ul>
+<p><strong>条件概率也是概率</strong>，所以满足[[2023-09-12概率论#概率的公理化定义|三条公理和五条性质]]<br>但是样本空间有变化：样本空间缩减为$S_{B}$</p>
+<p><strong>全概率公式</strong>： #全概率公式 概率大于0，多因求果<br>设S是随机实验E的样本空间，$A,B_1,B_2,…,B_n为E的时间，若P(B_i)&gt;0(i&#x3D;1,2,\Lambda,n)且B_1,B_2,\Lambda.B+n是$样本空间S的有一个划分，则$$\begin{matrix}<br>P(A)&#x3D;\sum_{i&#x3D;1}^nP(B_i)P(A|B_i) \<br>P(B_k|A)&#x3D;\frac{P(A|B)PB_1}{\Sigma P（A_1|B)PB_1}\end{matrix}$$ ^b88979</p>
+<p>例子：甲箱种有5个正品3个次品，乙箱中有4个正品3个次品，从甲箱中人去任取3个产品放入乙箱，然后从乙箱中任取1个产品，求该产品是正品的概率<br>解：设A：从乙箱中所取产品是正品<br>$B_{i}$：“从甲箱中所取3个产品中有i个正品”，$i&#x3D;0,1,2,3$<br>所求概率为：<br>$P(A)&#x3D;\sum_{i&#x3D;0}^{3}P(B_{i})P(A|B_{i})$<br>$$<br>&#x3D;\frac{C_{3}^{3}}{C_{8}^{3}}\cdot\frac{4}{10}+\frac{C_{5}^{1}C_{3}^{2}}{C_{8}^{3}}\cdot\frac{5}{10}+\frac{C_{5}^{2}C_{3}^{1}}{C_{8}^{3}}\cdot\frac{6}{10}+\frac{C_{5}^{3}}{C_{8}^{3}}\cdot\frac{7}{10}<br>$$$$&#x3D;\frac{329}{560}&#x3D;0.5875$$</p>
+<h3 id="贝叶斯公式"><a href="#贝叶斯公式" class="headerlink" title="贝叶斯公式"></a>贝叶斯公式</h3><p>![[Pasted image 20230921132516.png]]</p>
+
+            
+            <a class="mdui-btn mdui-btn-block mdui-ripple" href="/2023/09/14/%E6%A6%82%E7%8E%87%E8%AE%BA/2023-09-14%E6%A6%82%E7%8E%87%E8%AE%BA/">Read more</a>
+        
+    </div>
+    
+</section>
+
+    <section class="mdui-card mdui-hoverable mdui-shadow-1 mdui-m-y-2" style="opacity: 1; border-radius: 4px">
+    
+    <div class="mdui-card-primary mdui-ripple">
+    <div class="mdui-card-primary-title">
+        <a role="heading" aria-level="1" class="mdui-text-color-theme-text" href="/2023/09/13/%E7%89%A9%E7%90%86/2023-09-13%E7%89%A9%E7%90%86/"></a>
+        
+        <small> <a class="mdui-text-color-theme-text category-link" href="/categories/%E7%89%A9%E7%90%86/">物理</a></small>
+        
+    </div>
+    <div class="mdui-card-primary-subtitle mdui-typo">
+        
+        <span><a class="tag-none-link" href="/tags/LaTeX/" rel="tag">LaTeX</a> <a class="tag-none-link" href="/tags/%E7%89%A9%E7%90%86/" rel="tag">物理</a> -</span>
+        <span mdui-tooltip="{content:'Created: 2023-09-13 01:25<br>Updated: 2023-10-11 01:42'}">2023-09-13 -</span>
+        
+            <a href="/2023/09/13/%E7%89%A9%E7%90%86/2023-09-13%E7%89%A9%E7%90%86/">2023/09/13/物理/2023-09-13物理/</a>
+        
+    </div>
+</div>
+    
+    
+    <div class="mdui-divider"></div>
+    <div class="mdui-card-content mdui-typo">
+        
+            <h2 id="振动"><a href="#振动" class="headerlink" title="振动"></a>振动</h2><p>定义：</p>
+<blockquote>
+<p>机械振动是物体在一定位置附近所作的周期性往复的运动</p>
+</blockquote>
+<h3 id="简谐振动"><a href="#简谐振动" class="headerlink" title="#简谐振动"></a>#简谐振动</h3><ul>
+<li>弹簧振子</li>
+</ul>
+<p>平衡位置O为坐标原点，</p>
+<p>运动学特征：<br>$x&#x3D;Acos(\omega t+\phi)$<br>$v&#x3D;\frac{dx}{dt}&#x3D;-\omega Asin(\omega t+\phi)$<br>$a&#x3D;\frac{d^2x}{dt^2}&#x3D;-\omega^2Acos\omega t+\phi$<br>![[Pasted image 20230913135328.png]]<br>物体在简谐运动时，其 #位移 ， #速度 ， #加速度 都是<strong>周期性变化</strong><br>（采用余弦形式表示运动）</p>
+<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><ul>
+<li>受力角度来说 动力学特征 $f&#x3D;-kx$</li>
+<li>加速度角度来说 运动学特征 $a&#x3D;-\omega^2$x</li>
+<li>从位移角度来看 运动学特征 $x&#x3D;Acos(\omega t+\phi)$<br>证明是否是简谐运动，三证一即可</li>
+</ul>
+<h3 id="振幅"><a href="#振幅" class="headerlink" title="振幅"></a>振幅</h3>
+            
+            <a class="mdui-btn mdui-btn-block mdui-ripple" href="/2023/09/13/%E7%89%A9%E7%90%86/2023-09-13%E7%89%A9%E7%90%86/">Read more</a>
+        
+    </div>
+    
+</section>
+
+    <section class="mdui-card mdui-hoverable mdui-shadow-1 mdui-m-y-2" style="opacity: 1; border-radius: 4px">
+    
+    <div class="mdui-card-primary mdui-ripple">
+    <div class="mdui-card-primary-title">
+        <a role="heading" aria-level="1" class="mdui-text-color-theme-text" href="/2023/09/13/%E6%A8%A1%E7%94%B5/2023-09-13%E6%A8%A1%E7%94%B5/"></a>
+        
+        <small> <a class="mdui-text-color-theme-text category-link" href="/categories/%E6%A8%A1%E7%94%B5/">模电</a></small>
+        
+    </div>
+    <div class="mdui-card-primary-subtitle mdui-typo">
+        
+        <span><a class="tag-none-link" href="/tags/%E6%A8%A1%E7%94%B5/" rel="tag">模电</a> -</span>
+        <span mdui-tooltip="{content:'Created: 2023-09-13 12:00<br>Updated: 2023-10-11 01:42'}">2023-09-13 -</span>
+        
+            <a href="/2023/09/13/%E6%A8%A1%E7%94%B5/2023-09-13%E6%A8%A1%E7%94%B5/">2023/09/13/模电/2023-09-13模电/</a>
+        
+    </div>
+</div>
+    
+    
+    <div class="mdui-divider"></div>
+    <div class="mdui-card-content mdui-typo">
+        
+            <p>![[Pasted image 20230913150830.png]]<br>反向击穿部分可逆<br>电压变化率小<br>可逆击穿可以用来控制电路<br>分为齐纳击穿和雪崩击穿<br>齐纳击穿：参杂浓度高，反向电压使载流子高速运动形成强电场毁坏耗尽层内，载流子数量激增<br>雪崩击穿：参杂浓度低，较大反向电压使少子高速运动，毁坏共价键，载流子数量激增<br>热击穿：PN结电流点或电压较大，使PN结温度升高，形成永久损害</p>
+<p>![[Pasted image 20230913151752.png]]</p>
+<p>![[Pasted image 20230913152147.png]]</p>
+<p>![[Pasted image 20230913152210.png]]</p>
+
+            
+            <a class="mdui-btn mdui-btn-block mdui-ripple" href="/2023/09/13/%E6%A8%A1%E7%94%B5/2023-09-13%E6%A8%A1%E7%94%B5/">Read more</a>
         
     </div>
     
@@ -189,7 +515,8 @@ set TMPDIR&#x3D;D:\your\cache\dir<span aria-hidden="true" class="line-numbers-ro
         <i class="mdui-icon mdui-icon-left material-icons">arrow_back</i>Newer</a>
     </div>
     <div class="mdui-col-xs-12 mdui-col-sm-6">
-        <a class="mdui-btn mdui-ripple mdui-float-right" rel="next" disabled>
+        <a class="mdui-btn mdui-ripple mdui-float-right" rel="next" href="/archives/2023/09/page/3/">
+        
         <i class="mdui-icon mdui-icon-right material-icons">arrow_forward</i>Older</a>
     </div>
 </nav>

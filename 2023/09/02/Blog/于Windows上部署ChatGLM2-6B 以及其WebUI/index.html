@@ -40,13 +40,13 @@
     
 </style>
     
-    <title>于Windows上部署ChatGLM2-6B 以及其WebUI | Hexo</title>
-    <link rel="canonical" href="http://example.com/2023/09/02/Blog/%E4%BA%8EWindows%E4%B8%8A%E9%83%A8%E7%BD%B2ChatGLM2-6B%20%E4%BB%A5%E5%8F%8A%E5%85%B6WebUI/">
+    <title>于Windows上部署ChatGLM2-6B 以及其WebUI | 容小狸的笔记</title>
+    <link rel="canonical" href="http://note.rongxiaoli.top/2023/09/02/Blog/%E4%BA%8EWindows%E4%B8%8A%E9%83%A8%E7%BD%B2ChatGLM2-6B%20%E4%BB%A5%E5%8F%8A%E5%85%B6WebUI/">
     <meta name="description" content="寻思要给自己搞一个能上网的GLM2-6B，就在GLM官网找有没有友链，正好找到了这么一条：ChatGLM-6B-Engineering，于是就打算在本地部署一下（我是比较讨厌语言模型不在本地的那种）。坑有点多，于是用几乎是0基础的方式写了这么一篇教程。本篇文章使用venv来创建虚拟环境，conda创建环境的可以找别人了。  0x0 拉代码到这个工程的仓库拉下代码，解压到一个文件夹。创建一个命令行窗">
 <meta property="og:type" content="article">
 <meta property="og:title" content="于Windows上部署ChatGLM2-6B 以及其WebUI">
-<meta property="og:url" content="http://example.com/2023/09/02/Blog/%E4%BA%8EWindows%E4%B8%8A%E9%83%A8%E7%BD%B2ChatGLM2-6B%20%E4%BB%A5%E5%8F%8A%E5%85%B6WebUI/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:url" content="http://note.rongxiaoli.top/2023/09/02/Blog/%E4%BA%8EWindows%E4%B8%8A%E9%83%A8%E7%BD%B2ChatGLM2-6B%20%E4%BB%A5%E5%8F%8A%E5%85%B6WebUI/index.html">
+<meta property="og:site_name" content="容小狸的笔记">
 <meta property="og:description" content="寻思要给自己搞一个能上网的GLM2-6B，就在GLM官网找有没有友链，正好找到了这么一条：ChatGLM-6B-Engineering，于是就打算在本地部署一下（我是比较讨厌语言模型不在本地的那种）。坑有点多，于是用几乎是0基础的方式写了这么一篇教程。本篇文章使用venv来创建虚拟环境，conda创建环境的可以找别人了。  0x0 拉代码到这个工程的仓库拉下代码，解压到一个文件夹。创建一个命令行窗">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-02T06:06:13.000Z">
@@ -62,7 +62,7 @@
     <header id="appbar" class="mdui-appbar mdui-appbar-fixed mdui-shadow-0 mdui-appbar-scroll-hide">
     <div class="mdui-toolbar">
         <button mdui-drawer="{target: '.mdui-drawer'}" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">menu</i></button>
-        <a href="/" class="mdui-typo-title">Hexo</a>
+        <a href="/" class="mdui-typo-title">容小狸的笔记</a>
         <div class="mdui-toolbar-spacer"></div>
         
         <a href="/atom.xml" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">rss_feed</i></a>
@@ -93,7 +93,7 @@
                 <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
             </div>
             <div class="mdui-collapse-item-body mdui-list mdui-list-dense">
-                <a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/09/">九月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/08/">八月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/03/">三月 2023</a>
+                <a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/10/">十月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/09/">九月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/08/">八月 2023</a><a class="mdui-list-item mdui-ripple m-link" href="/archives/2023/03/">三月 2023</a>
             </div>
         </div>
         
@@ -289,7 +289,7 @@ pause<span aria-hidden="true" class="line-numbers-rows"><span></span><span></spa
         <blockquote class="mdui-m-x-0 mdui-m-t-4">
     <strong>
         Author: <a href="/about/">容小狸</a><br>
-        URL: <a href="http://example.com/2023/09/02/Blog/%E4%BA%8EWindows%E4%B8%8A%E9%83%A8%E7%BD%B2ChatGLM2-6B%20%E4%BB%A5%E5%8F%8A%E5%85%B6WebUI/">http://example.com/2023/09/02/Blog/%E4%BA%8EWindows%E4%B8%8A%E9%83%A8%E7%BD%B2ChatGLM2-6B%20%E4%BB%A5%E5%8F%8A%E5%85%B6WebUI/</a><br>
+        URL: <a href="http://note.rongxiaoli.top/2023/09/02/Blog/%E4%BA%8EWindows%E4%B8%8A%E9%83%A8%E7%BD%B2ChatGLM2-6B%20%E4%BB%A5%E5%8F%8A%E5%85%B6WebUI/">http://note.rongxiaoli.top/2023/09/02/Blog/%E4%BA%8EWindows%E4%B8%8A%E9%83%A8%E7%BD%B2ChatGLM2-6B%20%E4%BB%A5%E5%8F%8A%E5%85%B6WebUI/</a><br>
         
             This work is licensed under a <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> .
         

@@ -5,12 +5,24 @@
     
     <entry>
       <title></title>
-      <link href="/2023/09/20/README/"/>
-      <url>/2023/09/20/README/</url>
+      <link href="/2023/10/11/2023-10-11%E7%89%A9%E7%90%86/"/>
+      <url>/2023/10/11/2023-10-11%E7%89%A9%E7%90%86/</url>
       
-        <content type="html"><![CDATA[<h1 id="MarkdownNote"><a href="#MarkdownNote" class="headerlink" title="MarkdownNote"></a>MarkdownNote</h1><p>这是所有笔记的记录处，Blog下放了博客用的内容</p>]]></content>
+        <content type="html"><![CDATA[<p>![[物理202310111330.jpg]]</p><h2 id="杨氏双缝干涉"><a href="#杨氏双缝干涉" class="headerlink" title="#杨氏双缝干涉"></a>#杨氏双缝干涉</h2><p>$\Delta r \approx dtan\theta&#x3D;d\frac x{d’},\theta$是一个非常小的角<br>$&#x3D;\left{\begin{matrix}\pm k\lambda&amp;明纹\\pm(2k+1)\frac{\lambda}2&amp;暗纹\end{matrix}\right.$<br>$\left{\begin{matrix}x_明&#x3D;\pm k\lambda\frac{d’}d\x_暗&#x3D;\pm(2k+1)\frac{\lambda}2\frac{d’}d\end{matrix}\right.(k&#x3D;0,1,…)$</p><h3 id="劳埃德镜"><a href="#劳埃德镜" class="headerlink" title="劳埃德镜"></a>劳埃德镜</h3><h2 id="光程"><a href="#光程" class="headerlink" title="光程"></a>光程</h2><p>光程：折射率$\times$波程$nr$<br>光程差：$\Delta&#x3D;n_1r_1-n_2r_2$</p>]]></content>
       
       
+      <categories>
+          
+          <category> 物理 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 物理 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -18,10 +30,10 @@
     
     <entry>
       <title></title>
-      <link href="/2023/09/19/%E6%A6%82%E7%8E%87%E8%AE%BA/2023-09-19%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
-      <url>/2023/09/19/%E6%A6%82%E7%8E%87%E8%AE%BA/2023-09-19%E6%A6%82%E7%8E%87%E8%AE%BA/</url>
+      <link href="/2023/10/10/2023-10-10%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+      <url>/2023/10/10/2023-10-10%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</url>
       
-        <content type="html"><![CDATA[<h2 id="事件独立性"><a href="#事件独立性" class="headerlink" title="事件独立性"></a>事件独立性</h2><p><strong>每个事件间没有重叠</strong><br>$P(AB)&#x3D;P(A)P(B)$<br>A对B的发生没有影响<br>设ABC相互独立<br>那么有：<br>$$\left.\begin{matrix}<br>P(AB)&#x3D;P(A)P(B) \<br>P(AC)&#x3D;P(A)P(C) \<br>P(BC)&#x3D;P(B)P(C)<br>\end{matrix}\right} ABC相互独立$$<br>$$P(ABC)&#x3D;P(A)+P(B)+P(C)$$</p><h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><ul><li>设AB相互独立，则有：<br>  若P(A)&gt;0，则有P(B|A)&#x3D;P(B)<br>  若P(B)&gt;0，则有P(A|B)&#x3D;P(A)</li><li>S与A相互独立，$\emptyset$与A相互独立</li><li>A与B相互独立，则：<br>  $\overline{A}$与B，A与$\overline{B}$，$\overline{A} 与 \overline{B}$也相互独立</li></ul><p>并转交：<br>$$P(\bigcup_{i&#x3D;1}^{n}A_{i})&#x3D;1-\overline{P(\bigcup_{i&#x3D;1}^nA_i)}&#x3D;1-P(\bigcap_{i&#x3D;1}^nA_i)$$</p><h2 id="n重贝努利实验"><a href="#n重贝努利实验" class="headerlink" title="n重贝努利实验"></a>n重贝努利实验</h2><h3 id="1-独立实验序列"><a href="#1-独立实验序列" class="headerlink" title="1. 独立实验序列"></a>1. 独立实验序列</h3><blockquote><p>设E为随机实验，如果在相同条件下将实验E重复进行若干次，且各实验结果互不影响，则由这若干次实验构成的序列称为独立实验序列</p></blockquote><h3 id="2-n重贝努利实验"><a href="#2-n重贝努利实验" class="headerlink" title="2. n重贝努利实验"></a>2. n重贝努利实验</h3><blockquote><p>设E为随机实验，相同条件下将E重复若干次，若：<br>    由这n次实验构成的序列是独立实验序列；<br>    每次实验只有两个结果：$A与\overline{A}$；<br>    每次试验A发生的概率为常数p，即P(A)&#x3D;p<br>则该实验序列为n重贝努利实验</p></blockquote><h3 id="n重贝努利事件A恰好发生k次概率："><a href="#n重贝努利事件A恰好发生k次概率：" class="headerlink" title="n重贝努利事件A恰好发生k次概率："></a>n重贝努利事件A恰好发生k次概率：</h3>]]></content>
+        <content type="html"><![CDATA[<p>#高阶导数公式<br>$\oint_C{\frac{f(z)}{(z-z_0)^{n+1}}\mathrm dz} &#x3D; \frac{2\pi i}{n!}f^{(n)}(z_0)$</p>]]></content>
       
       
       <categories>
@@ -35,7 +47,619 @@
             
             <tag> 概率论 </tag>
             
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/10/10/2023-10-10%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+      <url>/2023/10/10/2023-10-10%E6%A6%82%E7%8E%87%E8%AE%BA/</url>
+      
+        <content type="html"><![CDATA[<h2 id="多维随机变量及其分布"><a href="#多维随机变量及其分布" class="headerlink" title="多维随机变量及其分布"></a>多维随机变量及其分布</h2><p><em>只是增加到二维</em></p><ul><li>二维随机变量及其分布</li><li>边缘分布</li></ul><h3 id="二维随机变量的联合分布函数"><a href="#二维随机变量的联合分布函数" class="headerlink" title="二维随机变量的联合分布函数"></a>二维随机变量的联合分布函数</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>设(X,Y)是二维随机变量，对于任意实数x,y，二元函数</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 概率论 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 概率论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/10/09/2023-10-09%E6%A8%A1%E7%94%B5/"/>
+      <url>/2023/10/09/2023-10-09%E6%A8%A1%E7%94%B5/</url>
+      
+        <content type="html"><![CDATA[<ul><li>静态工作点</li><li>直接耦合：信号源与放大电路，放大电路与负载电阻均直接相连</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 模电 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 模电 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/10/08/2023-10-08%E7%89%A9%E7%90%86/"/>
+      <url>/2023/10/08/2023-10-08%E7%89%A9%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<h2 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h2><h3 id="波函数"><a href="#波函数" class="headerlink" title="#波函数"></a>#波函数</h3><p>$y(x,t)&#x3D;Acos(\omega t+\phi-\frac{2\pi}{\lambda}x)$</p><h3 id="波的-干涉"><a href="#波的-干涉" class="headerlink" title="波的 #干涉"></a>波的 #干涉</h3><p>$$\left{\begin{matrix}y(r_1,t)&#x3D;Acos(\omega t +\phi_1-\frac{2\pi}{\lambda}r_1)\y(r_2,t)&#x3D;Acos(\omega t +\phi_2-\frac{2\pi}{\lambda}r_2)\end{matrix}\right.$$$$\Delta\phi&#x3D;(\phi_2-\phi_1)-\frac{2\pi}{\lambda}(r_2-r_1)$$</p><p>$$\Delta\phi&#x3D;\left{\begin{matrix}2k\pi&amp;极大,A&#x3D;A_1+A_2\2(k+1)\pi&amp;极小，A&#x3D;|A_2-A_1|\end{matrix}\right.k&#x3D;0,1,…$$<br>$\phi_1&#x3D;\phi_2$时<br>$\Delta\phi&#x3D;-\frac{2\pi}{\lambda}(r_2-r_1)$<br>$\Delta r&#x3D;\left{\begin{matrix}k\lambda&amp;极大\(2k+1)\frac\lambda2&amp;极小\end{matrix}\right.k&#x3D;0,1,…$</p><h1 id="光学"><a href="#光学" class="headerlink" title="#光学"></a>#光学</h1><h2 id="相干光源的获得"><a href="#相干光源的获得" class="headerlink" title="相干光源的获得"></a>相干光源的获得</h2><ul><li>分波阵面</li><li>分振</li></ul><h2 id="杨氏双缝干涉实验"><a href="#杨氏双缝干涉实验" class="headerlink" title="杨氏双缝干涉实验"></a>杨氏双缝干涉实验</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 物理 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 物理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/10/07/templates/%E6%A8%A1%E7%94%B5/"/>
+      <url>/2023/10/07/templates/%E6%A8%A1%E7%94%B5/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 模电 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 模电 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/10/07/templates/%E7%89%A9%E7%90%86/"/>
+      <url>/2023/10/07/templates/%E7%89%A9%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 物理 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 物理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/10/07/templates/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+      <url>/2023/10/07/templates/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 复变函数 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 复变函数 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/10/07/templates/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+      <url>/2023/10/07/templates/%E6%A6%82%E7%8E%87%E8%AE%BA/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 概率论 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 概率论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/10/07/2023-10-07%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+      <url>/2023/10/07/2023-10-07%E6%A6%82%E7%8E%87%E8%AE%BA/</url>
+      
+        <content type="html"><![CDATA[<h2 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h2><p>![[2023-09-14概率论#^b88979|全概率公式]]</p><p>![[2023-09-23概率论#泊松分布|泊松分布]]</p><p>![[2023-09-28概率论#均匀分布$U(a,b)$]]</p><p>![[2023-09-28概率论#指数分布 $E( lambda)$|指数分布]]</p><p>![[2023-09-28概率论#正态分布 $N( mu, sigma 2)$]]</p><h2 id="概率函数的分布-与-概率分布函数"><a href="#概率函数的分布-与-概率分布函数" class="headerlink" title="#概率函数的分布 与 #概率分布函数"></a>#概率函数的分布 与 #概率分布函数</h2><p>![[概率论202310071355.jpeg]]</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 概率论 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 概率论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/10/07/2023-10-07%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+      <url>/2023/10/07/2023-10-07%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="柯西积分定理"><a href="#柯西积分定理" class="headerlink" title="#柯西积分定理"></a>#柯西积分定理</h2><h3 id="单连通区域-柯西积分定理"><a href="#单连通区域-柯西积分定理" class="headerlink" title="#单连通区域 #柯西积分定理"></a>#单连通区域 #柯西积分定理</h3><p>设$f(z)$是单连通区域$D$内的解析函数，且$f’(z)$在$D$内连续。若$L$是$D$内任意一条简单闭曲线，则$$<br>\oint_L{f(z)\mathrm{d}z&#x3D;0}$$</p><h3 id="单连通区域-柯西-古萨积分定理"><a href="#单连通区域-柯西-古萨积分定理" class="headerlink" title="#单连通区域 #柯西-古萨积分定理"></a>#单连通区域 #柯西-古萨积分定理</h3><p>设$f(z)$是单连通区域$D$内的解析函数，若$L$是$D$内任意一周线，则 $$\oint_C{f(z)\mathrm dz}&#x3D;0$$</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 复变函数 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 复变函数 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/09/28/2023-09-28%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+      <url>/2023/09/28/2023-09-28%E6%A6%82%E7%8E%87%E8%AE%BA/</url>
+      
+        <content type="html"><![CDATA[<h2 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h2><p>![[2023-09-14概率论#^b88979]]</p><h3 id="均匀分布-U-a-b"><a href="#均匀分布-U-a-b" class="headerlink" title="均匀分布$U(a,b)$"></a>均匀分布$U(a,b)$</h3><p>$$f(x)&#x3D;\left{\begin{matrix}\frac{1}{b-a}&amp;a&lt;x&lt;b\0&amp;其他\end{matrix}\right.$$</p><h3 id="指数分布-E-lambda"><a href="#指数分布-E-lambda" class="headerlink" title="#指数分布 $E(\lambda)$"></a>#指数分布 $E(\lambda)$</h3><p>$$f(x)&#x3D;\left{\begin{matrix}\lambda e^{-\lambda x}&amp;x&gt;0\0&amp;x\le0\end{matrix}\right.，\lambda&gt;0$$</p><ul><li>数学期望$\frac{1}{\lambda}$</li><li>方差$\frac{1}{\lambda^2}$</li></ul><h3 id="正态分布-N-mu-sigma-2"><a href="#正态分布-N-mu-sigma-2" class="headerlink" title="#正态分布 $N(\mu,\sigma^2)$"></a>#正态分布 $N(\mu,\sigma^2)$</h3><p><strong>极其重要，非常重要</strong><br>$$f(x)&#x3D;\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}},-\infty&lt;x&lt;+\infty,\sigma&gt;0$$</p><ul><li>对称性</li><li>数学期望$\mu$</li><li>方差$\sigma^2$</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 概率论 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
             <tag> LaTeX </tag>
+            
+            <tag> 概率论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/09/28/2023-09-28%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+      <url>/2023/09/28/2023-09-28%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="三角函数和双曲函数"><a href="#三角函数和双曲函数" class="headerlink" title="三角函数和双曲函数"></a>三角函数和双曲函数</h2><p>余弦：$cosz&#x3D;\frac{e^{iz}+e^{-iz}}2$<br>正弦：$sinz&#x3D;\frac{e^{iz}-e^{-iz}}2$<br>全复平面都解析，奇偶性，周期性，和差化积公式全部成立</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 复变函数 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LaTeX </tag>
+            
+            <tag> 复变函数 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/09/27/2023-09-27%E6%A8%A1%E7%94%B5/"/>
+      <url>/2023/09/27/2023-09-27%E6%A8%A1%E7%94%B5/</url>
+      
+        <content type="html"><![CDATA[<h2 id="晶体管-特性曲线"><a href="#晶体管-特性曲线" class="headerlink" title="#晶体管 特性曲线"></a>#晶体管 特性曲线</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 模电 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 模电 </tag>
+            
+            <tag> LaTeX </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/09/27/2023-09-27%E7%89%A9%E7%90%86/"/>
+      <url>/2023/09/27/2023-09-27%E7%89%A9%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<h2 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h2><p>![[物理202309271319.jpeg]]<br>需要注意的公式：<br>![[2023-09-22物理#^83bd0b]]</p><h2 id="波的-干涉-和-衍射"><a href="#波的-干涉-和-衍射" class="headerlink" title="波的 #干涉 和 #衍射"></a>波的 #干涉 和 #衍射</h2><h3 id="惠更斯原理"><a href="#惠更斯原理" class="headerlink" title="#惠更斯原理"></a>#惠更斯原理</h3><blockquote><p>一个波阵面的每个点（面源）可各看做是一个产生球面子波的次级球面波的中心波源，次级波源的波速与频率等于初级波的波速与频率；而且，以后任何时刻波阵面的位置是所有这种子波的包络面</p></blockquote><p><em>子波和子波源</em></p><h3 id="波的-衍射"><a href="#波的-衍射" class="headerlink" title="波的 #衍射"></a>波的 #衍射</h3><p>定义</p><blockquote><p>指在介质中由于有障碍物或其他的不连续性而引起波改变传播方向的现象</p></blockquote><h3 id="波的干涉"><a href="#波的干涉" class="headerlink" title="波的干涉"></a>波的干涉</h3><h4 id="波的叠加原理"><a href="#波的叠加原理" class="headerlink" title="波的叠加原理"></a>波的叠加原理</h4><ul><li>传播的独立性</li><li>叠加规律</li></ul><h5 id="干涉的现象和规律"><a href="#干涉的现象和规律" class="headerlink" title="干涉的现象和规律"></a>干涉的现象和规律</h5>]]></content>
+      
+      
+      <categories>
+          
+          <category> 物理 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LaTeX </tag>
+            
+            <tag> 物理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/09/26/2023-09-26%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+      <url>/2023/09/26/2023-09-26%E6%A6%82%E7%8E%87%E8%AE%BA/</url>
+      
+        <content type="html"><![CDATA[<h2 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h2><p>![[2023-09-14概率论#^b88979|全概率公式]]</p><p>![[2023-09-23概率论#泊松分布|泊松分布]]</p><h2 id="随机变量的分布函数"><a href="#随机变量的分布函数" class="headerlink" title="随机变量的分布函数"></a>随机变量的分布函数</h2><p><strong>高数注意</strong></p><h3 id="分布函数的定义"><a href="#分布函数的定义" class="headerlink" title="分布函数的定义"></a>分布函数的定义</h3><p>设X为一个随机变量，x是任意实数，称函数<br>$F(x)&#x3D;P{X\le x}, -\infty&lt;x&lt;+\infty$<br>为随机变量X的分布函数</p><ol><li><p>$0\le F(x)\le1,x\in(-\infty, +\infty)$</p></li><li><p>分布函数不是减函数</p></li><li><p>$F(-\infty)&#x3D;0,F(+\infty)&#x3D;1$</p></li><li><p>F(x)是右连续的，即：<br> $F(x+0)&#x3D;F(x)$<br>以上四个性质是辨别一个函数是否可以作为一个分布函数的<strong>充分必要条件</strong></p></li></ol><p>![[概率论202309260852.jpeg]]</p><h2 id="连续型随机变量及其概率密度"><a href="#连续型随机变量及其概率密度" class="headerlink" title="连续型随机变量及其概率密度"></a>连续型随机变量及其概率密度</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><blockquote><p>若对于随机变量X的分布函数F(X)，存在非负函数f(x)，使得对于任意实数x有：<br>$$<br> F(x)&#x3D;\int_{-\infty}^x f(t)\mathrm dt<br> $$<br> 则称X为连续型随机变量，其中被积函数f(x)称为X的概率密度函数（简称概率密度）</p></blockquote><h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><ol><li>非负性 $f(x)\ge0,\forall x\in(-\infty,+\infty)$</li><li>规范性$\int_{-\infty}^{+\infty}f(x)\mathrm dx&#x3D;1$<br>![[概率论202309260931.png]]</li><li></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 概率论 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LaTeX </tag>
+            
+            <tag> 概率论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/09/26/2023-09-26%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+      <url>/2023/09/26/2023-09-26%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h2><h3 id="C-R方程-（-柯西-黎曼方程-）"><a href="#C-R方程-（-柯西-黎曼方程-）" class="headerlink" title="#C-R方程 （ #柯西-黎曼方程 ）"></a>#C-R方程 （ #柯西-黎曼方程 ）</h3><p>[[2023-09-21复变函数#^541cef]]</p><h2 id="调和函数"><a href="#调和函数" class="headerlink" title="调和函数"></a>调和函数</h2><p>定义：<br>![[Pasted image 20230926105656.png]]</p><p><strong>定理</strong>：函数$f(z)&#x3D;u(x,y)+iv(x,y)在区域D内解析\rightarrow u(x,y)和v(x,y)都是D$内的调和函数</p><h3 id="共轭调和函数"><a href="#共轭调和函数" class="headerlink" title="共轭调和函数"></a>共轭调和函数</h3><p>区域D内满足CR方程的两个调和函数u与v称为共轭调和函数<br><strong>定理</strong>：函数$f(z)&#x3D;u(x,y)+iv(x,y)在区域D内解析\leftrightarrow u(x,y)和v(x,y)互为D$内的共轭调和函数</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 复变函数 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LaTeX </tag>
+            
+            <tag> 复变函数 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/09/25/2023-09-25%E6%A8%A1%E7%94%B5/"/>
+      <url>/2023/09/25/2023-09-25%E6%A8%A1%E7%94%B5/</url>
+      
+        <content type="html"><![CDATA[<p>![[IMG_8759.jpeg]]</p><p>![[IMG_8760.jpeg]]</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 模电 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 模电 </tag>
+            
+            <tag> LaTeX </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/09/22/%E7%89%A9%E7%90%86/2023-09-22%E7%89%A9%E7%90%86/"/>
+      <url>/2023/09/22/%E7%89%A9%E7%90%86/2023-09-22%E7%89%A9%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<h2 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h2><h3 id="波-的产生条件"><a href="#波-的产生条件" class="headerlink" title="#波 的产生条件"></a>#波 的产生条件</h3><ul><li>弹性介质</li><li>波源<br>是<em>振动状态</em>的传播和<em>能量</em>的传播<br>横波，纵波的区别</li></ul><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>![[2023-09-20物理#横波与纵波]]</p><h3 id="基本物理参量"><a href="#基本物理参量" class="headerlink" title="基本物理参量"></a>基本物理参量</h3><p>![[2023-09-20物理#描述波的基本物理量]]<br>重点记忆公式：<br>$$<br>\begin{matrix}<br>u&#x3D;\frac{\lambda}{T} \<br>T&#x3D;\frac{2\pi}{\omega}&#x3D;\frac{1}{v}<br>\end{matrix}<br>$$</p><h3 id="描述波的其他相关概念"><a href="#描述波的其他相关概念" class="headerlink" title="描述波的其他相关概念"></a>描述波的其他相关概念</h3><h4 id="波线"><a href="#波线" class="headerlink" title="波线"></a>波线</h4><h4 id="波面"><a href="#波面" class="headerlink" title="波面"></a>波面</h4><h4 id="波前"><a href="#波前" class="headerlink" title="波前"></a>波前</h4><p><em>在各向同性的均匀介质中，波线与波面垂直</em></p><h3 id="平面简谐波"><a href="#平面简谐波" class="headerlink" title="平面简谐波"></a>平面简谐波</h3><ol><li>各质元等振幅等角频率但相位不同</li><li>波动方程<br>$y_0(t)Acos(\omega t+\phi)$</li></ol><p>$$<br>波动方程：\left{<br>\begin{matrix}<br>y_p(x,t)&#x3D;Acos[\omega(t\mp\frac xu)+\phi]\<br>y_p(x,t)&#x3D;Acos[2\pi(\frac tT \mp\frac x\lambda)+\phi]\<br>y_p(x,t)&#x3D;Acos(\omega t+\phi \mp\frac{2\pi}\lambda x)<br>\end{matrix}<br>\right.<br>$$</p><p>^83bd0b</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 物理 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 物理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/09/21/2023-09-21%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+      <url>/2023/09/21/2023-09-21%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="极限与连续"><a href="#极限与连续" class="headerlink" title="极限与连续"></a>极限与连续</h2><p>复变函数极限：</p><blockquote><p>$z\rightarrow z_0时，有|f(z)-A|\rightarrow 0称A为f(z)当z趋向于z_0时的极限$</p></blockquote><p>w&#x3D;u+iv，u，v连续则w连续</p><h2 id="C-R方程"><a href="#C-R方程" class="headerlink" title="#C-R方程"></a>#C-R方程</h2><p>$$<br>\left { \begin{matrix}<br>\frac{\delta u}{\delta x}&#x3D;\frac{\delta v}{\delta y} \<br>\frac{\delta u}{\delta y}&#x3D;-\frac{\delta v}{\delta x}<br>\end{matrix} \right.<br>$$</p><p>^541cef</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 复变函数 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LaTeX </tag>
+            
+            <tag> 复变函数 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/09/21/%E6%A6%82%E7%8E%87%E8%AE%BA/2023-09-23%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+      <url>/2023/09/21/%E6%A6%82%E7%8E%87%E8%AE%BA/2023-09-23%E6%A6%82%E7%8E%87%E8%AE%BA/</url>
+      
+        <content type="html"><![CDATA[<h2 id="随机变量及其分布"><a href="#随机变量及其分布" class="headerlink" title="随机变量及其分布"></a>随机变量及其分布</h2><p><em>样本空间数量化</em><br>e.g.<br>一个骰子有1,2,3,4,5,6六面，<br>设样本空间X<br>$$<br>X&#x3D;X(e)&#x3D;\left{\begin{matrix}<br>1 &amp;, e&#x3D;1\<br>2 &amp;, e&#x3D;2\<br>3 &amp;, e&#x3D;3\<br>4 &amp;, e&#x3D;4\<br>5 &amp;, e&#x3D;5\<br>6 &amp;, e&#x3D;6<br>\end{matrix}\right.<br>$$</p><p><strong>定义</strong>：</p><blockquote><p>设E为随机实验，S是样本空间，如果对S中的每一个样本点e，有一个实数X&#x3D;X(e)与之对应，则称这个定义在样本空间S上的单值实值函数X&#x3D;X(e)为随机变量，随机变量的取值用小写字母表示。</p></blockquote><p>![[概率论202309201343.jpeg]]</p><p>离散型随机变量随机变量分布及分布律：<br>$P{X&#x3D;X_{k}}&#x3D;p_{k},k&#x3D;1,2,\Lambda$</p><h3 id="0-1分布"><a href="#0-1分布" class="headerlink" title="0-1分布"></a>0-1分布</h3><h3 id="二项分布"><a href="#二项分布" class="headerlink" title="二项分布"></a>二项分布</h3><h3 id="泊松分布"><a href="#泊松分布" class="headerlink" title="#泊松分布"></a>#泊松分布</h3><p>$P{X&#x3D;k}&#x3D;\frac{\lambda^k}{k!}e^{-\lambda}$</p><h2 id="泊松定理"><a href="#泊松定理" class="headerlink" title="#泊松定理"></a>#泊松定理</h2><p>![[概率论202309211432.jpeg]]</p><p>![[概率论202309211433.jpeg]]</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 概率论 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LaTeX </tag>
+            
+            <tag> 概率论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/09/20/README/"/>
+      <url>/2023/09/20/README/</url>
+      
+        <content type="html"><![CDATA[<h1 id="MarkdownNote"><a href="#MarkdownNote" class="headerlink" title="MarkdownNote"></a>MarkdownNote</h1><p>这是所有笔记的记录处，Blog下放了博客用的内容</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/09/20/%E6%A8%A1%E7%94%B5/2023-09-20%E6%A8%A1%E7%94%B5/"/>
+      <url>/2023/09/20/%E6%A8%A1%E7%94%B5/2023-09-20%E6%A8%A1%E7%94%B5/</url>
+      
+        <content type="html"><![CDATA[<p>交流转直流：<br>电压等于$\frac{\sqrt2}{\pi}$倍有效值<br>二极管最大整流电流$I_{OM}\ge I_o$<br>最高反响电压$U_{DRM} \ge \sqrt2 U_2$<br>![[物理202309201549.jpeg]]<br>![[物理202309201551.jpg]]</p><p>![[物理202309201619.jpeg]]</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 模电 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 模电 </tag>
+            
+            <tag> LaTeX </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/09/20/%E7%89%A9%E7%90%86/2023-09-20%E7%89%A9%E7%90%86/"/>
+      <url>/2023/09/20/%E7%89%A9%E7%90%86/2023-09-20%E7%89%A9%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<h2 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h2><h3 id="简谐运动的方程"><a href="#简谐运动的方程" class="headerlink" title="简谐运动的方程"></a>简谐运动的方程</h3><p>见[[2023-09-13物理#简谐振动]]<br>$$\left{\begin{matrix}<br>\omega&#x3D;\frac{2\pi}{T} \<br>v&#x3D;\frac{1}{T}<br>\end{matrix}\right.$$<br>$$\left{\begin{matrix}<br>x&#x3D;Acos(\omega t+\phi)&#x3D;Acos(\frac{2\pi}{T}+\phi) \<br>v&#x3D;-A\omega sin(\omega t+\phi) \<br>a&#x3D;-A\omega^2cos(\omega t+\phi)<br>\end{matrix}\right.$$</p><h3 id="旋转矢量法"><a href="#旋转矢量法" class="headerlink" title="旋转矢量法"></a>旋转矢量法</h3><h2 id="简谐振动的合成"><a href="#简谐振动的合成" class="headerlink" title="简谐振动的合成"></a>简谐振动的合成</h2><p><em>目前研究简单情况：多个振动可合成为一个简谐振动</em></p><p>$$<br>\left{\begin{matrix}<br>x_1&#x3D;Acos(\omega t+\phi_1) \<br>x_2&#x3D;Acos(\omega t+\phi_2)<br>\end{matrix} \right.<br>$$<br>$$\downarrow$$<br>$$x&#x3D;Acos(\omega t+\phi)$$</p><p>同方向同频率相位差恒定<br>两个简谐运动合成后合振动为一个新的简谐振动<br><em>建议使用矢量和进行合成</em><br>![[物理202309201356.jpg]]</p><h3 id="特殊情形"><a href="#特殊情形" class="headerlink" title="特殊情形"></a>特殊情形</h3><ol><li>$\Delta\phi&#x3D;\phi_2-\phi_1&#x3D;\pm2k\pi, k\in\mathbb{Z}; A&#x3D;A_1+A_2$ 同相合成</li><li>$\Delta\phi&#x3D;\phi_2-\phi_1&#x3D;\pm(2k+1)\pi, k\in\mathbb{Z}; A&#x3D;|A_1-A_2|$ 反相合成，$A_1&#x3D;A_2$时，A&#x3D;0（应用：主动降噪）</li></ol><h2 id="关于波动的基本概念"><a href="#关于波动的基本概念" class="headerlink" title="关于波动的基本概念"></a>关于波动的基本概念</h2><h3 id="弹性介质和波源"><a href="#弹性介质和波源" class="headerlink" title="弹性介质和波源"></a>弹性介质和波源</h3><h3 id="机械波"><a href="#机械波" class="headerlink" title="#机械波"></a>#机械波</h3><ul><li>波动是振动状态的传播</li><li>是能量的传播</li><li>不是质点位移</li></ul><h3 id="横波与纵波"><a href="#横波与纵波" class="headerlink" title="横波与纵波"></a>横波与纵波</h3><ul><li>质点运动方向垂直是横波</li><li>与运动方向相同则是纵波</li></ul><h3 id="描述波的基本物理量"><a href="#描述波的基本物理量" class="headerlink" title="描述波的基本物理量"></a>描述波的基本物理量</h3><ul><li>波长$\lambda$：沿同一波线上相位差为2$\pi$的两个相邻质点间的距离，单位$m$</li><li>周期$T$：一个完整的波（一个波长）通过波线上某点所需时间，单位$s$</li><li>频率$v$：单位时间内通过波线上某点完整波的数目，单位$Hz$</li><li>角速度$\omega$：2$\pi$秒内通过波线上某点完整波的数目，单位$rad&#x2F;s$</li><li>波速$u$：某一振动状态单位时间沿波线传播的距离，单位$m&#x2F;s$</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 物理 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LaTeX </tag>
+            
+            <tag> 物理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/09/19/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/2023-09-19%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+      <url>/2023/09/19/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/2023-09-19%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="作业讲解"><a href="#作业讲解" class="headerlink" title="作业讲解"></a>作业讲解</h2><p>先虚实分离<br>$e^{i\alpha}&#x3D;e^{-y+ix}\newline&#x3D;e^{-y}\cdot e^{ix}$<br>$e^{ix}$：欧拉公式</p><p>复数相乘，辐角相加</p><p>![[Pasted image 20230919105656.png]]</p><h2 id="复数-与-复变函数"><a href="#复数-与-复变函数" class="headerlink" title="#复数 与 #复变函数"></a>#复数 与 #复变函数</h2><h3 id="点集"><a href="#点集" class="headerlink" title="点集"></a>点集</h3><p><strong>复数要从实数类比</strong><br>为积分做准备</p><h3 id="1-直角方程"><a href="#1-直角方程" class="headerlink" title="1. 直角方程"></a>1. 直角方程</h3><p><strong>z换x,y：</strong><br>$x\rightarrow \frac{z+\overline z}{2},y\rightarrow \frac{z+\overline z}{2i}$<br><strong>x,y换z：</strong><br>$z&#x3D;x+yi$</p><h3 id="2-参数方程"><a href="#2-参数方程" class="headerlink" title="2. #参数方程"></a>2. #参数方程</h3><p>$$\left{\begin{matrix}<br>x&#x3D;x(t) \<br>y&#x3D;y(t)<br>\end{matrix}\right.$$<br>转换为：<br>$z(t)&#x3D;x(t)+iy(t)$</p><p><em>特殊例题：</em><br>    $Im(i-\overline z)&#x3D;5$<br>    转换为xy方程<br>    虚实分离<br>    变成y&#x3D;4</p><ul><li>简单闭合曲线</li><li>简单不闭合曲线</li><li>不简单闭合曲线（有自交点）</li><li>不简单不闭合曲线（有自交点而且不闭合）</li></ul><h3 id="邻域"><a href="#邻域" class="headerlink" title="#邻域"></a>#邻域</h3><p>![[Pasted image 20230919112742.png]]</p><p>$r_{1}&lt;|z-z_{0}&lt;r_{2}$圆环域</p><p><em>不研究不联通区域</em><br>联通区域：<br>    #单联通区域<br>    #复联通区域<br><strong>重点记忆的常见域</strong></p><ul><li>$z^2\rightarrow x^2-y^2$</li></ul><h2 id="复变函数"><a href="#复变函数" class="headerlink" title="复变函数"></a>复变函数</h2><p>表示方法：<br>$w&#x3D;f(z)$<br>一个复变函数相当于两个二元实变函数<br>$z&#x3D;x+iy,w&#x3D;u+iv$<br>$$\left{\begin{matrix}<br>u&#x3D;u(x,y) \<br>v&#x3D;v(x,y)<br>\end{matrix}\right.$$<br>定义域是样子二元函数的定义域的样子</p><p>画图无法画出（要画出四个变量）<br>分两张图即可</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 复变函数 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LaTeX </tag>
+            
+            <tag> 复变函数 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/09/19/%E6%A6%82%E7%8E%87%E8%AE%BA/2023-09-19%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+      <url>/2023/09/19/%E6%A6%82%E7%8E%87%E8%AE%BA/2023-09-19%E6%A6%82%E7%8E%87%E8%AE%BA/</url>
+      
+        <content type="html"><![CDATA[<h2 id="事件独立性"><a href="#事件独立性" class="headerlink" title="事件独立性"></a>事件独立性</h2><p><strong>每个事件间没有重叠</strong><br>$P(AB)&#x3D;P(A)P(B)$<br>A对B的发生没有影响<br>设ABC相互独立<br>那么有：<br>$$\left.\begin{matrix}<br>P(AB)&#x3D;P(A)P(B) \<br>P(AC)&#x3D;P(A)P(C) \<br>P(BC)&#x3D;P(B)P(C)<br>\end{matrix}\right} ABC相互独立$$<br>$$P(ABC)&#x3D;P(A)+P(B)+P(C)$$</p><h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><ul><li>设AB相互独立，则有：<br>  若P(A)&gt;0，则有P(B|A)&#x3D;P(B)<br>  若P(B)&gt;0，则有P(A|B)&#x3D;P(A)</li><li>S与A相互独立，$\emptyset$与A相互独立</li><li>A与B相互独立，则：<br>  $\overline{A}$与B，A与$\overline{B}$，$\overline{A} 与 \overline{B}$也相互独立</li></ul><p>并转交：<br>$$P(\bigcup_{i&#x3D;1}^{n}A_{i})&#x3D;1-\overline{P(\bigcup_{i&#x3D;1}^nA_i)}&#x3D;1-P(\bigcap_{i&#x3D;1}^nA_i)$$</p><h2 id="n重贝努利实验"><a href="#n重贝努利实验" class="headerlink" title="#n重贝努利实验"></a>#n重贝努利实验</h2><h3 id="1-独立实验序列"><a href="#1-独立实验序列" class="headerlink" title="1. 独立实验序列"></a>1. 独立实验序列</h3><blockquote><p>设E为随机实验，如果在相同条件下将实验E重复进行若干次，且各实验结果互不影响，则由这若干次实验构成的序列称为独立实验序列</p></blockquote><h3 id="2-n重贝努利实验"><a href="#2-n重贝努利实验" class="headerlink" title="2. #n重贝努利实验"></a>2. #n重贝努利实验</h3><blockquote><p>设E为随机实验，相同条件下将E重复若干次，若：<br>    由这n次实验构成的序列是独立实验序列；<br>    每次实验只有两个结果：$A与\overline{A}$；<br>    每次试验A发生的概率为常数p，即P(A)&#x3D;p<br>则该实验序列为n重贝努利实验</p></blockquote><h3 id="n重贝努利事件A恰好发生k次概率："><a href="#n重贝努利事件A恰好发生k次概率：" class="headerlink" title="n重贝努利事件A恰好发生k次概率："></a>n重贝努利事件A恰好发生k次概率：</h3><p>![[Pasted image 20230921132649.png]]</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 概率论 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LaTeX </tag>
+            
+            <tag> 概率论 </tag>
             
         </tags>
       
@@ -58,6 +682,12 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> 模电 </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -67,7 +697,7 @@
       <link href="/2023/09/14/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/2023-09-14%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
       <url>/2023/09/14/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/2023-09-14%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</url>
       
-        <content type="html"><![CDATA[<h2 id="复数加减法"><a href="#复数加减法" class="headerlink" title="复数加减法"></a>复数加减法</h2><p>![[Pasted image 20230914152541.png]]<br>![[Pasted image 20230914152742.png]]<br>#角度旋转公式 ：<br>$sin(\alpha+\beta)&#x3D;sin\alpha cos\beta+cos\alpha sin\beta$<br>$sin(\alpha-\beta)&#x3D;sin\alpha cos\beta-cos\alpha sin\beta$<br>$cos(\alpha+\beta)&#x3D;cos\alpha cos\beta-sin\alpha sin\beta$<br>$cos(\alpha-\beta)&#x3D;cos\alpha cos\beta+sin\alpha sin\beta$</p><p>![[Pasted image 20230914160108.png]]</p><p>![[Pasted image 20230914161824.png]]</p>]]></content>
+        <content type="html"><![CDATA[<p>复数运算</p><h2 id="复数加减法"><a href="#复数加减法" class="headerlink" title="复数加减法"></a>复数加减法</h2><p>![[Pasted image 20230914152541.png]]<br>![[Pasted image 20230914152742.png]]<br>#角度旋转公式 ：<br>$sin(\alpha+\beta)&#x3D;sin\alpha cos\beta+cos\alpha sin\beta$<br>$sin(\alpha-\beta)&#x3D;sin\alpha cos\beta-cos\alpha sin\beta$<br>$cos(\alpha+\beta)&#x3D;cos\alpha cos\beta-sin\alpha sin\beta$<br>$cos(\alpha-\beta)&#x3D;cos\alpha cos\beta+sin\alpha sin\beta$</p><p>![[Pasted image 20230914160108.png]]</p><p>![[Pasted image 20230914161824.png]]</p>]]></content>
       
       
       <categories>
@@ -92,7 +722,7 @@
       <link href="/2023/09/14/%E6%A6%82%E7%8E%87%E8%AE%BA/2023-09-14%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
       <url>/2023/09/14/%E6%A6%82%E7%8E%87%E8%AE%BA/2023-09-14%E6%A6%82%E7%8E%87%E8%AE%BA/</url>
       
-        <content type="html"><![CDATA[<p>条件概率，乘法定理<br>$P(A|B)$<br>理解为：</p><ul><li>B为因，A为果</li><li>B已发生，A未发生<br>$P(A|B)&#x3D;\frac{P(AB)}{PB}$<br>定义：<blockquote><p>设A，B为随机试验E的两个随机事件，且P(B)&gt;0，</p></blockquote></li></ul><p><strong>条件概率也是概率</strong>，所以满足[[2023-09-12概率论#概率的公理化定义|三条公理和五条性质]]<br>但是样本空间有变化：样本空间缩减为$S_{B}$</p><p><strong>全概率公式</strong>：概率大于0，多因求果</p><p>例子：甲箱种有5个正品3个次品，乙箱中有4个正品3个次品，从甲箱中人去任取3个产品放入乙箱，然后从乙箱中任取1个产品，求该产品是正品的概率<br>解：设A：从乙箱中所取产品是正品<br>B_{i}：“从甲箱中所取3个产品中有i个正品”，i&#x3D;0,1,2,3<br>所求概率为：<br>$P(A)&#x3D;\sum_{i&#x3D;0}^{3}P(B_{i})P(A|B_{i})$<br>$$<br>&#x3D;\frac{C_{3}^{3}}{C_{8}^{3}}\cdot\frac{4}{10}+\frac{C_{5}^{1}C_{3}^{2}}{C_{8}^{3}}\cdot\frac{5}{10}+\frac{C_{5}^{2}C_{3}^{1}}{C_{8}^{3}}\cdot\frac{6}{10}+\frac{C_{5}^{3}}{C_{8}^{3}}\cdot\frac{7}{10}<br>\&#x3D;\frac{329}{560}&#x3D;0.5875<br>$$</p>]]></content>
+        <content type="html"><![CDATA[<p>条件概率，乘法定理<br>$P(A|B)$<br>理解为：</p><ul><li>B为因，A为果</li><li>B已发生，A未发生<br>$P(A|B)&#x3D;\frac{P(AB)}{PB}$</li></ul><p><strong>条件概率也是概率</strong>，所以满足[[2023-09-12概率论#概率的公理化定义|三条公理和五条性质]]<br>但是样本空间有变化：样本空间缩减为$S_{B}$</p><p><strong>全概率公式</strong>： #全概率公式 概率大于0，多因求果<br>设S是随机实验E的样本空间，$A,B_1,B_2,…,B_n为E的时间，若P(B_i)&gt;0(i&#x3D;1,2,\Lambda,n)且B_1,B_2,\Lambda.B+n是$样本空间S的有一个划分，则$$\begin{matrix}<br>P(A)&#x3D;\sum_{i&#x3D;1}^nP(B_i)P(A|B_i) \<br>P(B_k|A)&#x3D;\frac{P(A|B)PB_1}{\Sigma P（A_1|B)PB_1}\end{matrix}$$ ^b88979</p><p>例子：甲箱种有5个正品3个次品，乙箱中有4个正品3个次品，从甲箱中人去任取3个产品放入乙箱，然后从乙箱中任取1个产品，求该产品是正品的概率<br>解：设A：从乙箱中所取产品是正品<br>$B_{i}$：“从甲箱中所取3个产品中有i个正品”，$i&#x3D;0,1,2,3$<br>所求概率为：<br>$P(A)&#x3D;\sum_{i&#x3D;0}^{3}P(B_{i})P(A|B_{i})$<br>$$<br>&#x3D;\frac{C_{3}^{3}}{C_{8}^{3}}\cdot\frac{4}{10}+\frac{C_{5}^{1}C_{3}^{2}}{C_{8}^{3}}\cdot\frac{5}{10}+\frac{C_{5}^{2}C_{3}^{1}}{C_{8}^{3}}\cdot\frac{6}{10}+\frac{C_{5}^{3}}{C_{8}^{3}}\cdot\frac{7}{10}<br>$$$$&#x3D;\frac{329}{560}&#x3D;0.5875$$</p><h3 id="贝叶斯公式"><a href="#贝叶斯公式" class="headerlink" title="贝叶斯公式"></a>贝叶斯公式</h3><p>![[Pasted image 20230921132516.png]]</p>]]></content>
       
       
       <categories>
@@ -104,9 +734,9 @@
       
         <tags>
             
-            <tag> 概率论 </tag>
-            
             <tag> LaTeX </tag>
+            
+            <tag> 概率论 </tag>
             
         </tags>
       
@@ -133,6 +763,8 @@
             
             <tag> LaTeX </tag>
             
+            <tag> 物理 </tag>
+            
         </tags>
       
     </entry>
@@ -153,6 +785,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 模电 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -200,9 +838,9 @@
       
         <tags>
             
-            <tag> 概率论 </tag>
-            
             <tag> LaTeX </tag>
+            
+            <tag> 概率论 </tag>
             
         </tags>
       
