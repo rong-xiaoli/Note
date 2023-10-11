@@ -3,11 +3,11 @@
   <title>容小狸的笔记</title>
   
   
-  <link href="http://note.rongxiaoli.top/atom.xml" rel="self"/>
+  <link href="http://blog.rongxiaoli.top/Note/atom.xml" rel="self"/>
   
-  <link href="http://note.rongxiaoli.top/"/>
+  <link href="http://blog.rongxiaoli.top/Note/"/>
   <updated>2023-10-11T06:12:40.958Z</updated>
-  <id>http://note.rongxiaoli.top/</id>
+  <id>http://blog.rongxiaoli.top/Note/</id>
   
   <author>
     <name>容小狸</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title></title>
-    <link href="http://note.rongxiaoli.top/2023/10/11/2023-10-11%E7%89%A9%E7%90%86/"/>
-    <id>http://note.rongxiaoli.top/2023/10/11/2023-10-11%E7%89%A9%E7%90%86/</id>
+    <link href="http://blog.rongxiaoli.top/Note/2023/10/11/2023-10-11%E7%89%A9%E7%90%86/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/10/11/2023-10-11%E7%89%A9%E7%90%86/</id>
     <published>2023-10-10T16:00:00.000Z</published>
     <updated>2023-10-11T06:12:40.958Z</updated>
     
@@ -33,39 +33,17 @@
     
     
     
-    <category term="物理" scheme="http://note.rongxiaoli.top/categories/%E7%89%A9%E7%90%86/"/>
+    <category term="物理" scheme="http://blog.rongxiaoli.top/Note/categories/%E7%89%A9%E7%90%86/"/>
     
     
-    <category term="物理" scheme="http://note.rongxiaoli.top/tags/%E7%89%A9%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://note.rongxiaoli.top/2023/10/10/2023-10-10%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
-    <id>http://note.rongxiaoli.top/2023/10/10/2023-10-10%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</id>
-    <published>2023-10-09T16:00:00.000Z</published>
-    <updated>2023-10-11T05:42:18.623Z</updated>
-    
-    <content type="html"><![CDATA[<p>#高阶导数公式<br>$\oint_C{\frac{f(z)}{(z-z_0)^{n+1}}\mathrm dz} &#x3D; \frac{2\pi i}{n!}f^{(n)}(z_0)$</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;#高阶导数公式&lt;br&gt;$&#92;oint_C{&#92;frac{f(z)}{(z-z_0)^{n+1}}&#92;mathrm dz} &amp;#x3D; &#92;frac{2&#92;pi i}{n!}f^{(n)}(z_0)$&lt;/p&gt;
-</summary>
-    
-    
-    
-    <category term="概率论" scheme="http://note.rongxiaoli.top/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
-    
-    
-    <category term="概率论" scheme="http://note.rongxiaoli.top/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    <category term="物理" scheme="http://blog.rongxiaoli.top/Note/tags/%E7%89%A9%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://note.rongxiaoli.top/2023/10/10/2023-10-10%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
-    <id>http://note.rongxiaoli.top/2023/10/10/2023-10-10%E6%A6%82%E7%8E%87%E8%AE%BA/</id>
+    <link href="http://blog.rongxiaoli.top/Note/2023/10/10/2023-10-10%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/10/10/2023-10-10%E6%A6%82%E7%8E%87%E8%AE%BA/</id>
     <published>2023-10-09T16:00:00.000Z</published>
     <updated>2023-10-10T05:16:12.789Z</updated>
     
@@ -82,17 +60,39 @@
     
     
     
-    <category term="概率论" scheme="http://note.rongxiaoli.top/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    <category term="概率论" scheme="http://blog.rongxiaoli.top/Note/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
     
     
-    <category term="概率论" scheme="http://note.rongxiaoli.top/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    <category term="概率论" scheme="http://blog.rongxiaoli.top/Note/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://note.rongxiaoli.top/2023/10/09/2023-10-09%E6%A8%A1%E7%94%B5/"/>
-    <id>http://note.rongxiaoli.top/2023/10/09/2023-10-09%E6%A8%A1%E7%94%B5/</id>
+    <link href="http://blog.rongxiaoli.top/Note/2023/10/10/2023-10-10%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/10/10/2023-10-10%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</id>
+    <published>2023-10-09T16:00:00.000Z</published>
+    <updated>2023-10-11T05:42:18.623Z</updated>
+    
+    <content type="html"><![CDATA[<p>#高阶导数公式<br>$\oint_C{\frac{f(z)}{(z-z_0)^{n+1}}\mathrm dz} &#x3D; \frac{2\pi i}{n!}f^{(n)}(z_0)$</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;#高阶导数公式&lt;br&gt;$&#92;oint_C{&#92;frac{f(z)}{(z-z_0)^{n+1}}&#92;mathrm dz} &amp;#x3D; &#92;frac{2&#92;pi i}{n!}f^{(n)}(z_0)$&lt;/p&gt;
+</summary>
+    
+    
+    
+    <category term="概率论" scheme="http://blog.rongxiaoli.top/Note/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+    
+    <category term="概率论" scheme="http://blog.rongxiaoli.top/Note/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://blog.rongxiaoli.top/Note/2023/10/09/2023-10-09%E6%A8%A1%E7%94%B5/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/10/09/2023-10-09%E6%A8%A1%E7%94%B5/</id>
     <published>2023-10-08T16:00:00.000Z</published>
     <updated>2023-10-09T16:19:41.188Z</updated>
     
@@ -107,17 +107,17 @@
     
     
     
-    <category term="模电" scheme="http://note.rongxiaoli.top/categories/%E6%A8%A1%E7%94%B5/"/>
+    <category term="模电" scheme="http://blog.rongxiaoli.top/Note/categories/%E6%A8%A1%E7%94%B5/"/>
     
     
-    <category term="模电" scheme="http://note.rongxiaoli.top/tags/%E6%A8%A1%E7%94%B5/"/>
+    <category term="模电" scheme="http://blog.rongxiaoli.top/Note/tags/%E6%A8%A1%E7%94%B5/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://note.rongxiaoli.top/2023/10/08/2023-10-08%E7%89%A9%E7%90%86/"/>
-    <id>http://note.rongxiaoli.top/2023/10/08/2023-10-08%E7%89%A9%E7%90%86/</id>
+    <link href="http://blog.rongxiaoli.top/Note/2023/10/08/2023-10-08%E7%89%A9%E7%90%86/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/10/08/2023-10-08%E7%89%A9%E7%90%86/</id>
     <published>2023-10-07T16:00:00.000Z</published>
     <updated>2023-10-09T16:19:41.187Z</updated>
     
@@ -135,85 +135,108 @@
     
     
     
-    <category term="物理" scheme="http://note.rongxiaoli.top/categories/%E7%89%A9%E7%90%86/"/>
+    <category term="物理" scheme="http://blog.rongxiaoli.top/Note/categories/%E7%89%A9%E7%90%86/"/>
     
     
-    <category term="物理" scheme="http://note.rongxiaoli.top/tags/%E7%89%A9%E7%90%86/"/>
+    <category term="物理" scheme="http://blog.rongxiaoli.top/Note/tags/%E7%89%A9%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://note.rongxiaoli.top/2023/10/07/templates/%E6%A8%A1%E7%94%B5/"/>
-    <id>http://note.rongxiaoli.top/2023/10/07/templates/%E6%A8%A1%E7%94%B5/</id>
+    <link href="http://blog.rongxiaoli.top/Note/2023/10/07/templates/%E7%89%A9%E7%90%86/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/10/07/templates/%E7%89%A9%E7%90%86/</id>
     <published>2023-10-07T08:14:54.093Z</published>
     <updated>2023-10-07T08:14:54.093Z</updated>
     
     
     
     
-    <category term="模电" scheme="http://note.rongxiaoli.top/categories/%E6%A8%A1%E7%94%B5/"/>
+    <category term="物理" scheme="http://blog.rongxiaoli.top/Note/categories/%E7%89%A9%E7%90%86/"/>
     
     
-    <category term="模电" scheme="http://note.rongxiaoli.top/tags/%E6%A8%A1%E7%94%B5/"/>
+    <category term="物理" scheme="http://blog.rongxiaoli.top/Note/tags/%E7%89%A9%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://note.rongxiaoli.top/2023/10/07/templates/%E7%89%A9%E7%90%86/"/>
-    <id>http://note.rongxiaoli.top/2023/10/07/templates/%E7%89%A9%E7%90%86/</id>
+    <link href="http://blog.rongxiaoli.top/Note/2023/10/07/templates/%E6%A8%A1%E7%94%B5/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/10/07/templates/%E6%A8%A1%E7%94%B5/</id>
     <published>2023-10-07T08:14:54.093Z</published>
     <updated>2023-10-07T08:14:54.093Z</updated>
     
     
     
     
-    <category term="物理" scheme="http://note.rongxiaoli.top/categories/%E7%89%A9%E7%90%86/"/>
+    <category term="模电" scheme="http://blog.rongxiaoli.top/Note/categories/%E6%A8%A1%E7%94%B5/"/>
     
     
-    <category term="物理" scheme="http://note.rongxiaoli.top/tags/%E7%89%A9%E7%90%86/"/>
+    <category term="模电" scheme="http://blog.rongxiaoli.top/Note/tags/%E6%A8%A1%E7%94%B5/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://note.rongxiaoli.top/2023/10/07/templates/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
-    <id>http://note.rongxiaoli.top/2023/10/07/templates/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</id>
+    <link href="http://blog.rongxiaoli.top/Note/2023/10/07/templates/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/10/07/templates/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</id>
     <published>2023-10-07T08:14:54.092Z</published>
     <updated>2023-10-09T16:28:10.601Z</updated>
     
     
     
     
-    <category term="复变函数" scheme="http://note.rongxiaoli.top/categories/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    <category term="复变函数" scheme="http://blog.rongxiaoli.top/Note/categories/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
     
     
-    <category term="复变函数" scheme="http://note.rongxiaoli.top/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    <category term="复变函数" scheme="http://blog.rongxiaoli.top/Note/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://note.rongxiaoli.top/2023/10/07/templates/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
-    <id>http://note.rongxiaoli.top/2023/10/07/templates/%E6%A6%82%E7%8E%87%E8%AE%BA/</id>
+    <link href="http://blog.rongxiaoli.top/Note/2023/10/07/templates/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/10/07/templates/%E6%A6%82%E7%8E%87%E8%AE%BA/</id>
     <published>2023-10-07T08:14:54.092Z</published>
     <updated>2023-10-07T08:14:54.093Z</updated>
     
     
     
     
-    <category term="概率论" scheme="http://note.rongxiaoli.top/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    <category term="概率论" scheme="http://blog.rongxiaoli.top/Note/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
     
     
-    <category term="概率论" scheme="http://note.rongxiaoli.top/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    <category term="概率论" scheme="http://blog.rongxiaoli.top/Note/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://note.rongxiaoli.top/2023/10/07/2023-10-07%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
-    <id>http://note.rongxiaoli.top/2023/10/07/2023-10-07%E6%A6%82%E7%8E%87%E8%AE%BA/</id>
+    <link href="http://blog.rongxiaoli.top/Note/2023/10/07/2023-10-07%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/10/07/2023-10-07%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</id>
+    <published>2023-10-06T16:00:00.000Z</published>
+    <updated>2023-10-09T16:19:41.186Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="柯西积分定理"><a href="#柯西积分定理" class="headerlink" title="#柯西积分定理"></a>#柯西积分定理</h2><h3 id="单连通区域-柯西积分定理"><a href="#单连通区域-柯西积分定理" class="headerlink" title="#单连通区域 #柯西积分定理"></a>#单连通区域 #柯西积分定理</h3><p>设$f(z)$是单连通区域$D$内的解析函数，且$f’(z)$在$D$内连续。若$L$是$D$内任意一条简单闭曲线，则$$<br>\oint_L{f(z)\mathrm{d}z&#x3D;0}$$</p><h3 id="单连通区域-柯西-古萨积分定理"><a href="#单连通区域-柯西-古萨积分定理" class="headerlink" title="#单连通区域 #柯西-古萨积分定理"></a>#单连通区域 #柯西-古萨积分定理</h3><p>设$f(z)$是单连通区域$D$内的解析函数，若$L$是$D$内任意一周线，则 $$\oint_C{f(z)\mathrm dz}&#x3D;0$$</p>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;柯西积分定理&quot;&gt;&lt;a href=&quot;#柯西积分定理&quot; class=&quot;headerlink&quot; title=&quot;#柯西积分定理&quot;&gt;&lt;/a&gt;#柯西积分定理&lt;/h2&gt;&lt;h3 id=&quot;单连通区域-柯西积分定理&quot;&gt;&lt;a href=&quot;#单连通区域-柯西积分定理&quot; class=&quot;headerlink&quot; title=&quot;#单连通区域 #柯西积分定理&quot;&gt;&lt;/a&gt;#单连通区域 #柯西积分定理&lt;/h3&gt;&lt;p&gt;设$f(z)$是单连通区域$D$内的解析函数，且$f’(z)$在$D$内连续。若$L$是$D$内任意一条简单闭曲线，则$$&lt;br&gt;&#92;oint_L{f(z)&#92;mathrm{d}z&amp;#x3D;0}$$&lt;/p&gt;
+&lt;h3 id=&quot;单连通区域-柯西-古萨积分定理&quot;&gt;&lt;a href=&quot;#单连通区域-柯西-古萨积分定理&quot; class=&quot;headerlink&quot; title=&quot;#单连通区域 #柯西-古萨积分定理&quot;&gt;&lt;/a&gt;#单连通区域 #柯西-古萨积分定理&lt;/h3&gt;&lt;p&gt;设$f(z)$是单连通区域$D$内的解析函数，若$L$是$D$内任意一周线，则 $$&#92;oint_C{f(z)&#92;mathrm dz}&amp;#x3D;0$$&lt;/p&gt;
+</summary>
+    
+    
+    
+    <category term="复变函数" scheme="http://blog.rongxiaoli.top/Note/categories/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    
+    
+    <category term="复变函数" scheme="http://blog.rongxiaoli.top/Note/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://blog.rongxiaoli.top/Note/2023/10/07/2023-10-07%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/10/07/2023-10-07%E6%A6%82%E7%8E%87%E8%AE%BA/</id>
     <published>2023-10-06T16:00:00.000Z</published>
     <updated>2023-10-09T16:19:41.187Z</updated>
     
@@ -230,40 +253,41 @@
     
     
     
-    <category term="概率论" scheme="http://note.rongxiaoli.top/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    <category term="概率论" scheme="http://blog.rongxiaoli.top/Note/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
     
     
-    <category term="概率论" scheme="http://note.rongxiaoli.top/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    <category term="概率论" scheme="http://blog.rongxiaoli.top/Note/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://note.rongxiaoli.top/2023/10/07/2023-10-07%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
-    <id>http://note.rongxiaoli.top/2023/10/07/2023-10-07%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</id>
-    <published>2023-10-06T16:00:00.000Z</published>
+    <link href="http://blog.rongxiaoli.top/Note/2023/09/28/2023-09-28%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/09/28/2023-09-28%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</id>
+    <published>2023-09-27T16:00:00.000Z</published>
     <updated>2023-10-09T16:19:41.186Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="柯西积分定理"><a href="#柯西积分定理" class="headerlink" title="#柯西积分定理"></a>#柯西积分定理</h2><h3 id="单连通区域-柯西积分定理"><a href="#单连通区域-柯西积分定理" class="headerlink" title="#单连通区域 #柯西积分定理"></a>#单连通区域 #柯西积分定理</h3><p>设$f(z)$是单连通区域$D$内的解析函数，且$f’(z)$在$D$内连续。若$L$是$D$内任意一条简单闭曲线，则$$<br>\oint_L{f(z)\mathrm{d}z&#x3D;0}$$</p><h3 id="单连通区域-柯西-古萨积分定理"><a href="#单连通区域-柯西-古萨积分定理" class="headerlink" title="#单连通区域 #柯西-古萨积分定理"></a>#单连通区域 #柯西-古萨积分定理</h3><p>设$f(z)$是单连通区域$D$内的解析函数，若$L$是$D$内任意一周线，则 $$\oint_C{f(z)\mathrm dz}&#x3D;0$$</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="三角函数和双曲函数"><a href="#三角函数和双曲函数" class="headerlink" title="三角函数和双曲函数"></a>三角函数和双曲函数</h2><p>余弦：$cosz&#x3D;\frac{e^{iz}+e^{-iz}}2$<br>正弦：$sinz&#x3D;\frac{e^{iz}-e^{-iz}}2$<br>全复平面都解析，奇偶性，周期性，和差化积公式全部成立</p>]]></content>
     
     
-    <summary type="html">&lt;h2 id=&quot;柯西积分定理&quot;&gt;&lt;a href=&quot;#柯西积分定理&quot; class=&quot;headerlink&quot; title=&quot;#柯西积分定理&quot;&gt;&lt;/a&gt;#柯西积分定理&lt;/h2&gt;&lt;h3 id=&quot;单连通区域-柯西积分定理&quot;&gt;&lt;a href=&quot;#单连通区域-柯西积分定理&quot; class=&quot;headerlink&quot; title=&quot;#单连通区域 #柯西积分定理&quot;&gt;&lt;/a&gt;#单连通区域 #柯西积分定理&lt;/h3&gt;&lt;p&gt;设$f(z)$是单连通区域$D$内的解析函数，且$f’(z)$在$D$内连续。若$L$是$D$内任意一条简单闭曲线，则$$&lt;br&gt;&#92;oint_L{f(z)&#92;mathrm{d}z&amp;#x3D;0}$$&lt;/p&gt;
-&lt;h3 id=&quot;单连通区域-柯西-古萨积分定理&quot;&gt;&lt;a href=&quot;#单连通区域-柯西-古萨积分定理&quot; class=&quot;headerlink&quot; title=&quot;#单连通区域 #柯西-古萨积分定理&quot;&gt;&lt;/a&gt;#单连通区域 #柯西-古萨积分定理&lt;/h3&gt;&lt;p&gt;设$f(z)$是单连通区域$D$内的解析函数，若$L$是$D$内任意一周线，则 $$&#92;oint_C{f(z)&#92;mathrm dz}&amp;#x3D;0$$&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;三角函数和双曲函数&quot;&gt;&lt;a href=&quot;#三角函数和双曲函数&quot; class=&quot;headerlink&quot; title=&quot;三角函数和双曲函数&quot;&gt;&lt;/a&gt;三角函数和双曲函数&lt;/h2&gt;&lt;p&gt;余弦：$cosz&amp;#x3D;&#92;frac{e^{iz}+e^{-iz}}2$&lt;br&gt;正弦：$sinz&amp;#x3D;&#92;frac{e^{iz}-e^{-iz}}2$&lt;br&gt;全复平面都解析，奇偶性，周期性，和差化积公式全部成立&lt;/p&gt;
 </summary>
     
     
     
-    <category term="复变函数" scheme="http://note.rongxiaoli.top/categories/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    <category term="复变函数" scheme="http://blog.rongxiaoli.top/Note/categories/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
     
     
-    <category term="复变函数" scheme="http://note.rongxiaoli.top/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    <category term="复变函数" scheme="http://blog.rongxiaoli.top/Note/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    
+    <category term="LaTeX" scheme="http://blog.rongxiaoli.top/Note/tags/LaTeX/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://note.rongxiaoli.top/2023/09/28/2023-09-28%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
-    <id>http://note.rongxiaoli.top/2023/09/28/2023-09-28%E6%A6%82%E7%8E%87%E8%AE%BA/</id>
+    <link href="http://blog.rongxiaoli.top/Note/2023/09/28/2023-09-28%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/09/28/2023-09-28%E6%A6%82%E7%8E%87%E8%AE%BA/</id>
     <published>2023-09-27T16:00:00.000Z</published>
     <updated>2023-10-07T08:14:54.085Z</updated>
     
@@ -286,43 +310,19 @@
     
     
     
-    <category term="概率论" scheme="http://note.rongxiaoli.top/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    <category term="概率论" scheme="http://blog.rongxiaoli.top/Note/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
     
     
-    <category term="LaTeX" scheme="http://note.rongxiaoli.top/tags/LaTeX/"/>
+    <category term="LaTeX" scheme="http://blog.rongxiaoli.top/Note/tags/LaTeX/"/>
     
-    <category term="概率论" scheme="http://note.rongxiaoli.top/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://note.rongxiaoli.top/2023/09/28/2023-09-28%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
-    <id>http://note.rongxiaoli.top/2023/09/28/2023-09-28%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</id>
-    <published>2023-09-27T16:00:00.000Z</published>
-    <updated>2023-10-09T16:19:41.186Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="三角函数和双曲函数"><a href="#三角函数和双曲函数" class="headerlink" title="三角函数和双曲函数"></a>三角函数和双曲函数</h2><p>余弦：$cosz&#x3D;\frac{e^{iz}+e^{-iz}}2$<br>正弦：$sinz&#x3D;\frac{e^{iz}-e^{-iz}}2$<br>全复平面都解析，奇偶性，周期性，和差化积公式全部成立</p>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;三角函数和双曲函数&quot;&gt;&lt;a href=&quot;#三角函数和双曲函数&quot; class=&quot;headerlink&quot; title=&quot;三角函数和双曲函数&quot;&gt;&lt;/a&gt;三角函数和双曲函数&lt;/h2&gt;&lt;p&gt;余弦：$cosz&amp;#x3D;&#92;frac{e^{iz}+e^{-iz}}2$&lt;br&gt;正弦：$sinz&amp;#x3D;&#92;frac{e^{iz}-e^{-iz}}2$&lt;br&gt;全复平面都解析，奇偶性，周期性，和差化积公式全部成立&lt;/p&gt;
-</summary>
-    
-    
-    
-    <category term="复变函数" scheme="http://note.rongxiaoli.top/categories/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
-    
-    
-    <category term="LaTeX" scheme="http://note.rongxiaoli.top/tags/LaTeX/"/>
-    
-    <category term="复变函数" scheme="http://note.rongxiaoli.top/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    <category term="概率论" scheme="http://blog.rongxiaoli.top/Note/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://note.rongxiaoli.top/2023/09/27/2023-09-27%E6%A8%A1%E7%94%B5/"/>
-    <id>http://note.rongxiaoli.top/2023/09/27/2023-09-27%E6%A8%A1%E7%94%B5/</id>
+    <link href="http://blog.rongxiaoli.top/Note/2023/09/27/2023-09-27%E6%A8%A1%E7%94%B5/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/09/27/2023-09-27%E6%A8%A1%E7%94%B5/</id>
     <published>2023-09-26T16:00:00.000Z</published>
     <updated>2023-10-07T08:14:54.084Z</updated>
     
@@ -333,19 +333,19 @@
     
     
     
-    <category term="模电" scheme="http://note.rongxiaoli.top/categories/%E6%A8%A1%E7%94%B5/"/>
+    <category term="模电" scheme="http://blog.rongxiaoli.top/Note/categories/%E6%A8%A1%E7%94%B5/"/>
     
     
-    <category term="模电" scheme="http://note.rongxiaoli.top/tags/%E6%A8%A1%E7%94%B5/"/>
+    <category term="LaTeX" scheme="http://blog.rongxiaoli.top/Note/tags/LaTeX/"/>
     
-    <category term="LaTeX" scheme="http://note.rongxiaoli.top/tags/LaTeX/"/>
+    <category term="模电" scheme="http://blog.rongxiaoli.top/Note/tags/%E6%A8%A1%E7%94%B5/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://note.rongxiaoli.top/2023/09/27/2023-09-27%E7%89%A9%E7%90%86/"/>
-    <id>http://note.rongxiaoli.top/2023/09/27/2023-09-27%E7%89%A9%E7%90%86/</id>
+    <link href="http://blog.rongxiaoli.top/Note/2023/09/27/2023-09-27%E7%89%A9%E7%90%86/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/09/27/2023-09-27%E7%89%A9%E7%90%86/</id>
     <published>2023-09-26T16:00:00.000Z</published>
     <updated>2023-10-07T08:14:54.084Z</updated>
     
@@ -365,19 +365,46 @@
     
     
     
-    <category term="物理" scheme="http://note.rongxiaoli.top/categories/%E7%89%A9%E7%90%86/"/>
+    <category term="物理" scheme="http://blog.rongxiaoli.top/Note/categories/%E7%89%A9%E7%90%86/"/>
     
     
-    <category term="LaTeX" scheme="http://note.rongxiaoli.top/tags/LaTeX/"/>
+    <category term="LaTeX" scheme="http://blog.rongxiaoli.top/Note/tags/LaTeX/"/>
     
-    <category term="物理" scheme="http://note.rongxiaoli.top/tags/%E7%89%A9%E7%90%86/"/>
+    <category term="物理" scheme="http://blog.rongxiaoli.top/Note/tags/%E7%89%A9%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://note.rongxiaoli.top/2023/09/26/2023-09-26%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
-    <id>http://note.rongxiaoli.top/2023/09/26/2023-09-26%E6%A6%82%E7%8E%87%E8%AE%BA/</id>
+    <link href="http://blog.rongxiaoli.top/Note/2023/09/26/2023-09-26%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/09/26/2023-09-26%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</id>
+    <published>2023-09-25T16:00:00.000Z</published>
+    <updated>2023-09-26T15:20:40.417Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h2><h3 id="C-R方程-（-柯西-黎曼方程-）"><a href="#C-R方程-（-柯西-黎曼方程-）" class="headerlink" title="#C-R方程 （ #柯西-黎曼方程 ）"></a>#C-R方程 （ #柯西-黎曼方程 ）</h3><p>[[2023-09-21复变函数#^541cef]]</p><h2 id="调和函数"><a href="#调和函数" class="headerlink" title="调和函数"></a>调和函数</h2><p>定义：<br>![[Pasted image 20230926105656.png]]</p><p><strong>定理</strong>：函数$f(z)&#x3D;u(x,y)+iv(x,y)在区域D内解析\rightarrow u(x,y)和v(x,y)都是D$内的调和函数</p><h3 id="共轭调和函数"><a href="#共轭调和函数" class="headerlink" title="共轭调和函数"></a>共轭调和函数</h3><p>区域D内满足CR方程的两个调和函数u与v称为共轭调和函数<br><strong>定理</strong>：函数$f(z)&#x3D;u(x,y)+iv(x,y)在区域D内解析\leftrightarrow u(x,y)和v(x,y)互为D$内的共轭调和函数</p>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;复习&quot;&gt;&lt;a href=&quot;#复习&quot; class=&quot;headerlink&quot; title=&quot;复习&quot;&gt;&lt;/a&gt;复习&lt;/h2&gt;&lt;h3 id=&quot;C-R方程-（-柯西-黎曼方程-）&quot;&gt;&lt;a href=&quot;#C-R方程-（-柯西-黎曼方程-）&quot; class=&quot;headerlink&quot; title=&quot;#C-R方程 （ #柯西-黎曼方程 ）&quot;&gt;&lt;/a&gt;#C-R方程 （ #柯西-黎曼方程 ）&lt;/h3&gt;&lt;p&gt;[[2023-09-21复变函数#^541cef]]&lt;/p&gt;
+&lt;h2 id=&quot;调和函数&quot;&gt;&lt;a href=&quot;#调和函数&quot; class=&quot;headerlink&quot; title=&quot;调和函数&quot;&gt;&lt;/a&gt;调和函数&lt;/h2&gt;&lt;p&gt;定义：&lt;br&gt;![[Pasted image 20230926105656.png]]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定理&lt;/strong&gt;：函数$f(z)&amp;#x3D;u(x,y)+iv(x,y)在区域D内解析&#92;rightarrow u(x,y)和v(x,y)都是D$内的调和函数&lt;/p&gt;
+&lt;h3 id=&quot;共轭调和函数&quot;&gt;&lt;a href=&quot;#共轭调和函数&quot; class=&quot;headerlink&quot; title=&quot;共轭调和函数&quot;&gt;&lt;/a&gt;共轭调和函数&lt;/h3&gt;&lt;p&gt;区域D内满足CR方程的两个调和函数u与v称为共轭调和函数&lt;br&gt;&lt;strong&gt;定理&lt;/strong&gt;：函数$f(z)&amp;#x3D;u(x,y)+iv(x,y)在区域D内解析&#92;leftrightarrow u(x,y)和v(x,y)互为D$内的共轭调和函数&lt;/p&gt;
+</summary>
+    
+    
+    
+    <category term="复变函数" scheme="http://blog.rongxiaoli.top/Note/categories/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    
+    
+    <category term="复变函数" scheme="http://blog.rongxiaoli.top/Note/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    
+    <category term="LaTeX" scheme="http://blog.rongxiaoli.top/Note/tags/LaTeX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://blog.rongxiaoli.top/Note/2023/09/26/2023-09-26%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/09/26/2023-09-26%E6%A6%82%E7%8E%87%E8%AE%BA/</id>
     <published>2023-09-25T16:00:00.000Z</published>
     <updated>2023-10-07T08:14:54.083Z</updated>
     
@@ -403,46 +430,19 @@
     
     
     
-    <category term="概率论" scheme="http://note.rongxiaoli.top/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    <category term="概率论" scheme="http://blog.rongxiaoli.top/Note/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
     
     
-    <category term="LaTeX" scheme="http://note.rongxiaoli.top/tags/LaTeX/"/>
+    <category term="LaTeX" scheme="http://blog.rongxiaoli.top/Note/tags/LaTeX/"/>
     
-    <category term="概率论" scheme="http://note.rongxiaoli.top/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://note.rongxiaoli.top/2023/09/26/2023-09-26%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
-    <id>http://note.rongxiaoli.top/2023/09/26/2023-09-26%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</id>
-    <published>2023-09-25T16:00:00.000Z</published>
-    <updated>2023-09-26T15:20:40.417Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h2><h3 id="C-R方程-（-柯西-黎曼方程-）"><a href="#C-R方程-（-柯西-黎曼方程-）" class="headerlink" title="#C-R方程 （ #柯西-黎曼方程 ）"></a>#C-R方程 （ #柯西-黎曼方程 ）</h3><p>[[2023-09-21复变函数#^541cef]]</p><h2 id="调和函数"><a href="#调和函数" class="headerlink" title="调和函数"></a>调和函数</h2><p>定义：<br>![[Pasted image 20230926105656.png]]</p><p><strong>定理</strong>：函数$f(z)&#x3D;u(x,y)+iv(x,y)在区域D内解析\rightarrow u(x,y)和v(x,y)都是D$内的调和函数</p><h3 id="共轭调和函数"><a href="#共轭调和函数" class="headerlink" title="共轭调和函数"></a>共轭调和函数</h3><p>区域D内满足CR方程的两个调和函数u与v称为共轭调和函数<br><strong>定理</strong>：函数$f(z)&#x3D;u(x,y)+iv(x,y)在区域D内解析\leftrightarrow u(x,y)和v(x,y)互为D$内的共轭调和函数</p>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;复习&quot;&gt;&lt;a href=&quot;#复习&quot; class=&quot;headerlink&quot; title=&quot;复习&quot;&gt;&lt;/a&gt;复习&lt;/h2&gt;&lt;h3 id=&quot;C-R方程-（-柯西-黎曼方程-）&quot;&gt;&lt;a href=&quot;#C-R方程-（-柯西-黎曼方程-）&quot; class=&quot;headerlink&quot; title=&quot;#C-R方程 （ #柯西-黎曼方程 ）&quot;&gt;&lt;/a&gt;#C-R方程 （ #柯西-黎曼方程 ）&lt;/h3&gt;&lt;p&gt;[[2023-09-21复变函数#^541cef]]&lt;/p&gt;
-&lt;h2 id=&quot;调和函数&quot;&gt;&lt;a href=&quot;#调和函数&quot; class=&quot;headerlink&quot; title=&quot;调和函数&quot;&gt;&lt;/a&gt;调和函数&lt;/h2&gt;&lt;p&gt;定义：&lt;br&gt;![[Pasted image 20230926105656.png]]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;定理&lt;/strong&gt;：函数$f(z)&amp;#x3D;u(x,y)+iv(x,y)在区域D内解析&#92;rightarrow u(x,y)和v(x,y)都是D$内的调和函数&lt;/p&gt;
-&lt;h3 id=&quot;共轭调和函数&quot;&gt;&lt;a href=&quot;#共轭调和函数&quot; class=&quot;headerlink&quot; title=&quot;共轭调和函数&quot;&gt;&lt;/a&gt;共轭调和函数&lt;/h3&gt;&lt;p&gt;区域D内满足CR方程的两个调和函数u与v称为共轭调和函数&lt;br&gt;&lt;strong&gt;定理&lt;/strong&gt;：函数$f(z)&amp;#x3D;u(x,y)+iv(x,y)在区域D内解析&#92;leftrightarrow u(x,y)和v(x,y)互为D$内的共轭调和函数&lt;/p&gt;
-</summary>
-    
-    
-    
-    <category term="复变函数" scheme="http://note.rongxiaoli.top/categories/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
-    
-    
-    <category term="LaTeX" scheme="http://note.rongxiaoli.top/tags/LaTeX/"/>
-    
-    <category term="复变函数" scheme="http://note.rongxiaoli.top/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    <category term="概率论" scheme="http://blog.rongxiaoli.top/Note/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://note.rongxiaoli.top/2023/09/25/2023-09-25%E6%A8%A1%E7%94%B5/"/>
-    <id>http://note.rongxiaoli.top/2023/09/25/2023-09-25%E6%A8%A1%E7%94%B5/</id>
+    <link href="http://blog.rongxiaoli.top/Note/2023/09/25/2023-09-25%E6%A8%A1%E7%94%B5/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/09/25/2023-09-25%E6%A8%A1%E7%94%B5/</id>
     <published>2023-09-24T16:00:00.000Z</published>
     <updated>2023-09-26T15:20:40.416Z</updated>
     
@@ -455,19 +455,19 @@
     
     
     
-    <category term="模电" scheme="http://note.rongxiaoli.top/categories/%E6%A8%A1%E7%94%B5/"/>
+    <category term="模电" scheme="http://blog.rongxiaoli.top/Note/categories/%E6%A8%A1%E7%94%B5/"/>
     
     
-    <category term="模电" scheme="http://note.rongxiaoli.top/tags/%E6%A8%A1%E7%94%B5/"/>
+    <category term="LaTeX" scheme="http://blog.rongxiaoli.top/Note/tags/LaTeX/"/>
     
-    <category term="LaTeX" scheme="http://note.rongxiaoli.top/tags/LaTeX/"/>
+    <category term="模电" scheme="http://blog.rongxiaoli.top/Note/tags/%E6%A8%A1%E7%94%B5/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://note.rongxiaoli.top/2023/09/22/%E7%89%A9%E7%90%86/2023-09-22%E7%89%A9%E7%90%86/"/>
-    <id>http://note.rongxiaoli.top/2023/09/22/%E7%89%A9%E7%90%86/2023-09-22%E7%89%A9%E7%90%86/</id>
+    <link href="http://blog.rongxiaoli.top/Note/2023/09/22/%E7%89%A9%E7%90%86/2023-09-22%E7%89%A9%E7%90%86/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/09/22/%E7%89%A9%E7%90%86/2023-09-22%E7%89%A9%E7%90%86/</id>
     <published>2023-09-21T16:00:00.000Z</published>
     <updated>2023-10-07T08:14:54.100Z</updated>
     
@@ -484,17 +484,17 @@
     
     
     
-    <category term="物理" scheme="http://note.rongxiaoli.top/categories/%E7%89%A9%E7%90%86/"/>
+    <category term="物理" scheme="http://blog.rongxiaoli.top/Note/categories/%E7%89%A9%E7%90%86/"/>
     
     
-    <category term="物理" scheme="http://note.rongxiaoli.top/tags/%E7%89%A9%E7%90%86/"/>
+    <category term="物理" scheme="http://blog.rongxiaoli.top/Note/tags/%E7%89%A9%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://note.rongxiaoli.top/2023/09/21/2023-09-21%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
-    <id>http://note.rongxiaoli.top/2023/09/21/2023-09-21%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</id>
+    <link href="http://blog.rongxiaoli.top/Note/2023/09/21/2023-09-21%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    <id>http://blog.rongxiaoli.top/Note/2023/09/21/2023-09-21%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</id>
     <published>2023-09-20T16:00:00.000Z</published>
     <updated>2023-09-26T15:20:40.416Z</updated>
     
@@ -512,12 +512,12 @@
     
     
     
-    <category term="复变函数" scheme="http://note.rongxiaoli.top/categories/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    <category term="复变函数" scheme="http://blog.rongxiaoli.top/Note/categories/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
     
     
-    <category term="LaTeX" scheme="http://note.rongxiaoli.top/tags/LaTeX/"/>
+    <category term="复变函数" scheme="http://blog.rongxiaoli.top/Note/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
     
-    <category term="复变函数" scheme="http://note.rongxiaoli.top/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    <category term="LaTeX" scheme="http://blog.rongxiaoli.top/Note/tags/LaTeX/"/>
     
   </entry>
   
